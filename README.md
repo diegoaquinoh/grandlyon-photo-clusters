@@ -1,11 +1,55 @@
-# grandlyon-photo-clusters
+# Grand Lyon Photo Clusters
 
-## Project Description
-This project aims to analyze a dataset of photos from the Grand Lyon area to automatically identify and characterize Points of Interest (POIs) and events.
+Automatic discovery and characterization of Points of Interest (POIs) and events from 400,000+ geolocated Flickr photos in the Lyon metropolitan area.
 
-The workflow consists of:
-1.  **Data Processing**: Ingestion, cleaning, and filtering of raw photo data (geolocation, timestamps, text).
-2.  **Clustering**: Applying spatial clustering algorithms (e.g., DBSCAN, K-Means) to grouping photos into areas of interest.
-3.  **Text Mining**: Using methods like TF-IDF and Association Rules to generate descriptive labels for each cluster based on user tags and photo titles.
-4.  **Temporal Analysis**: Distinguishing between permanent landmarks and temporary events by analyzing the temporal distribution of photos within clusters.
-5.  **Visualization**: An interactive map application to display the results and explore the discovered clusters.
+## Project Overview
+
+| Phase | Description |
+|-------|-------------|
+| **Data Processing** | Ingest, clean, and filter raw photo data (geolocation, timestamps, text) |
+| **Clustering** | Apply spatial clustering (K-Means, Hierarchical, DBSCAN) to identify areas of interest |
+| **Text Mining** | Generate cluster labels using TF-IDF and Association Rules on tags/titles |
+| **Temporal Analysis** | Distinguish permanent landmarks from one-time/recurring events |
+| **Visualization** | Interactive Folium map to explore discovered clusters |
+
+## Project Structure
+
+```
+├── data/           # Raw and processed datasets (not tracked in git)
+├── src/            # Python source modules
+├── notebooks/      # Jupyter notebooks for analysis
+├── app/            # Streamlit web application
+└── reports/        # Generated reports and visualizations
+```
+
+## Setup
+
+**Option 1 – pip:**
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**Option 2 – Conda:**
+```bash
+conda env create -f environment.yml
+conda activate grandlyon-photo-clusters
+```
+
+## Data Format
+
+Each photo record contains:
+```
+⟨photo_id, user_id, latitude, longitude, tags, description, dates⟩
+```
+
+Access photos at: `https://www.flickr.com/photos/<user_id>/<photo_id>`
+
+## Team
+
+- Diego Aquino
+- [Add team members]
+
+---
+*IF4 Data Mining Project – INSA Lyon 2025-2026*
