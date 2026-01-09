@@ -1,0 +1,3 @@
+# This directory contains the web application code
+# - main.py (Streamlit app entry point)
+# - components/ (UI components)
