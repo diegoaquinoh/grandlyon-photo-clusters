@@ -8,7 +8,6 @@
 1. **Project setup & workflow**
 
    * Create repo structure (data/, src/, notebooks/, app/, reports/), environment (requirements.txt / conda).
-   * Define team roles (data/ML/app) + shared “definition of done” for each milestone item.
 
 2. **Data ingestion & profiling**
 

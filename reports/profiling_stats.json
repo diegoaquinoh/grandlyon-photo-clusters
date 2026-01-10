@@ -1,0 +1,22 @@
+{
+  "total_rows": 187443,
+  "unique_users": 5145,
+  "duplicate_ids": "252143",
+  "duplicate_rows": "232642",
+  "null_coords": 0,
+  "outside_lyon": 0,
+  "empty_tags": "46949",
+  "empty_titles": "16961",
+  "year_range": [
+    1991,
+    2019
+  ],
+  "lat_range": [
+    45.6552,
+    45.85495
+  ],
+  "lon_range": [
+    4.720312,
+    5.006709
+  ]
+}
