@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-01-10T13:22:39.548733",
+  "initial_count": 420240,
+  "final_count": 167578,
+  "total_removed": 252662,
+  "retention_rate": 39.88,
+  "steps": [
+    {
+      "step": "GPS validation",
+      "rows_before": 420240,
+      "rows_after": 420240,
+      "rows_removed": 0,
+      "removal_percentage": 0.0,
+      "reason": "Removed rows with null, NaN, or out-of-range GPS coordinates"
+    },
+    {
+      "step": "Date validation",
+      "rows_before": 420240,
+      "rows_after": 419826,
+      "rows_removed": 414,
+      "removal_percentage": 0.1,
+      "reason": "Removed rows with impossible date values (month>12, year outside 1990-2025, etc.)"
+    },
+    {
+      "step": "Date coherency",
+      "rows_before": 419826,
+      "rows_after": 418898,
+      "rows_removed": 928,
+      "removal_percentage": 0.22,
+      "reason": "Removed rows where date_taken > date_upload (impossible: upload before capture)"
+    },
+    {
+      "step": "Deduplication",
+      "rows_before": 418898,
+      "rows_after": 167578,
+      "rows_removed": 251320,
+      "removal_percentage": 60.0,
+      "reason": "Removed duplicate photo entries (same photo ID)"
+    },
+    {
+      "step": "Lyon bbox filter",
+      "rows_before": 167578,
+      "rows_after": 167578,
+      "rows_removed": 0,
+      "removal_percentage": 0.0,
+      "reason": "Kept only photos within Lyon area (lat: 45.55-45.95, lon: 4.65-5.1)"
+    }
+  ]
+}
