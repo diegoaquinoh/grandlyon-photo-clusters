@@ -1,0 +1,2 @@
+eps,n_clusters,noise_pct,largest_pct,silhouette
+0.005,59,0.3,83.8,0.4098

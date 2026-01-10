@@ -1,15 +1,17 @@
 """
 Clustering module for the Grand Lyon Photo Clusters project.
 Provides utilities for spatial clustering of photo locations.
+
+Session 2: Enhanced with K-Means, Hierarchical, and improved DBSCAN.
 """
 
 import numpy as np
 import pandas as pd
-from sklearn.cluster import DBSCAN
+from sklearn.cluster import DBSCAN, KMeans, AgglomerativeClustering
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 from pathlib import Path
-from typing import Tuple, Optional
+from typing import Tuple, Optional, Dict, List
 import json
 from datetime import datetime
 
@@ -20,25 +22,32 @@ REPORTS_DIR = PROJECT_ROOT / "reports"
 DATA_DIR = PROJECT_ROOT / "data"
 
 
-def prepare_coordinates(df: pd.DataFrame) -> np.ndarray:
+def prepare_coordinates(df: pd.DataFrame, scale: bool = False) -> np.ndarray:
     """
     Extract and prepare coordinates for clustering.
     
     Args:
         df: DataFrame with 'lat' and 'long' columns
+        scale: Whether to standardize coordinates (recommended for K-Means)
     
     Returns:
         NumPy array of shape (n_samples, 2) with [lat, lon] coordinates
     """
     coords = df[['lat', 'long']].values
+    if scale:
+        scaler = StandardScaler()
+        coords = scaler.fit_transform(coords)
     return coords
 
+
+# =============================================================================
+# DBSCAN CLUSTERING
+# =============================================================================
 
 def run_dbscan(
     coords: np.ndarray,
     eps: float = 0.005,
-    min_samples: int = 10,
-    scale_coords: bool = False
+    min_samples: int = 10
 ) -> np.ndarray:
     """
     Run DBSCAN clustering on coordinates.
@@ -53,20 +62,137 @@ def run_dbscan(
         eps: Maximum distance between points in a cluster (in degrees)
              0.005 degrees ≈ ~500m at Lyon's latitude
         min_samples: Minimum points to form a cluster
-        scale_coords: Whether to standardize coordinates first
     
     Returns:
         Array of cluster labels (-1 = noise)
     """
-    if scale_coords:
-        scaler = StandardScaler()
-        coords = scaler.fit_transform(coords)
-    
-    dbscan = DBSCAN(eps=eps, min_samples=min_samples, metric='euclidean')
+    dbscan = DBSCAN(eps=eps, min_samples=min_samples, metric='euclidean', algorithm='ball_tree')
     labels = dbscan.fit_predict(coords)
-    
     return labels
 
+
+# =============================================================================
+# K-MEANS CLUSTERING
+# =============================================================================
+
+def run_kmeans(
+    coords: np.ndarray,
+    n_clusters: int = 50,
+    random_state: int = 42,
+    max_iter: int = 300
+) -> np.ndarray:
+    """
+    Run K-Means clustering on coordinates.
+    
+    K-Means creates spherical clusters of similar size. Works best when:
+    - You have an idea of how many clusters to expect
+    - Clusters are roughly similar in size
+    - Data is scaled
+    
+    Args:
+        coords: Array of [lat, lon] coordinates (recommend scaling first)
+        n_clusters: Number of clusters to create
+        random_state: Random seed for reproducibility
+        max_iter: Maximum iterations
+    
+    Returns:
+        Array of cluster labels (0 to n_clusters-1)
+    """
+    kmeans = KMeans(
+        n_clusters=n_clusters, 
+        random_state=random_state, 
+        max_iter=max_iter,
+        n_init=10
+    )
+    labels = kmeans.fit_predict(coords)
+    return labels
+
+
+def find_optimal_k(
+    coords: np.ndarray,
+    k_range: range = range(10, 101, 10),
+    random_state: int = 42,
+    sample_size: int = 10000
+) -> Dict:
+    """
+    Find optimal number of clusters for K-Means using elbow method and silhouette.
+    
+    Args:
+        coords: Array of coordinates
+        k_range: Range of k values to test
+        random_state: Random seed
+        sample_size: Number of points to sample for silhouette (speeds up calculation)
+    
+    Returns:
+        Dictionary with results for each k value
+    """
+    results = []
+    n_points = len(coords)
+    
+    # Create sample indices for silhouette calculation (much faster)
+    np.random.seed(random_state)
+    if n_points > sample_size:
+        sample_idx = np.random.choice(n_points, sample_size, replace=False)
+    else:
+        sample_idx = np.arange(n_points)
+    
+    for k in k_range:
+        print(f"  Testing k={k}...", end=" ")
+        kmeans = KMeans(n_clusters=k, random_state=random_state, n_init=3)  # Reduced n_init
+        labels = kmeans.fit_predict(coords)
+        
+        inertia = kmeans.inertia_
+        
+        # Calculate silhouette on sample only (100x faster)
+        if k > 1:
+            silhouette = silhouette_score(coords[sample_idx], labels[sample_idx])
+        else:
+            silhouette = 0
+        
+        results.append({
+            'k': k,
+            'inertia': float(inertia),
+            'silhouette': float(silhouette)
+        })
+        print(f"silhouette={silhouette:.4f}")
+    
+    return results
+
+
+# =============================================================================
+# HIERARCHICAL CLUSTERING
+# =============================================================================
+
+def run_hierarchical(
+    coords: np.ndarray,
+    n_clusters: int = 50,
+    linkage: str = 'ward'
+) -> np.ndarray:
+    """
+    Run Agglomerative Hierarchical clustering on coordinates.
+    
+    Hierarchical clustering builds a tree of clusters. Ward linkage
+    minimizes variance within clusters, good for compact clusters.
+    
+    Args:
+        coords: Array of [lat, lon] coordinates
+        n_clusters: Number of clusters to create
+        linkage: Linkage criterion ('ward', 'complete', 'average', 'single')
+    
+    Returns:
+        Array of cluster labels (0 to n_clusters-1)
+    """
+    hierarchical = AgglomerativeClustering(
+        n_clusters=n_clusters,
+        linkage=linkage
+    )
+    labels = hierarchical.fit_predict(coords)
+    return labels
+
+
+# =============================================================================
+# CLUSTER STATISTICS & METRICS
+# =============================================================================
 
 def get_cluster_stats(labels: np.ndarray) -> dict:
     """
@@ -99,8 +225,180 @@ def get_cluster_stats(labels: np.ndarray) -> dict:
         'largest_cluster': int(cluster_sizes[0]) if cluster_sizes else 0,
         'smallest_cluster': int(cluster_sizes[-1]) if cluster_sizes else 0,
         'median_cluster_size': int(np.median(cluster_sizes)) if cluster_sizes else 0,
+        'mean_cluster_size': float(np.mean(cluster_sizes)) if cluster_sizes else 0,
+        'std_cluster_size': float(np.std(cluster_sizes)) if cluster_sizes else 0,
         'cluster_sizes_top10': [int(x) for x in cluster_sizes[:10]]
     }
+
+
+def calculate_quality_metrics(
+    coords: np.ndarray, 
+    labels: np.ndarray,
+    sample_size: int = 10000
+) -> dict:
+    """
+    Calculate clustering quality metrics.
+    
+    Args:
+        coords: Array of coordinates
+        labels: Cluster labels
+        sample_size: Number of points to sample for metrics (speeds up calculation)
+    
+    Returns:
+        Dictionary of quality metrics
+    """
+    # Only calculate on clustered points (exclude noise)
+    mask = labels != -1
+    n_clustered = mask.sum()
+    n_clusters = len(set(labels[mask]))
+    
+    if n_clustered < 2 or n_clusters < 2:
+        return {
+            'silhouette': None,
+            'davies_bouldin': None,
+            'calinski_harabasz': None,
+            'note': 'Not enough clusters or points for metrics'
+        }
+    
+    # Sample for faster calculation
+    coords_masked = coords[mask]
+    labels_masked = labels[mask]
+    
+    if len(coords_masked) > sample_size:
+        sample_idx = np.random.choice(len(coords_masked), sample_size, replace=False)
+        coords_sample = coords_masked[sample_idx]
+        labels_sample = labels_masked[sample_idx]
+    else:
+        coords_sample = coords_masked
+        labels_sample = labels_masked
+    
+    return {
+        'silhouette': float(silhouette_score(coords_sample, labels_sample)),
+        'davies_bouldin': float(davies_bouldin_score(coords_sample, labels_sample)),
+        'calinski_harabasz': float(calinski_harabasz_score(coords_sample, labels_sample))
+    }
+
+
+# =============================================================================
+# COMPARISON UTILITIES
+# =============================================================================
+
+def compare_algorithms(
+    df: Optional[pd.DataFrame] = None,
+    dbscan_params: Dict = None,
+    kmeans_k: int = 50,
+    hierarchical_k: int = 50,
+    scale_for_kmeans: bool = True,
+    hier_sample_size: int = 20000
+) -> pd.DataFrame:
+    """
+    Run all three clustering algorithms and compare results.
+    
+    Args:
+        df: DataFrame with photo data
+        dbscan_params: Dict with 'eps' and 'min_samples' for DBSCAN
+        kmeans_k: Number of clusters for K-Means
+        hierarchical_k: Number of clusters for Hierarchical
+        scale_for_kmeans: Whether to scale coordinates for K-Means
+        hier_sample_size: Sample size for hierarchical clustering (memory-safe)
+    
+    Returns:
+        DataFrame with comparison results
+    """
+    if dbscan_params is None:
+        dbscan_params = {'eps': 0.003, 'min_samples': 10}
+    
+    if df is None:
+        df = load_cleaned_data()
+    
+    # Get coordinates
+    coords = prepare_coordinates(df, scale=False)
+    coords_scaled = prepare_coordinates(df, scale=True)
+    
+    results = []
+    
+    print("=" * 70)
+    print("CLUSTERING ALGORITHM COMPARISON (Optimized)")
+    print("=" * 70)
+    print(f"Data points: {len(df):,}")
+    print()
+    
+    # DBSCAN
+    print(f"[1/3] Running DBSCAN (eps={dbscan_params['eps']}, min_samples={dbscan_params['min_samples']})...")
+    dbscan_labels = run_dbscan(coords, **dbscan_params)
+    dbscan_stats = get_cluster_stats(dbscan_labels)
+    dbscan_metrics = calculate_quality_metrics(coords, dbscan_labels)
+    results.append({
+        'algorithm': 'DBSCAN',
+        'parameters': f"eps={dbscan_params['eps']}, min_samples={dbscan_params['min_samples']}",
+        'n_clusters': dbscan_stats['n_clusters'],
+        'noise_pct': round(dbscan_stats['noise_percentage'], 2),
+        'largest_cluster': dbscan_stats['largest_cluster'],
+        'largest_pct': round(dbscan_stats['largest_cluster'] / len(df) * 100, 1),
+        'median_size': dbscan_stats['median_cluster_size'],
+        'silhouette': round(dbscan_metrics['silhouette'], 4) if dbscan_metrics.get('silhouette') else None,
+        'davies_bouldin': round(dbscan_metrics['davies_bouldin'], 4) if dbscan_metrics.get('davies_bouldin') else None,
+    })
+    print(f"      → {dbscan_stats['n_clusters']} clusters, {dbscan_stats['noise_percentage']:.1f}% noise")
+    
+    # K-Means
+    print(f"[2/3] Running K-Means (k={kmeans_k})...")
+    kmeans_coords = coords_scaled if scale_for_kmeans else coords
+    kmeans_labels = run_kmeans(kmeans_coords, n_clusters=kmeans_k)
+    kmeans_stats = get_cluster_stats(kmeans_labels)
+    kmeans_metrics = calculate_quality_metrics(kmeans_coords, kmeans_labels)
+    results.append({
+        'algorithm': 'K-Means',
+        'parameters': f"k={kmeans_k}, scaled={scale_for_kmeans}",
+        'n_clusters': kmeans_stats['n_clusters'],
+        'noise_pct': 0.0,
+        'largest_cluster': kmeans_stats['largest_cluster'],
+        'largest_pct': round(kmeans_stats['largest_cluster'] / len(df) * 100, 1),
+        'median_size': kmeans_stats['median_cluster_size'],
+        'silhouette': round(kmeans_metrics['silhouette'], 4) if kmeans_metrics.get('silhouette') else None,
+        'davies_bouldin': round(kmeans_metrics['davies_bouldin'], 4) if kmeans_metrics.get('davies_bouldin') else None,
+    })
+    print(f"      → {kmeans_stats['n_clusters']} clusters")
+    
+    # Hierarchical (on sample for memory safety)
+    sample_size = min(hier_sample_size, len(coords))
+    use_sample = len(coords) > hier_sample_size
+    
+    if use_sample:
+        print(f"[3/3] Running Hierarchical (k={hierarchical_k}, linkage=ward) on {sample_size:,} sample...")
+        sample_idx = np.random.choice(len(coords), sample_size, replace=False)
+        coords_hier = coords[sample_idx]
+    else:
+        print(f"[3/3] Running Hierarchical (k={hierarchical_k}, linkage=ward)...")
+        coords_hier = coords
+    
+    hier_model = AgglomerativeClustering(n_clusters=hierarchical_k, linkage='ward')
+    hier_labels = hier_model.fit_predict(coords_hier)
+    hier_stats = get_cluster_stats(hier_labels)
+    hier_metrics = calculate_quality_metrics(coords_hier, hier_labels)
+    
+    results.append({
+        'algorithm': 'Hierarchical',
+        'parameters': f"k={hierarchical_k}, linkage=ward" + (f", sampled={sample_size}" if use_sample else ""),
+        'n_clusters': hier_stats['n_clusters'],
+        'noise_pct': 0.0,
+        'largest_cluster': hier_stats['largest_cluster'],
+        'largest_pct': round(hier_stats['largest_cluster'] / len(coords_hier) * 100, 1),
+        'median_size': hier_stats['median_cluster_size'],
+        'silhouette': round(hier_metrics['silhouette'], 4) if hier_metrics.get('silhouette') else None,
+        'davies_bouldin': round(hier_metrics['davies_bouldin'], 4) if hier_metrics.get('davies_bouldin') else None,
+    })
+    print(f"      → {hier_stats['n_clusters']} clusters")
+    
+    # Create comparison DataFrame
+    comparison_df = pd.DataFrame(results)
+    
+    print("\n" + "=" * 70)
+    print("COMPARISON RESULTS")
+    print("=" * 70)
+    print(comparison_df.to_string(index=False))
+    
+    return comparison_df
 
 
 def run_baseline_clustering(
@@ -161,52 +459,6 @@ def run_baseline_clustering(
         print(f"  Saved stats to: {stats_path}")
     
     return df, stats
-
-
-def main():
-    """Run baseline clustering and print results."""
-    print("=" * 50)
-    print("Running Baseline DBSCAN Clustering")
-    print("=" * 50)
-    
-    df, stats = run_baseline_clustering()
-    
-    print("\n" + "=" * 50)
-    print("✅ Baseline clustering complete!")
-    print("=" * 50)
-    
-    return df, stats
-
-
-def calculate_quality_metrics(coords: np.ndarray, labels: np.ndarray) -> dict:
-    """
-    Calculate clustering quality metrics.
-    
-    Args:
-        coords: Array of coordinates
-        labels: Cluster labels
-    
-    Returns:
-        Dictionary of quality metrics
-    """
-    # Only calculate on clustered points (exclude noise)
-    mask = labels != -1
-    n_clustered = mask.sum()
-    n_clusters = len(set(labels[mask]))
-    
-    if n_clustered < 2 or n_clusters < 2:
-        return {
-            'silhouette': None,
-            'davies_bouldin': None,
-            'calinski_harabasz': None,
-            'note': 'Not enough clusters or points for metrics'
-        }
-    
-    return {
-        'silhouette': float(silhouette_score(coords[mask], labels[mask])),
-        'davies_bouldin': float(davies_bouldin_score(coords[mask], labels[mask])),
-        'calinski_harabasz': float(calinski_harabasz_score(coords[mask], labels[mask]))
-    }
 
 
 def run_parameter_sweep(
@@ -294,6 +546,27 @@ def run_parameter_sweep(
         print(f"\nSaved sweep results to: {sweep_path}")
     
     return results_df
+
+
+def main():
+    """Run clustering comparison and print results."""
+    print("=" * 70)
+    print("GRAND LYON PHOTO CLUSTERS - CLUSTERING MODULE")
+    print("=" * 70)
+    
+    # Run comparison of all three algorithms
+    comparison_df = compare_algorithms(
+        dbscan_params={'eps': 0.003, 'min_samples': 10},
+        kmeans_k=50,
+        hierarchical_k=50
+    )
+    
+    # Save comparison
+    comparison_path = REPORTS_DIR / "clustering_comparison.csv"
+    comparison_df.to_csv(comparison_path, index=False)
+    print(f"\n✅ Saved comparison to: {comparison_path}")
+    
+    return comparison_df
 
 
 if __name__ == "__main__":

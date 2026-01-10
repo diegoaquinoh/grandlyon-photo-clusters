@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-01-10T15:25:53.684115",
+  "dbscan": {
+    "eps": 0.005,
+    "min_samples": 10,
+    "silhouette": 0.4098,
+    "n_clusters": 59
+  },
+  "kmeans": {
+    "k": 100,
+    "silhouette": 0.5343997223568664
+  },
+  "hierarchical": {
+    "n_clusters": 100,
+    "linkage": "ward",
+    "silhouette": 0.513
+  }
+}
