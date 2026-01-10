@@ -1,0 +1,4 @@
+algorithm,parameters,n_clusters,noise_pct,largest_cluster,largest_pct,median_size,silhouette,davies_bouldin
+DBSCAN,"eps=0.005, min_samples=10",59,0.28,140409,83.8,47,0.4044,0.2889
+K-Means,"k=100, scaled=True",100,0.0,15157,9.0,771,0.5347,0.6174
+Hierarchical,"k=100, linkage=ward, sampled=20000",100,0.0,1891,9.5,85,0.5105,0.6558
