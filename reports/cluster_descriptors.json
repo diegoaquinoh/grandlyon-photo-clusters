@@ -1,0 +1,4206 @@
+{
+  "generated_at": "2026-01-10T16:14:26.034584",
+  "method": "TF-IDF",
+  "clusters": {
+    "0": [
+      {
+        "term": "centrenautiquetonybertrand",
+        "score": 0.4011
+      },
+      {
+        "term": "stella",
+        "score": 0.3153
+      },
+      {
+        "term": "river",
+        "score": 0.2912
+      },
+      {
+        "term": "open",
+        "score": 0.2789
+      },
+      {
+        "term": "along river",
+        "score": 0.184
+      },
+      {
+        "term": "river along",
+        "score": 0.1819
+      },
+      {
+        "term": "camargue",
+        "score": 0.1806
+      },
+      {
+        "term": "pont",
+        "score": 0.1699
+      },
+      {
+        "term": "exif",
+        "score": 0.1662
+      },
+      {
+        "term": "kreuzfahrt",
+        "score": 0.158
+      }
+    ],
+    "1": [
+      {
+        "term": "foodspotting",
+        "score": 0.5536
+      },
+      {
+        "term": "bocuse",
+        "score": 0.4737
+      },
+      {
+        "term": "paul bocuse",
+        "score": 0.4202
+      },
+      {
+        "term": "paul",
+        "score": 0.2597
+      },
+      {
+        "term": "collonges",
+        "score": 0.2455
+      },
+      {
+        "term": "auberge",
+        "score": 0.1846
+      },
+      {
+        "term": "lione",
+        "score": 0.1746
+      },
+      {
+        "term": "francia lione",
+        "score": 0.1316
+      },
+      {
+        "term": "francia",
+        "score": 0.1166
+      },
+      {
+        "term": "lione francia",
+        "score": 0.1085
+      }
+    ],
+    "2": [
+      {
+        "term": "bron",
+        "score": 0.5875
+      },
+      {
+        "term": "lever",
+        "score": 0.4885
+      },
+      {
+        "term": "lyn",
+        "score": 0.2853
+      },
+      {
+        "term": "soleil",
+        "score": 0.257
+      },
+      {
+        "term": "swan",
+        "score": 0.203
+      },
+      {
+        "term": "global",
+        "score": 0.203
+      },
+      {
+        "term": "nissan",
+        "score": 0.1938
+      },
+      {
+        "term": "bron bron",
+        "score": 0.1072
+      },
+      {
+        "term": "bird",
+        "score": 0.0732
+      },
+      {
+        "term": "bd",
+        "score": 0.0705
+      }
+    ],
+    "3": [
+      {
+        "term": "loyasse",
+        "score": 0.7618
+      },
+      {
+        "term": "tombe",
+        "score": 0.5734
+      },
+      {
+        "term": "architecture",
+        "score": 0.2434
+      },
+      {
+        "term": "avalanche cup",
+        "score": 0.0789
+      },
+      {
+        "term": "avalanche",
+        "score": 0.0729
+      },
+      {
+        "term": "famille",
+        "score": 0.0628
+      },
+      {
+        "term": "cup",
+        "score": 0.049
+      },
+      {
+        "term": "vtt",
+        "score": 0.028
+      },
+      {
+        "term": "foood",
+        "score": 0.0273
+      },
+      {
+        "term": "lightroom",
+        "score": 0.0261
+      }
+    ],
+    "4": [
+      {
+        "term": "villeurbanne",
+        "score": 0.6989
+      },
+      {
+        "term": "rieur",
+        "score": 0.2316
+      },
+      {
+        "term": "inte",
+        "score": 0.2214
+      },
+      {
+        "term": "inte rieur",
+        "score": 0.2214
+      },
+      {
+        "term": "lesinvites",
+        "score": 0.1685
+      },
+      {
+        "term": "artsdelarue",
+        "score": 0.1672
+      },
+      {
+        "term": "spectaclesartsdelarue",
+        "score": 0.1383
+      },
+      {
+        "term": "spectacle villeurbanne",
+        "score": 0.1371
+      },
+      {
+        "term": "artidistrada",
+        "score": 0.1295
+      },
+      {
+        "term": "villeurbanne streetarts",
+        "score": 0.1295
+      }
+    ],
+    "5": [
+      {
+        "term": "chaos",
+        "score": 0.177
+      },
+      {
+        "term": "ddc",
+        "score": 0.1672
+      },
+      {
+        "term": "demeureduchaos",
+        "score": 0.1514
+      },
+      {
+        "term": "abodeofchaos",
+        "score": 0.1504
+      },
+      {
+        "term": "thierryehrmann",
+        "score": 0.1463
+      },
+      {
+        "term": "demeureduchaos thierryehrmann",
+        "score": 0.1435
+      },
+      {
+        "term": "organmuseum",
+        "score": 0.1388
+      },
+      {
+        "term": "lespritdelasalamandre",
+        "score": 0.1372
+      },
+      {
+        "term": "salamanderspirit",
+        "score": 0.1362
+      },
+      {
+        "term": "prophecy",
+        "score": 0.1342
+      }
+    ],
+    "6": [
+      {
+        "term": "pasted",
+        "score": 0.39
+      },
+      {
+        "term": "paper",
+        "score": 0.3411
+      },
+      {
+        "term": "croixrousse",
+        "score": 0.3359
+      },
+      {
+        "term": "pasted paper",
+        "score": 0.3115
+      },
+      {
+        "term": "europe croixrousse",
+        "score": 0.2218
+      },
+      {
+        "term": "croixrousse streetart",
+        "score": 0.2213
+      },
+      {
+        "term": "streetart",
+        "score": 0.2195
+      },
+      {
+        "term": "wheatpaper",
+        "score": 0.199
+      },
+      {
+        "term": "wheatpaste",
+        "score": 0.1986
+      },
+      {
+        "term": "pasteup",
+        "score": 0.1939
+      }
+    ],
+    "7": [
+      {
+        "term": "confluence",
+        "score": 0.5223
+      },
+      {
+        "term": "biennaledelyon",
+        "score": 0.2559
+      },
+      {
+        "term": "biennale",
+        "score": 0.2418
+      },
+      {
+        "term": "euronews",
+        "score": 0.1597
+      },
+      {
+        "term": "cube",
+        "score": 0.1462
+      },
+      {
+        "term": "biennale artcontemporain",
+        "score": 0.1386
+      },
+      {
+        "term": "artcontemporain biennaledelyon",
+        "score": 0.1358
+      },
+      {
+        "term": "artcontemporain",
+        "score": 0.1274
+      },
+      {
+        "term": "biennaledelyon biennale",
+        "score": 0.1246
+      },
+      {
+        "term": "architecture",
+        "score": 0.1158
+      }
+    ],
+    "8": [
+      {
+        "term": "railways sncf",
+        "score": 0.4065
+      },
+      {
+        "term": "rotonde",
+        "score": 0.3675
+      },
+      {
+        "term": "frenchrailways",
+        "score": 0.3675
+      },
+      {
+        "term": "railways",
+        "score": 0.3093
+      },
+      {
+        "term": "turntable",
+        "score": 0.2737
+      },
+      {
+        "term": "roundhouse",
+        "score": 0.2708
+      },
+      {
+        "term": "roundhouse rotonde",
+        "score": 0.2579
+      },
+      {
+        "term": "sncf roundhouse",
+        "score": 0.2579
+      },
+      {
+        "term": "frenchrailways bb",
+        "score": 0.2234
+      },
+      {
+        "term": "sncf",
+        "score": 0.2177
+      }
+    ],
+    "9": [
+      {
+        "term": "vtt",
+        "score": 0.4914
+      },
+      {
+        "term": "craponne",
+        "score": 0.4909
+      },
+      {
+        "term": "flux flux",
+        "score": 0.4051
+      },
+      {
+        "term": "flux",
+        "score": 0.395
+      },
+      {
+        "term": "chaponost",
+        "score": 0.1994
+      },
+      {
+        "term": "berges",
+        "score": 0.1628
+      },
+      {
+        "term": "moulin",
+        "score": 0.1089
+      },
+      {
+        "term": "tassinlademilune",
+        "score": 0.0961
+      },
+      {
+        "term": "saint",
+        "score": 0.0836
+      },
+      {
+        "term": "campagne",
+        "score": 0.079
+      }
+    ],
+    "10": [
+      {
+        "term": "sido",
+        "score": 0.7121
+      },
+      {
+        "term": "iot",
+        "score": 0.3606
+      },
+      {
+        "term": "innorobo",
+        "score": 0.1944
+      },
+      {
+        "term": "frenchtech",
+        "score": 0.1497
+      },
+      {
+        "term": "mac",
+        "score": 0.1392
+      },
+      {
+        "term": "robot",
+        "score": 0.1268
+      },
+      {
+        "term": "expo",
+        "score": 0.1176
+      },
+      {
+        "term": "parc",
+        "score": 0.1162
+      },
+      {
+        "term": "conference",
+        "score": 0.112
+      },
+      {
+        "term": "interpol",
+        "score": 0.1092
+      }
+    ],
+    "11": [
+      {
+        "term": "miribel",
+        "score": 0.375
+      },
+      {
+        "term": "jonage",
+        "score": 0.3476
+      },
+      {
+        "term": "ornithologie",
+        "score": 0.3431
+      },
+      {
+        "term": "vaulxenvelin",
+        "score": 0.3284
+      },
+      {
+        "term": "fr vaulxenvelin",
+        "score": 0.2805
+      },
+      {
+        "term": "lac animaux",
+        "score": 0.262
+      },
+      {
+        "term": "lac",
+        "score": 0.2248
+      },
+      {
+        "term": "ain",
+        "score": 0.2202
+      },
+      {
+        "term": "faune",
+        "score": 0.2099
+      },
+      {
+        "term": "animaux",
+        "score": 0.2008
+      }
+    ],
+    "12": [
+      {
+        "term": "spectacle",
+        "score": 0.6061
+      },
+      {
+        "term": "art",
+        "score": 0.4972
+      },
+      {
+        "term": "ong",
+        "score": 0.333
+      },
+      {
+        "term": "unicef ong",
+        "score": 0.333
+      },
+      {
+        "term": "unicef",
+        "score": 0.2953
+      },
+      {
+        "term": "scenic",
+        "score": 0.2161
+      },
+      {
+        "term": "concert",
+        "score": 0.1151
+      },
+      {
+        "term": "tassinlademilune",
+        "score": 0.0401
+      },
+      {
+        "term": "brouillard",
+        "score": 0.0388
+      },
+      {
+        "term": "symboles",
+        "score": 0.0301
+      }
+    ],
+    "13": [
+      {
+        "term": "saint jean",
+        "score": 0.4078
+      },
+      {
+        "term": "jean",
+        "score": 0.3429
+      },
+      {
+        "term": "saint",
+        "score": 0.3016
+      },
+      {
+        "term": "vieuxlyon",
+        "score": 0.2342
+      },
+      {
+        "term": "st jean",
+        "score": 0.1667
+      },
+      {
+        "term": "st",
+        "score": 0.166
+      },
+      {
+        "term": "primatiale",
+        "score": 0.1442
+      },
+      {
+        "term": "saintjean",
+        "score": 0.1436
+      },
+      {
+        "term": "georges",
+        "score": 0.1427
+      },
+      {
+        "term": "cathedral",
+        "score": 0.1378
+      }
+    ],
+    "14": [
+      {
+        "term": "doctorwhoclassic",
+        "score": 0.3062
+      },
+      {
+        "term": "doctorwhoclassic square",
+        "score": 0.2975
+      },
+      {
+        "term": "baduk",
+        "score": 0.2718
+      },
+      {
+        "term": "baduk go",
+        "score": 0.2718
+      },
+      {
+        "term": "weiqi",
+        "score": 0.2718
+      },
+      {
+        "term": "part dieu",
+        "score": 0.2448
+      },
+      {
+        "term": "part",
+        "score": 0.2147
+      },
+      {
+        "term": "dieu",
+        "score": 0.209
+      },
+      {
+        "term": "jeudego",
+        "score": 0.2069
+      },
+      {
+        "term": "sncf",
+        "score": 0.1812
+      }
+    ],
+    "15": [
+      {
+        "term": "craponne",
+        "score": 0.735
+      },
+      {
+        "term": "chaponost",
+        "score": 0.5873
+      },
+      {
+        "term": "mai",
+        "score": 0.3306
+      },
+      {
+        "term": "trax vallat",
+        "score": 0.0334
+      },
+      {
+        "term": "vallat",
+        "score": 0.0334
+      },
+      {
+        "term": "pi trax",
+        "score": 0.0325
+      },
+      {
+        "term": "trax",
+        "score": 0.0325
+      },
+      {
+        "term": "pi",
+        "score": 0.0325
+      },
+      {
+        "term": "naissance",
+        "score": 0.0057
+      },
+      {
+        "term": "re",
+        "score": 0.0029
+      }
+    ],
+    "16": [
+      {
+        "term": "rillieuxlapape",
+        "score": 0.8738
+      },
+      {
+        "term": "lyautey",
+        "score": 0.2862
+      },
+      {
+        "term": "pape",
+        "score": 0.232
+      },
+      {
+        "term": "tours",
+        "score": 0.1494
+      },
+      {
+        "term": "nuit",
+        "score": 0.0909
+      },
+      {
+        "term": "fr",
+        "score": 0.0894
+      },
+      {
+        "term": "doll",
+        "score": 0.0884
+      },
+      {
+        "term": "paul",
+        "score": 0.0848
+      },
+      {
+        "term": "instafood",
+        "score": 0.0712
+      },
+      {
+        "term": "squareformat rise",
+        "score": 0.0542
+      }
+    ],
+    "17": [
+      {
+        "term": "japan touch",
+        "score": 0.4248
+      },
+      {
+        "term": "touch",
+        "score": 0.3927
+      },
+      {
+        "term": "japan",
+        "score": 0.346
+      },
+      {
+        "term": "japantouch",
+        "score": 0.2819
+      },
+      {
+        "term": "eurexpo",
+        "score": 0.2618
+      },
+      {
+        "term": "cosplay",
+        "score": 0.2093
+      },
+      {
+        "term": "touch convention",
+        "score": 0.1572
+      },
+      {
+        "term": "japactuinfo",
+        "score": 0.1501
+      },
+      {
+        "term": "japactu japactuinfo",
+        "score": 0.1501
+      },
+      {
+        "term": "japactu",
+        "score": 0.1501
+      }
+    ],
+    "18": [
+      {
+        "term": "ol",
+        "score": 0.4503
+      },
+      {
+        "term": "stadium",
+        "score": 0.3919
+      },
+      {
+        "term": "dion",
+        "score": 0.3527
+      },
+      {
+        "term": "calcio",
+        "score": 0.2204
+      },
+      {
+        "term": "hungary",
+        "score": 0.2204
+      },
+      {
+        "term": "futbol",
+        "score": 0.2204
+      },
+      {
+        "term": "portugal",
+        "score": 0.2064
+      },
+      {
+        "term": "goal",
+        "score": 0.2064
+      },
+      {
+        "term": "stade",
+        "score": 0.2064
+      },
+      {
+        "term": "soccer",
+        "score": 0.1913
+      }
+    ],
+    "19": [
+      {
+        "term": "forum",
+        "score": 0.5037
+      },
+      {
+        "term": "agir",
+        "score": 0.3789
+      },
+      {
+        "term": "medef",
+        "score": 0.3722
+      },
+      {
+        "term": "outils",
+        "score": 0.3547
+      },
+      {
+        "term": "alternance",
+        "score": 0.3057
+      },
+      {
+        "term": "geotagged inte",
+        "score": 0.2062
+      },
+      {
+        "term": "inte rieur",
+        "score": 0.1783
+      },
+      {
+        "term": "inte",
+        "score": 0.1783
+      },
+      {
+        "term": "rieur",
+        "score": 0.1693
+      },
+      {
+        "term": "geotagged",
+        "score": 0.154
+      }
+    ],
+    "20": [
+      {
+        "term": "lou",
+        "score": 0.3769
+      },
+      {
+        "term": "gerland",
+        "score": 0.2686
+      },
+      {
+        "term": "ubb",
+        "score": 0.2219
+      },
+      {
+        "term": "ninkasikao",
+        "score": 0.1793
+      },
+      {
+        "term": "live livepic",
+        "score": 0.1349
+      },
+      {
+        "term": "stadetoulousain",
+        "score": 0.134
+      },
+      {
+        "term": "livepic",
+        "score": 0.1269
+      },
+      {
+        "term": "capturedalive",
+        "score": 0.1269
+      },
+      {
+        "term": "arnallephotography",
+        "score": 0.1248
+      },
+      {
+        "term": "rugby",
+        "score": 0.1243
+      }
+    ],
+    "21": [
+      {
+        "term": "terreaux",
+        "score": 0.3227
+      },
+      {
+        "term": "beaux arts",
+        "score": 0.3216
+      },
+      {
+        "term": "placedesterreaux",
+        "score": 0.3104
+      },
+      {
+        "term": "beaux",
+        "score": 0.2772
+      },
+      {
+        "term": "arts",
+        "score": 0.2729
+      },
+      {
+        "term": "place terreaux",
+        "score": 0.1613
+      },
+      {
+        "term": "museum",
+        "score": 0.1509
+      },
+      {
+        "term": "bartholdi",
+        "score": 0.142
+      },
+      {
+        "term": "place",
+        "score": 0.1363
+      },
+      {
+        "term": "francia",
+        "score": 0.1357
+      }
+    ],
+    "22": [
+      {
+        "term": "villeurbanne",
+        "score": 0.5294
+      },
+      {
+        "term": "boxe",
+        "score": 0.4172
+      },
+      {
+        "term": "asvel",
+        "score": 0.3556
+      },
+      {
+        "term": "vs",
+        "score": 0.3177
+      },
+      {
+        "term": "sports",
+        "score": 0.3157
+      },
+      {
+        "term": "soro",
+        "score": 0.2873
+      },
+      {
+        "term": "rugby",
+        "score": 0.1761
+      },
+      {
+        "term": "asvelrugby",
+        "score": 0.1729
+      },
+      {
+        "term": "basket",
+        "score": 0.1327
+      },
+      {
+        "term": "alexander",
+        "score": 0.1056
+      }
+    ],
+    "23": [
+      {
+        "term": "ldoll",
+        "score": 0.4024
+      },
+      {
+        "term": "japan touch",
+        "score": 0.3409
+      },
+      {
+        "term": "haru",
+        "score": 0.323
+      },
+      {
+        "term": "touch haru",
+        "score": 0.3125
+      },
+      {
+        "term": "mixte",
+        "score": 0.2757
+      },
+      {
+        "term": "touch",
+        "score": 0.2447
+      },
+      {
+        "term": "bjd",
+        "score": 0.2183
+      },
+      {
+        "term": "japan",
+        "score": 0.2122
+      },
+      {
+        "term": "double",
+        "score": 0.1573
+      },
+      {
+        "term": "cosplay japan",
+        "score": 0.1505
+      }
+    ],
+    "24": [
+      {
+        "term": "unicef",
+        "score": 0.581
+      },
+      {
+        "term": "ong",
+        "score": 0.5623
+      },
+      {
+        "term": "unicef ong",
+        "score": 0.5482
+      },
+      {
+        "term": "nuit eau",
+        "score": 0.0839
+      },
+      {
+        "term": "incity",
+        "score": 0.0742
+      },
+      {
+        "term": "halles",
+        "score": 0.0595
+      },
+      {
+        "term": "gay pride",
+        "score": 0.0436
+      },
+      {
+        "term": "tour",
+        "score": 0.0401
+      },
+      {
+        "term": "tour incity",
+        "score": 0.0386
+      },
+      {
+        "term": "pride",
+        "score": 0.0361
+      }
+    ],
+    "25": [
+      {
+        "term": "bron bron",
+        "score": 0.7136
+      },
+      {
+        "term": "bron",
+        "score": 0.6698
+      },
+      {
+        "term": "rugby",
+        "score": 0.1142
+      },
+      {
+        "term": "asvelrugby",
+        "score": 0.0861
+      },
+      {
+        "term": "asvel",
+        "score": 0.0801
+      },
+      {
+        "term": "rugby stade",
+        "score": 0.0758
+      },
+      {
+        "term": "wwwsylvainmestrecom",
+        "score": 0.0694
+      },
+      {
+        "term": "stade",
+        "score": 0.0538
+      },
+      {
+        "term": "tournoi",
+        "score": 0.0149
+      },
+      {
+        "term": "tramway",
+        "score": 0.0095
+      }
+    ],
+    "26": [
+      {
+        "term": "dardilly",
+        "score": 0.2283
+      },
+      {
+        "term": "nissan",
+        "score": 0.2106
+      },
+      {
+        "term": "ecole",
+        "score": 0.1839
+      },
+      {
+        "term": "mazda",
+        "score": 0.1518
+      },
+      {
+        "term": "toyota",
+        "score": 0.1493
+      },
+      {
+        "term": "decay decaying",
+        "score": 0.1493
+      },
+      {
+        "term": "urbex urbexfrance",
+        "score": 0.1493
+      },
+      {
+        "term": "urbexfrance",
+        "score": 0.1493
+      },
+      {
+        "term": "bts",
+        "score": 0.1493
+      },
+      {
+        "term": "exploration explo",
+        "score": 0.1493
+      }
+    ],
+    "27": [
+      {
+        "term": "boardgame boardgame",
+        "score": 0.7017
+      },
+      {
+        "term": "boardgame",
+        "score": 0.6589
+      },
+      {
+        "term": "nuages sunset",
+        "score": 0.2407
+      },
+      {
+        "term": "nuages",
+        "score": 0.0929
+      },
+      {
+        "term": "sunset",
+        "score": 0.0791
+      },
+      {
+        "term": "di",
+        "score": 0.0142
+      },
+      {
+        "term": "filter nofilter",
+        "score": 0.006
+      },
+      {
+        "term": "nofilter",
+        "score": 0.006
+      },
+      {
+        "term": "flickrmobile flickriosapp",
+        "score": 0.0057
+      },
+      {
+        "term": "flickrmobile",
+        "score": 0.0057
+      }
+    ],
+    "28": [
+      {
+        "term": "feyzin",
+        "score": 0.3526
+      },
+      {
+        "term": "live",
+        "score": 0.1816
+      },
+      {
+        "term": "epicerie",
+        "score": 0.1806
+      },
+      {
+        "term": "hardrock",
+        "score": 0.1633
+      },
+      {
+        "term": "show showmetal",
+        "score": 0.1633
+      },
+      {
+        "term": "showrock",
+        "score": 0.1633
+      },
+      {
+        "term": "rocknroll showrock",
+        "score": 0.1625
+      },
+      {
+        "term": "show",
+        "score": 0.1621
+      },
+      {
+        "term": "showmetal",
+        "score": 0.1567
+      },
+      {
+        "term": "pic rock",
+        "score": 0.1567
+      }
+    ],
+    "29": [
+      {
+        "term": "parc",
+        "score": 0.6036
+      },
+      {
+        "term": "zoo",
+        "score": 0.3998
+      },
+      {
+        "term": "parc parc",
+        "score": 0.2016
+      },
+      {
+        "term": "dor",
+        "score": 0.1888
+      },
+      {
+        "term": "animal",
+        "score": 0.175
+      },
+      {
+        "term": "dor parc",
+        "score": 0.141
+      },
+      {
+        "term": "parcdelatetedor",
+        "score": 0.1217
+      },
+      {
+        "term": "parc dor",
+        "score": 0.1045
+      },
+      {
+        "term": "animaux",
+        "score": 0.1004
+      },
+      {
+        "term": "parc tete",
+        "score": 0.0986
+      }
+    ],
+    "30": [
+      {
+        "term": "barbe",
+        "score": 0.6246
+      },
+      {
+        "term": "ile barbe",
+        "score": 0.3974
+      },
+      {
+        "term": "ile",
+        "score": 0.3117
+      },
+      {
+        "term": "huilesurtoile",
+        "score": 0.2462
+      },
+      {
+        "term": "caluire",
+        "score": 0.1518
+      },
+      {
+        "term": "isb",
+        "score": 0.1268
+      },
+      {
+        "term": "peinture",
+        "score": 0.1224
+      },
+      {
+        "term": "justpentax",
+        "score": 0.113
+      },
+      {
+        "term": "jean",
+        "score": 0.1104
+      },
+      {
+        "term": "eau",
+        "score": 0.0974
+      }
+    ],
+    "31": [
+      {
+        "term": "maquette",
+        "score": 0.3664
+      },
+      {
+        "term": "miniature",
+        "score": 0.3565
+      },
+      {
+        "term": "mini",
+        "score": 0.3172
+      },
+      {
+        "term": "soie",
+        "score": 0.3113
+      },
+      {
+        "term": "cco",
+        "score": 0.2872
+      },
+      {
+        "term": "villeurbanne",
+        "score": 0.2494
+      },
+      {
+        "term": "urban jungle",
+        "score": 0.2488
+      },
+      {
+        "term": "art villeurbanne",
+        "score": 0.2377
+      },
+      {
+        "term": "world",
+        "score": 0.2297
+      },
+      {
+        "term": "streetart",
+        "score": 0.1831
+      }
+    ],
+    "32": [
+      {
+        "term": "blackmetal concert",
+        "score": 0.3505
+      },
+      {
+        "term": "live metal",
+        "score": 0.3505
+      },
+      {
+        "term": "blackmetal",
+        "score": 0.3505
+      },
+      {
+        "term": "eat",
+        "score": 0.2309
+      },
+      {
+        "term": "live",
+        "score": 0.1937
+      },
+      {
+        "term": "concert live",
+        "score": 0.1891
+      },
+      {
+        "term": "sarra",
+        "score": 0.1723
+      },
+      {
+        "term": "concert",
+        "score": 0.1712
+      },
+      {
+        "term": "rock",
+        "score": 0.1611
+      },
+      {
+        "term": "avalanche",
+        "score": 0.1595
+      }
+    ],
+    "33": [
+      {
+        "term": "championnat europe",
+        "score": 0.7641
+      },
+      {
+        "term": "championnat",
+        "score": 0.5982
+      },
+      {
+        "term": "europe",
+        "score": 0.2201
+      },
+      {
+        "term": "sport",
+        "score": 0.044
+      },
+      {
+        "term": "velin",
+        "score": 0.0296
+      },
+      {
+        "term": "urba",
+        "score": 0.0273
+      },
+      {
+        "term": "urba urba",
+        "score": 0.0246
+      },
+      {
+        "term": "mont",
+        "score": 0.0237
+      },
+      {
+        "term": "personnes",
+        "score": 0.0215
+      },
+      {
+        "term": "modernism",
+        "score": 0.0213
+      }
+    ],
+    "34": [
+      {
+        "term": "laval",
+        "score": 0.8798
+      },
+      {
+        "term": "juillet",
+        "score": 0.259
+      },
+      {
+        "term": "parc",
+        "score": 0.2418
+      },
+      {
+        "term": "vtt",
+        "score": 0.1666
+      },
+      {
+        "term": "tassinlademilune",
+        "score": 0.156
+      },
+      {
+        "term": "cute",
+        "score": 0.0658
+      },
+      {
+        "term": "affiche",
+        "score": 0.0585
+      },
+      {
+        "term": "lovely",
+        "score": 0.055
+      },
+      {
+        "term": "fille",
+        "score": 0.0519
+      },
+      {
+        "term": "lyonnais",
+        "score": 0.0518
+      }
+    ],
+    "35": [
+      {
+        "term": "mondiaux",
+        "score": 0.9395
+      },
+      {
+        "term": "parilly",
+        "score": 0.3302
+      },
+      {
+        "term": "automne parc",
+        "score": 0.0491
+      },
+      {
+        "term": "automne",
+        "score": 0.0256
+      },
+      {
+        "term": "parc",
+        "score": 0.0245
+      },
+      {
+        "term": "nature",
+        "score": 0.0226
+      },
+      {
+        "term": "innovation",
+        "score": 0.0205
+      },
+      {
+        "term": "bron",
+        "score": 0.0191
+      },
+      {
+        "term": "sport",
+        "score": 0.0171
+      },
+      {
+        "term": "feuilles",
+        "score": 0.0166
+      }
+    ],
+    "36": [
+      {
+        "term": "bellecour",
+        "score": 0.5038
+      },
+      {
+        "term": "place bellecour",
+        "score": 0.2898
+      },
+      {
+        "term": "placebellecour",
+        "score": 0.2674
+      },
+      {
+        "term": "place",
+        "score": 0.2539
+      },
+      {
+        "term": "europe",
+        "score": 0.134
+      },
+      {
+        "term": "francia",
+        "score": 0.1304
+      },
+      {
+        "term": "festa",
+        "score": 0.1209
+      },
+      {
+        "term": "luci",
+        "score": 0.1142
+      },
+      {
+        "term": "lione",
+        "score": 0.112
+      },
+      {
+        "term": "passages",
+        "score": 0.1098
+      }
+    ],
+    "37": [
+      {
+        "term": "perrache",
+        "score": 0.5903
+      },
+      {
+        "term": "sonic",
+        "score": 0.2238
+      },
+      {
+        "term": "pratt musee",
+        "score": 0.1735
+      },
+      {
+        "term": "pratt",
+        "score": 0.1735
+      },
+      {
+        "term": "museedesconfluences hugo",
+        "score": 0.1735
+      },
+      {
+        "term": "musee confluences",
+        "score": 0.1735
+      },
+      {
+        "term": "hugo pratt",
+        "score": 0.1735
+      },
+      {
+        "term": "hugopratt",
+        "score": 0.1735
+      },
+      {
+        "term": "hugopratt museedesconfluences",
+        "score": 0.1735
+      },
+      {
+        "term": "confluences hugopratt",
+        "score": 0.1652
+      }
+    ],
+    "38": [
+      {
+        "term": "croixrousse",
+        "score": 0.3092
+      },
+      {
+        "term": "canuts",
+        "score": 0.2899
+      },
+      {
+        "term": "jardin ville",
+        "score": 0.2783
+      },
+      {
+        "term": "geotagged pierre",
+        "score": 0.2561
+      },
+      {
+        "term": "pierre jardin",
+        "score": 0.2332
+      },
+      {
+        "term": "mur canuts",
+        "score": 0.2312
+      },
+      {
+        "term": "jardin",
+        "score": 0.2216
+      },
+      {
+        "term": "jardin rosa",
+        "score": 0.2149
+      },
+      {
+        "term": "mir",
+        "score": 0.2149
+      },
+      {
+        "term": "ville geotagged",
+        "score": 0.1906
+      }
+    ],
+    "39": [
+      {
+        "term": "tassin",
+        "score": 0.3591
+      },
+      {
+        "term": "cellier",
+        "score": 0.3508
+      },
+      {
+        "term": "norbert",
+        "score": 0.3508
+      },
+      {
+        "term": "norbert cellier",
+        "score": 0.3491
+      },
+      {
+        "term": "wwwlasauvagiefr",
+        "score": 0.3338
+      },
+      {
+        "term": "norbertcellier",
+        "score": 0.3125
+      },
+      {
+        "term": "cellier norbertcellier",
+        "score": 0.2959
+      },
+      {
+        "term": "tassinlademilune",
+        "score": 0.2627
+      },
+      {
+        "term": "demi lune",
+        "score": 0.2574
+      },
+      {
+        "term": "demi",
+        "score": 0.2036
+      }
+    ],
+    "40": [
+      {
+        "term": "halletonygarnier",
+        "score": 0.4098
+      },
+      {
+        "term": "halle tony",
+        "score": 0.3319
+      },
+      {
+        "term": "halle",
+        "score": 0.3054
+      },
+      {
+        "term": "tony garnier",
+        "score": 0.2722
+      },
+      {
+        "term": "garnier",
+        "score": 0.2514
+      },
+      {
+        "term": "concert",
+        "score": 0.2456
+      },
+      {
+        "term": "tony",
+        "score": 0.2328
+      },
+      {
+        "term": "live",
+        "score": 0.1973
+      },
+      {
+        "term": "music concert",
+        "score": 0.1629
+      },
+      {
+        "term": "music",
+        "score": 0.1591
+      }
+    ],
+    "41": [
+      {
+        "term": "bmx",
+        "score": 0.3526
+      },
+      {
+        "term": "river",
+        "score": 0.2366
+      },
+      {
+        "term": "pont",
+        "score": 0.2146
+      },
+      {
+        "term": "europe",
+        "score": 0.1811
+      },
+      {
+        "term": "berges",
+        "score": 0.1782
+      },
+      {
+        "term": "fleuve",
+        "score": 0.1713
+      },
+      {
+        "term": "hebdo",
+        "score": 0.1707
+      },
+      {
+        "term": "skatepark",
+        "score": 0.1522
+      },
+      {
+        "term": "dieu",
+        "score": 0.1372
+      },
+      {
+        "term": "bridge",
+        "score": 0.1342
+      }
+    ],
+    "42": [
+      {
+        "term": "tournage",
+        "score": 0.4518
+      },
+      {
+        "term": "julia",
+        "score": 0.2607
+      },
+      {
+        "term": "miel",
+        "score": 0.2502
+      },
+      {
+        "term": "cosplay convention",
+        "score": 0.2307
+      },
+      {
+        "term": "con",
+        "score": 0.186
+      },
+      {
+        "term": "manifestation",
+        "score": 0.1858
+      },
+      {
+        "term": "convention",
+        "score": 0.1807
+      },
+      {
+        "term": "cosplay",
+        "score": 0.1449
+      },
+      {
+        "term": "skatepark",
+        "score": 0.1447
+      },
+      {
+        "term": "contest",
+        "score": 0.1343
+      }
+    ],
+    "43": [
+      {
+        "term": "rise",
+        "score": 0.3817
+      },
+      {
+        "term": "rise iphoneography",
+        "score": 0.3788
+      },
+      {
+        "term": "squareformat rise",
+        "score": 0.3788
+      },
+      {
+        "term": "xproii",
+        "score": 0.2747
+      },
+      {
+        "term": "instagramapp xproii",
+        "score": 0.2745
+      },
+      {
+        "term": "xproii uploaded",
+        "score": 0.2745
+      },
+      {
+        "term": "streetart streetart",
+        "score": 0.1504
+      },
+      {
+        "term": "vaise",
+        "score": 0.1223
+      },
+      {
+        "term": "hudson",
+        "score": 0.1195
+      },
+      {
+        "term": "hudson iphoneography",
+        "score": 0.1161
+      }
+    ],
+    "44": [
+      {
+        "term": "confluence",
+        "score": 0.8379
+      },
+      {
+        "term": "confluence confluence",
+        "score": 0.1553
+      },
+      {
+        "term": "quartierdelaconfuence",
+        "score": 0.1467
+      },
+      {
+        "term": "lyoncity quartierdelaconfuence",
+        "score": 0.1467
+      },
+      {
+        "term": "confluence villedelyon",
+        "score": 0.1467
+      },
+      {
+        "term": "quartierdelaconfuence confluence",
+        "score": 0.1467
+      },
+      {
+        "term": "architecture",
+        "score": 0.1058
+      },
+      {
+        "term": "villedelyon lyoncity",
+        "score": 0.0968
+      },
+      {
+        "term": "lyoncity",
+        "score": 0.0866
+      },
+      {
+        "term": "villedelyon",
+        "score": 0.0853
+      }
+    ],
+    "45": [
+      {
+        "term": "zoo",
+        "score": 0.3389
+      },
+      {
+        "term": "art",
+        "score": 0.2589
+      },
+      {
+        "term": "street art",
+        "score": 0.2207
+      },
+      {
+        "term": "street",
+        "score": 0.2121
+      },
+      {
+        "term": "streetart",
+        "score": 0.2046
+      },
+      {
+        "term": "foch",
+        "score": 0.1781
+      },
+      {
+        "term": "show",
+        "score": 0.1765
+      },
+      {
+        "term": "passerelle",
+        "score": 0.166
+      },
+      {
+        "term": "art streetart",
+        "score": 0.1403
+      },
+      {
+        "term": "pont",
+        "score": 0.1378
+      }
+    ],
+    "46": [
+      {
+        "term": "tonygarnier",
+        "score": 0.4393
+      },
+      {
+        "term": "etats",
+        "score": 0.3389
+      },
+      {
+        "term": "garnier",
+        "score": 0.3158
+      },
+      {
+        "term": "unis",
+        "score": 0.3055
+      },
+      {
+        "term": "tony garnier",
+        "score": 0.2691
+      },
+      {
+        "term": "tony",
+        "score": 0.2432
+      },
+      {
+        "term": "mural",
+        "score": 0.1781
+      },
+      {
+        "term": "fresque",
+        "score": 0.1484
+      },
+      {
+        "term": "etatsunis",
+        "score": 0.1301
+      },
+      {
+        "term": "trompeloeil fresque",
+        "score": 0.1105
+      }
+    ],
+    "47": [
+      {
+        "term": "confluences",
+        "score": 0.6073
+      },
+      {
+        "term": "confluence",
+        "score": 0.4178
+      },
+      {
+        "term": "museum",
+        "score": 0.1884
+      },
+      {
+        "term": "confluences confluence",
+        "score": 0.1375
+      },
+      {
+        "term": "architecture",
+        "score": 0.1271
+      },
+      {
+        "term": "pont",
+        "score": 0.1099
+      },
+      {
+        "term": "confluences confluences",
+        "score": 0.1038
+      },
+      {
+        "term": "confluence confluences",
+        "score": 0.0998
+      },
+      {
+        "term": "frankrijk",
+        "score": 0.0943
+      },
+      {
+        "term": "coop",
+        "score": 0.094
+      }
+    ],
+    "48": [
+      {
+        "term": "oullins",
+        "score": 0.7203
+      },
+      {
+        "term": "show concert",
+        "score": 0.4237
+      },
+      {
+        "term": "concert live",
+        "score": 0.2814
+      },
+      {
+        "term": "live",
+        "score": 0.2569
+      },
+      {
+        "term": "show",
+        "score": 0.2166
+      },
+      {
+        "term": "concert",
+        "score": 0.214
+      },
+      {
+        "term": "gtr",
+        "score": 0.1831
+      },
+      {
+        "term": "troyvonbalthazar",
+        "score": 0.0636
+      },
+      {
+        "term": "peter",
+        "score": 0.0557
+      },
+      {
+        "term": "artifices",
+        "score": 0.0526
+      }
+    ],
+    "49": [
+      {
+        "term": "basilique",
+        "score": 0.5207
+      },
+      {
+        "term": "dame",
+        "score": 0.3372
+      },
+      {
+        "term": "basilica",
+        "score": 0.282
+      },
+      {
+        "term": "fourviere",
+        "score": 0.2723
+      },
+      {
+        "term": "basilique dame",
+        "score": 0.2234
+      },
+      {
+        "term": "church",
+        "score": 0.1612
+      },
+      {
+        "term": "dame fourviere",
+        "score": 0.1551
+      },
+      {
+        "term": "europe",
+        "score": 0.136
+      },
+      {
+        "term": "fourviere basilique",
+        "score": 0.116
+      },
+      {
+        "term": "francia",
+        "score": 0.1048
+      }
+    ],
+    "50": [
+      {
+        "term": "corbas",
+        "score": 0.6267
+      },
+      {
+        "term": "nature hiver",
+        "score": 0.4332
+      },
+      {
+        "term": "campagne",
+        "score": 0.4169
+      },
+      {
+        "term": "brouillard",
+        "score": 0.2631
+      },
+      {
+        "term": "nature",
+        "score": 0.225
+      },
+      {
+        "term": "oiseau",
+        "score": 0.2133
+      },
+      {
+        "term": "hiver",
+        "score": 0.1875
+      },
+      {
+        "term": "saone",
+        "score": 0.1055
+      },
+      {
+        "term": "nature fleur",
+        "score": 0.0855
+      },
+      {
+        "term": "coucherdesoleil",
+        "score": 0.0719
+      }
+    ],
+    "51": [
+      {
+        "term": "tpv",
+        "score": 0.4138
+      },
+      {
+        "term": "scooter",
+        "score": 0.3914
+      },
+      {
+        "term": "prototype",
+        "score": 0.3874
+      },
+      {
+        "term": "lalogothequecom",
+        "score": 0.3037
+      },
+      {
+        "term": "brignais",
+        "score": 0.2936
+      },
+      {
+        "term": "rallye gones",
+        "score": 0.2906
+      },
+      {
+        "term": "rallye",
+        "score": 0.2521
+      },
+      {
+        "term": "gones",
+        "score": 0.2276
+      },
+      {
+        "term": "vespa",
+        "score": 0.1716
+      },
+      {
+        "term": "sathonay",
+        "score": 0.1606
+      }
+    ],
+    "52": [
+      {
+        "term": "hopital",
+        "score": 0.6526
+      },
+      {
+        "term": "moso",
+        "score": 0.2147
+      },
+      {
+        "term": "allons moso",
+        "score": 0.2147
+      },
+      {
+        "term": "instagramapp square",
+        "score": 0.1881
+      },
+      {
+        "term": "iphoneography uploaded",
+        "score": 0.1881
+      },
+      {
+        "term": "moso allons",
+        "score": 0.18
+      },
+      {
+        "term": "allons",
+        "score": 0.1671
+      },
+      {
+        "term": "orage",
+        "score": 0.1534
+      },
+      {
+        "term": "lost",
+        "score": 0.1134
+      },
+      {
+        "term": "dame fourviere",
+        "score": 0.1055
+      }
+    ],
+    "53": [
+      {
+        "term": "journey",
+        "score": 0.3243
+      },
+      {
+        "term": "vakantie",
+        "score": 0.2733
+      },
+      {
+        "term": "flickrmobile flickriosapp",
+        "score": 0.2703
+      },
+      {
+        "term": "flickrmobile",
+        "score": 0.2676
+      },
+      {
+        "term": "uploaded flickrmobile",
+        "score": 0.2676
+      },
+      {
+        "term": "flickriosapp filter",
+        "score": 0.2676
+      },
+      {
+        "term": "flickriosapp",
+        "score": 0.2676
+      },
+      {
+        "term": "filter",
+        "score": 0.2622
+      },
+      {
+        "term": "toit",
+        "score": 0.2354
+      },
+      {
+        "term": "holiday",
+        "score": 0.2285
+      }
+    ],
+    "54": [
+      {
+        "term": "mont",
+        "score": 0.8776
+      },
+      {
+        "term": "montblanc",
+        "score": 0.2059
+      },
+      {
+        "term": "blanc",
+        "score": 0.176
+      },
+      {
+        "term": "monocycle",
+        "score": 0.1129
+      },
+      {
+        "term": "chemin",
+        "score": 0.0995
+      },
+      {
+        "term": "portraits",
+        "score": 0.0753
+      },
+      {
+        "term": "lights",
+        "score": 0.0747
+      },
+      {
+        "term": "shooting",
+        "score": 0.0743
+      },
+      {
+        "term": "saint",
+        "score": 0.0722
+      },
+      {
+        "term": "landscape",
+        "score": 0.0722
+      }
+    ],
+    "55": [
+      {
+        "term": "tarkastad",
+        "score": 0.4281
+      },
+      {
+        "term": "citadis",
+        "score": 0.4046
+      },
+      {
+        "term": "alstom",
+        "score": 0.3549
+      },
+      {
+        "term": "bonne nuit",
+        "score": 0.3064
+      },
+      {
+        "term": "feyzin",
+        "score": 0.2941
+      },
+      {
+        "term": "saint",
+        "score": 0.2464
+      },
+      {
+        "term": "innovation",
+        "score": 0.2444
+      },
+      {
+        "term": "bonne",
+        "score": 0.1889
+      },
+      {
+        "term": "way",
+        "score": 0.1674
+      },
+      {
+        "term": "good",
+        "score": 0.1606
+      }
+    ],
+    "56": [
+      {
+        "term": "guillotiere",
+        "score": 0.4493
+      },
+      {
+        "term": "marmite urbaine",
+        "score": 0.2087
+      },
+      {
+        "term": "marmite",
+        "score": 0.2087
+      },
+      {
+        "term": "europe",
+        "score": 0.2086
+      },
+      {
+        "term": "pasted",
+        "score": 0.2036
+      },
+      {
+        "term": "words",
+        "score": 0.1988
+      },
+      {
+        "term": "words wall",
+        "score": 0.1986
+      },
+      {
+        "term": "paper",
+        "score": 0.1779
+      },
+      {
+        "term": "manifestation",
+        "score": 0.1779
+      },
+      {
+        "term": "streetart",
+        "score": 0.1744
+      }
+    ],
+    "57": [
+      {
+        "term": "issmys internationalsummerschoolofmathematicsforyoungstudents",
+        "score": 0.5089
+      },
+      {
+        "term": "issmys",
+        "score": 0.5089
+      },
+      {
+        "term": "internationalsummerschoolofmathematicsforyoungstudents",
+        "score": 0.5089
+      },
+      {
+        "term": "burlesque",
+        "score": 0.3106
+      },
+      {
+        "term": "lyb onlylyon",
+        "score": 0.1261
+      },
+      {
+        "term": "lyb",
+        "score": 0.1217
+      },
+      {
+        "term": "gerland",
+        "score": 0.0876
+      },
+      {
+        "term": "sculpture lyb",
+        "score": 0.0873
+      },
+      {
+        "term": "entreprises",
+        "score": 0.0817
+      },
+      {
+        "term": "biennale art",
+        "score": 0.073
+      }
+    ],
+    "58": [
+      {
+        "term": "pasted",
+        "score": 0.257
+      },
+      {
+        "term": "paper",
+        "score": 0.2267
+      },
+      {
+        "term": "europe",
+        "score": 0.2125
+      },
+      {
+        "term": "paul",
+        "score": 0.1877
+      },
+      {
+        "term": "pasted paper",
+        "score": 0.1843
+      },
+      {
+        "term": "streetart",
+        "score": 0.1732
+      },
+      {
+        "term": "saint paul",
+        "score": 0.1687
+      },
+      {
+        "term": "juiverie",
+        "score": 0.1637
+      },
+      {
+        "term": "croixrousse",
+        "score": 0.1537
+      },
+      {
+        "term": "vieuxlyon",
+        "score": 0.1432
+      }
+    ],
+    "59": [
+      {
+        "term": "sharpei uploaded",
+        "score": 0.4083
+      },
+      {
+        "term": "sharpei",
+        "score": 0.3973
+      },
+      {
+        "term": "nofilter sharpei",
+        "score": 0.3973
+      },
+      {
+        "term": "win",
+        "score": 0.1985
+      },
+      {
+        "term": "filter nofilter",
+        "score": 0.1965
+      },
+      {
+        "term": "nofilter",
+        "score": 0.1945
+      },
+      {
+        "term": "flickrmobile flickriosapp",
+        "score": 0.1886
+      },
+      {
+        "term": "uploaded flickrmobile",
+        "score": 0.1885
+      },
+      {
+        "term": "flickrmobile",
+        "score": 0.1885
+      },
+      {
+        "term": "flickriosapp filter",
+        "score": 0.1885
+      }
+    ],
+    "60": [
+      {
+        "term": "chaponost",
+        "score": 0.7923
+      },
+      {
+        "term": "gier",
+        "score": 0.3824
+      },
+      {
+        "term": "aqueduc",
+        "score": 0.2952
+      },
+      {
+        "term": "romain",
+        "score": 0.2365
+      },
+      {
+        "term": "ballon",
+        "score": 0.1096
+      },
+      {
+        "term": "mont",
+        "score": 0.1015
+      },
+      {
+        "term": "tags",
+        "score": 0.1015
+      },
+      {
+        "term": "pose",
+        "score": 0.084
+      },
+      {
+        "term": "pellicule",
+        "score": 0.0816
+      },
+      {
+        "term": "lyonnais",
+        "score": 0.0801
+      }
+    ],
+    "61": [
+      {
+        "term": "saxotaz",
+        "score": 0.217
+      },
+      {
+        "term": "opera",
+        "score": 0.2022
+      },
+      {
+        "term": "saxotaz fall",
+        "score": 0.1607
+      },
+      {
+        "term": "croixrousse",
+        "score": 0.1567
+      },
+      {
+        "term": "pasted",
+        "score": 0.1548
+      },
+      {
+        "term": "ilove",
+        "score": 0.1528
+      },
+      {
+        "term": "europe",
+        "score": 0.1477
+      },
+      {
+        "term": "followme",
+        "score": 0.1402
+      },
+      {
+        "term": "paper",
+        "score": 0.1357
+      },
+      {
+        "term": "followme square",
+        "score": 0.1347
+      }
+    ],
+    "62": [
+      {
+        "term": "parc",
+        "score": 0.62
+      },
+      {
+        "term": "lac",
+        "score": 0.2134
+      },
+      {
+        "term": "dor",
+        "score": 0.2096
+      },
+      {
+        "term": "dor parc",
+        "score": 0.1821
+      },
+      {
+        "term": "park",
+        "score": 0.1753
+      },
+      {
+        "term": "lake",
+        "score": 0.1459
+      },
+      {
+        "term": "shooting parc",
+        "score": 0.1341
+      },
+      {
+        "term": "jardin hiver",
+        "score": 0.1119
+      },
+      {
+        "term": "lac parc",
+        "score": 0.1119
+      },
+      {
+        "term": "parc tete",
+        "score": 0.1058
+      }
+    ],
+    "63": [
+      {
+        "term": "cedric",
+        "score": 0.5725
+      },
+      {
+        "term": "animaux",
+        "score": 0.4185
+      },
+      {
+        "term": "meyzieu",
+        "score": 0.3945
+      },
+      {
+        "term": "oiseau",
+        "score": 0.3198
+      },
+      {
+        "term": "export",
+        "score": 0.2095
+      },
+      {
+        "term": "miribel",
+        "score": 0.2036
+      },
+      {
+        "term": "nature",
+        "score": 0.2014
+      },
+      {
+        "term": "miribel parc",
+        "score": 0.1762
+      },
+      {
+        "term": "animaux miribel",
+        "score": 0.1624
+      },
+      {
+        "term": "parc oiseau",
+        "score": 0.1222
+      }
+    ],
+    "64": [
+      {
+        "term": "cindy",
+        "score": 0.5051
+      },
+      {
+        "term": "caluireetcuire",
+        "score": 0.1807
+      },
+      {
+        "term": "ghost",
+        "score": 0.1717
+      },
+      {
+        "term": "caluire",
+        "score": 0.1696
+      },
+      {
+        "term": "liveconcert",
+        "score": 0.1452
+      },
+      {
+        "term": "concertlive live",
+        "score": 0.1452
+      },
+      {
+        "term": "cuire",
+        "score": 0.1416
+      },
+      {
+        "term": "doom",
+        "score": 0.1288
+      },
+      {
+        "term": "hardrock heavymetal",
+        "score": 0.1288
+      },
+      {
+        "term": "lieux metalshow",
+        "score": 0.1288
+      }
+    ],
+    "65": [
+      {
+        "term": "europe museu",
+        "score": 0.333
+      },
+      {
+        "term": "viagem voyage",
+        "score": 0.3242
+      },
+      {
+        "term": "travel museum",
+        "score": 0.3036
+      },
+      {
+        "term": "museu",
+        "score": 0.293
+      },
+      {
+        "term": "institut",
+        "score": 0.2571
+      },
+      {
+        "term": "museum",
+        "score": 0.256
+      },
+      {
+        "term": "viagem",
+        "score": 0.2234
+      },
+      {
+        "term": "voyage trip",
+        "score": 0.2206
+      },
+      {
+        "term": "trip travel",
+        "score": 0.18
+      },
+      {
+        "term": "villa",
+        "score": 0.1761
+      }
+    ],
+    "66": [
+      {
+        "term": "corbas",
+        "score": 0.3612
+      },
+      {
+        "term": "filter",
+        "score": 0.233
+      },
+      {
+        "term": "filter nofilter",
+        "score": 0.2213
+      },
+      {
+        "term": "nofilter",
+        "score": 0.219
+      },
+      {
+        "term": "moi",
+        "score": 0.2179
+      },
+      {
+        "term": "renault",
+        "score": 0.2156
+      },
+      {
+        "term": "flickrmobile flickriosapp",
+        "score": 0.2102
+      },
+      {
+        "term": "flickrmobile",
+        "score": 0.208
+      },
+      {
+        "term": "uploaded flickrmobile",
+        "score": 0.208
+      },
+      {
+        "term": "flickriosapp",
+        "score": 0.208
+      }
+    ],
+    "67": [
+      {
+        "term": "dierkschaefer",
+        "score": 0.6469
+      },
+      {
+        "term": "automobile",
+        "score": 0.4878
+      },
+      {
+        "term": "frankreich",
+        "score": 0.2428
+      },
+      {
+        "term": "bouton",
+        "score": 0.2339
+      },
+      {
+        "term": "automobile voitures",
+        "score": 0.2307
+      },
+      {
+        "term": "voitures",
+        "score": 0.1467
+      },
+      {
+        "term": "chevrolet",
+        "score": 0.1169
+      },
+      {
+        "term": "collonges",
+        "score": 0.1096
+      },
+      {
+        "term": "henri",
+        "score": 0.1011
+      },
+      {
+        "term": "muse",
+        "score": 0.0974
+      }
+    ],
+    "68": [
+      {
+        "term": "lou",
+        "score": 0.4382
+      },
+      {
+        "term": "rugby",
+        "score": 0.2261
+      },
+      {
+        "term": "matmutstadium",
+        "score": 0.1505
+      },
+      {
+        "term": "fonderie",
+        "score": 0.1479
+      },
+      {
+        "term": "oubli old",
+        "score": 0.1479
+      },
+      {
+        "term": "urbexfrance",
+        "score": 0.1479
+      },
+      {
+        "term": "urbex urbexfrance",
+        "score": 0.1479
+      },
+      {
+        "term": "decay decaying",
+        "score": 0.1479
+      },
+      {
+        "term": "lost lieu",
+        "score": 0.1479
+      },
+      {
+        "term": "oublie oubli",
+        "score": 0.1479
+      }
+    ],
+    "69": [
+      {
+        "term": "insa",
+        "score": 0.7588
+      },
+      {
+        "term": "villeurbanne",
+        "score": 0.4394
+      },
+      {
+        "term": "cross",
+        "score": 0.3428
+      },
+      {
+        "term": "cco",
+        "score": 0.0982
+      },
+      {
+        "term": "concert",
+        "score": 0.0867
+      },
+      {
+        "term": "music",
+        "score": 0.0863
+      },
+      {
+        "term": "live",
+        "score": 0.0857
+      },
+      {
+        "term": "metalmusic",
+        "score": 0.0639
+      },
+      {
+        "term": "septic",
+        "score": 0.0629
+      },
+      {
+        "term": "septic flesh",
+        "score": 0.0629
+      }
+    ],
+    "70": [
+      {
+        "term": "inte",
+        "score": 0.3955
+      },
+      {
+        "term": "inte rieur",
+        "score": 0.3955
+      },
+      {
+        "term": "rieur",
+        "score": 0.3755
+      },
+      {
+        "term": "hopital",
+        "score": 0.2537
+      },
+      {
+        "term": "hospital",
+        "score": 0.1912
+      },
+      {
+        "term": "oullins",
+        "score": 0.1691
+      },
+      {
+        "term": "aruba",
+        "score": 0.1691
+      },
+      {
+        "term": "aruba abw",
+        "score": 0.1691
+      },
+      {
+        "term": "abw",
+        "score": 0.1691
+      },
+      {
+        "term": "luminar",
+        "score": 0.1678
+      }
+    ],
+    "71": [
+      {
+        "term": "apero",
+        "score": 0.4898
+      },
+      {
+        "term": "qu",
+        "score": 0.3758
+      },
+      {
+        "term": "beer",
+        "score": 0.2358
+      },
+      {
+        "term": "train",
+        "score": 0.1869
+      },
+      {
+        "term": "squareformat hudson",
+        "score": 0.1764
+      },
+      {
+        "term": "hudson iphoneography",
+        "score": 0.1764
+      },
+      {
+        "term": "hudson",
+        "score": 0.1744
+      },
+      {
+        "term": "sunset",
+        "score": 0.1615
+      },
+      {
+        "term": "perpetua iphoneography",
+        "score": 0.156
+      },
+      {
+        "term": "squareformat perpetua",
+        "score": 0.156
+      }
+    ],
+    "72": [
+      {
+        "term": "brotteaux",
+        "score": 0.6496
+      },
+      {
+        "term": "fetesdeslumieres",
+        "score": 0.274
+      },
+      {
+        "term": "lumieres fete",
+        "score": 0.1899
+      },
+      {
+        "term": "architecture",
+        "score": 0.1736
+      },
+      {
+        "term": "gare",
+        "score": 0.1596
+      },
+      {
+        "term": "brasserie",
+        "score": 0.1549
+      },
+      {
+        "term": "plm",
+        "score": 0.151
+      },
+      {
+        "term": "fete",
+        "score": 0.1417
+      },
+      {
+        "term": "lumieres",
+        "score": 0.1297
+      },
+      {
+        "term": "artnouveau",
+        "score": 0.1262
+      }
+    ],
+    "73": [
+      {
+        "term": "schuman",
+        "score": 0.5782
+      },
+      {
+        "term": "vaise",
+        "score": 0.4892
+      },
+      {
+        "term": "pont",
+        "score": 0.3898
+      },
+      {
+        "term": "inauguration",
+        "score": 0.2293
+      },
+      {
+        "term": "urba",
+        "score": 0.1604
+      },
+      {
+        "term": "sncf",
+        "score": 0.1501
+      },
+      {
+        "term": "urba urba",
+        "score": 0.1497
+      },
+      {
+        "term": "bridge",
+        "score": 0.1207
+      },
+      {
+        "term": "lyoncity villedelyon",
+        "score": 0.1073
+      },
+      {
+        "term": "villedelyon lyoncity",
+        "score": 0.1018
+      }
+    ],
+    "74": [
+      {
+        "term": "part",
+        "score": 0.3921
+      },
+      {
+        "term": "dieu",
+        "score": 0.3837
+      },
+      {
+        "term": "part dieu",
+        "score": 0.3617
+      },
+      {
+        "term": "partdieu",
+        "score": 0.3482
+      },
+      {
+        "term": "tour",
+        "score": 0.188
+      },
+      {
+        "term": "auditorium",
+        "score": 0.1801
+      },
+      {
+        "term": "epic",
+        "score": 0.1525
+      },
+      {
+        "term": "architecture",
+        "score": 0.1344
+      },
+      {
+        "term": "tower",
+        "score": 0.126
+      },
+      {
+        "term": "crayon",
+        "score": 0.1207
+      }
+    ],
+    "75": [
+      {
+        "term": "monocycle unicyclebasketball",
+        "score": 0.2562
+      },
+      {
+        "term": "unicyclebasketball monobasket",
+        "score": 0.2562
+      },
+      {
+        "term": "monocyclebasket",
+        "score": 0.2562
+      },
+      {
+        "term": "bron monocycle",
+        "score": 0.2562
+      },
+      {
+        "term": "monobasket monocyclebasket",
+        "score": 0.2562
+      },
+      {
+        "term": "monobasket",
+        "score": 0.2562
+      },
+      {
+        "term": "basketball mono",
+        "score": 0.2562
+      },
+      {
+        "term": "unicycle",
+        "score": 0.2562
+      },
+      {
+        "term": "unicycle uni",
+        "score": 0.2562
+      },
+      {
+        "term": "unicyclebasketball",
+        "score": 0.2562
+      }
+    ],
+    "76": [
+      {
+        "term": "plonge",
+        "score": 0.6782
+      },
+      {
+        "term": "vaulxenvelin",
+        "score": 0.5309
+      },
+      {
+        "term": "piscine",
+        "score": 0.386
+      },
+      {
+        "term": "rho",
+        "score": 0.3132
+      },
+      {
+        "term": "velin",
+        "score": 0.0665
+      },
+      {
+        "term": "cours",
+        "score": 0.0274
+      },
+      {
+        "term": "bokeh",
+        "score": 0.0195
+      },
+      {
+        "term": "filter",
+        "score": 0.0192
+      },
+      {
+        "term": "filter nofilter",
+        "score": 0.0173
+      },
+      {
+        "term": "paris paris",
+        "score": 0.0172
+      }
+    ],
+    "77": [
+      {
+        "term": "passerelle",
+        "score": 0.3197
+      },
+      {
+        "term": "atelier",
+        "score": 0.2797
+      },
+      {
+        "term": "automne autumn",
+        "score": 0.2162
+      },
+      {
+        "term": "allons",
+        "score": 0.1771
+      },
+      {
+        "term": "jonage",
+        "score": 0.1638
+      },
+      {
+        "term": "miribel",
+        "score": 0.1578
+      },
+      {
+        "term": "fall",
+        "score": 0.1491
+      },
+      {
+        "term": "op",
+        "score": 0.1476
+      },
+      {
+        "term": "minimalism",
+        "score": 0.1426
+      },
+      {
+        "term": "flower",
+        "score": 0.1403
+      }
+    ],
+    "78": [
+      {
+        "term": "transbordeur",
+        "score": 0.4572
+      },
+      {
+        "term": "live",
+        "score": 0.2045
+      },
+      {
+        "term": "concert",
+        "score": 0.195
+      },
+      {
+        "term": "metal music",
+        "score": 0.1926
+      },
+      {
+        "term": "arnalphotography",
+        "score": 0.1639
+      },
+      {
+        "term": "arnal",
+        "score": 0.1639
+      },
+      {
+        "term": "music",
+        "score": 0.1592
+      },
+      {
+        "term": "metal",
+        "score": 0.1591
+      },
+      {
+        "term": "capturedalive",
+        "score": 0.1531
+      },
+      {
+        "term": "arnallephotography",
+        "score": 0.1517
+      }
+    ],
+    "79": [
+      {
+        "term": "rise iphoneography",
+        "score": 0.4892
+      },
+      {
+        "term": "squareformat rise",
+        "score": 0.4892
+      },
+      {
+        "term": "rise",
+        "score": 0.4837
+      },
+      {
+        "term": "venue square",
+        "score": 0.1937
+      },
+      {
+        "term": "instafood",
+        "score": 0.1721
+      },
+      {
+        "term": "pho",
+        "score": 0.0997
+      },
+      {
+        "term": "lightroom",
+        "score": 0.0961
+      },
+      {
+        "term": "squareformat amaro",
+        "score": 0.0928
+      },
+      {
+        "term": "amaro",
+        "score": 0.0928
+      },
+      {
+        "term": "amaro iphoneography",
+        "score": 0.0928
+      }
+    ],
+    "80": [
+      {
+        "term": "tassin",
+        "score": 0.5087
+      },
+      {
+        "term": "architecture architect",
+        "score": 0.2781
+      },
+      {
+        "term": "demi lune",
+        "score": 0.2717
+      },
+      {
+        "term": "tassin demi",
+        "score": 0.2612
+      },
+      {
+        "term": "tassinlademilune",
+        "score": 0.2536
+      },
+      {
+        "term": "demi",
+        "score": 0.2135
+      },
+      {
+        "term": "architect",
+        "score": 0.2121
+      },
+      {
+        "term": "architecte",
+        "score": 0.2044
+      },
+      {
+        "term": "contemporaryarchitecture architecturecontemporaine",
+        "score": 0.2037
+      },
+      {
+        "term": "tassin tassinlademilune",
+        "score": 0.1985
+      }
+    ],
+    "81": [
+      {
+        "term": "club",
+        "score": 0.5888
+      },
+      {
+        "term": "pano",
+        "score": 0.3263
+      },
+      {
+        "term": "turbo",
+        "score": 0.2427
+      },
+      {
+        "term": "iglesia",
+        "score": 0.1987
+      },
+      {
+        "term": "campagne",
+        "score": 0.1845
+      },
+      {
+        "term": "paysages",
+        "score": 0.1845
+      },
+      {
+        "term": "village",
+        "score": 0.1804
+      },
+      {
+        "term": "op",
+        "score": 0.1574
+      },
+      {
+        "term": "bluesky",
+        "score": 0.1521
+      },
+      {
+        "term": "herbe",
+        "score": 0.1496
+      }
+    ],
+    "82": [
+      {
+        "term": "ainay",
+        "score": 0.3377
+      },
+      {
+        "term": "marquis",
+        "score": 0.2056
+      },
+      {
+        "term": "martin",
+        "score": 0.1567
+      },
+      {
+        "term": "basilique",
+        "score": 0.1525
+      },
+      {
+        "term": "saint martin",
+        "score": 0.1411
+      },
+      {
+        "term": "basilique saint",
+        "score": 0.1114
+      },
+      {
+        "term": "performance apocalypse",
+        "score": 0.1019
+      },
+      {
+        "term": "secret performance",
+        "score": 0.1019
+      },
+      {
+        "term": "landart marquis",
+        "score": 0.1019
+      },
+      {
+        "term": "vanitas revelation",
+        "score": 0.1019
+      }
+    ],
+    "83": [
+      {
+        "term": "croixrousse",
+        "score": 0.5138
+      },
+      {
+        "term": "pasted",
+        "score": 0.2381
+      },
+      {
+        "term": "streetart",
+        "score": 0.2195
+      },
+      {
+        "term": "paper",
+        "score": 0.208
+      },
+      {
+        "term": "europe",
+        "score": 0.1987
+      },
+      {
+        "term": "croixrousse streetart",
+        "score": 0.1714
+      },
+      {
+        "term": "europe croixrousse",
+        "score": 0.169
+      },
+      {
+        "term": "pasted paper",
+        "score": 0.1673
+      },
+      {
+        "term": "zombie",
+        "score": 0.1385
+      },
+      {
+        "term": "zombie walk",
+        "score": 0.1288
+      }
+    ],
+    "84": [
+      {
+        "term": "sncf",
+        "score": 0.4675
+      },
+      {
+        "term": "wagons",
+        "score": 0.438
+      },
+      {
+        "term": "fret",
+        "score": 0.2802
+      },
+      {
+        "term": "pierre",
+        "score": 0.1619
+      },
+      {
+        "term": "sncf ter",
+        "score": 0.1534
+      },
+      {
+        "term": "ter",
+        "score": 0.1487
+      },
+      {
+        "term": "reise kreuzfahrt",
+        "score": 0.1485
+      },
+      {
+        "term": "kreuzfahrt arosaluna",
+        "score": 0.1485
+      },
+      {
+        "term": "kreuzfahrt",
+        "score": 0.1485
+      },
+      {
+        "term": "frankreich reise",
+        "score": 0.1485
+      }
+    ],
+    "85": [
+      {
+        "term": "parc",
+        "score": 0.3403
+      },
+      {
+        "term": "jardinbotaniquedelyon",
+        "score": 0.3023
+      },
+      {
+        "term": "lyonbotanicgarden",
+        "score": 0.2807
+      },
+      {
+        "term": "serre",
+        "score": 0.2673
+      },
+      {
+        "term": "lyonfrance flickrandroidapp",
+        "score": 0.2275
+      },
+      {
+        "term": "greenhouse",
+        "score": 0.2011
+      },
+      {
+        "term": "dor",
+        "score": 0.1482
+      },
+      {
+        "term": "botanicgarden",
+        "score": 0.1458
+      },
+      {
+        "term": "jardinbotanique",
+        "score": 0.1365
+      },
+      {
+        "term": "botany",
+        "score": 0.1309
+      }
+    ],
+    "86": [
+      {
+        "term": "villeurbanne",
+        "score": 0.7637
+      },
+      {
+        "term": "canal",
+        "score": 0.3327
+      },
+      {
+        "term": "rugby",
+        "score": 0.2328
+      },
+      {
+        "term": "doua",
+        "score": 0.226
+      },
+      {
+        "term": "murpeint",
+        "score": 0.1283
+      },
+      {
+        "term": "panasonic",
+        "score": 0.1269
+      },
+      {
+        "term": "sport",
+        "score": 0.099
+      },
+      {
+        "term": "musique villeurbanne",
+        "score": 0.0987
+      },
+      {
+        "term": "mur",
+        "score": 0.0907
+      },
+      {
+        "term": "vaulxenvelin",
+        "score": 0.0842
+      }
+    ],
+    "87": [
+      {
+        "term": "version",
+        "score": 0.9297
+      },
+      {
+        "term": "large",
+        "score": 0.2167
+      },
+      {
+        "term": "meyzieu",
+        "score": 0.1751
+      },
+      {
+        "term": "grand",
+        "score": 0.1382
+      },
+      {
+        "term": "miribel",
+        "score": 0.0675
+      },
+      {
+        "term": "lake",
+        "score": 0.0644
+      },
+      {
+        "term": "boat",
+        "score": 0.0615
+      },
+      {
+        "term": "landscape",
+        "score": 0.0514
+      },
+      {
+        "term": "hiver",
+        "score": 0.0476
+      },
+      {
+        "term": "fog",
+        "score": 0.045
+      }
+    ],
+    "88": [
+      {
+        "term": "voiture salon",
+        "score": 0.6013
+      },
+      {
+        "term": "salon",
+        "score": 0.4051
+      },
+      {
+        "term": "lieux",
+        "score": 0.3592
+      },
+      {
+        "term": "auto",
+        "score": 0.3564
+      },
+      {
+        "term": "show",
+        "score": 0.2777
+      },
+      {
+        "term": "voiture",
+        "score": 0.2588
+      },
+      {
+        "term": "mercedes",
+        "score": 0.1326
+      },
+      {
+        "term": "sharpei",
+        "score": 0.0888
+      },
+      {
+        "term": "nofilter sharpei",
+        "score": 0.0888
+      },
+      {
+        "term": "sharpei uploaded",
+        "score": 0.0694
+      }
+    ],
+    "89": [
+      {
+        "term": "collonges",
+        "score": 0.6616
+      },
+      {
+        "term": "mont",
+        "score": 0.4608
+      },
+      {
+        "term": "terre",
+        "score": 0.2732
+      },
+      {
+        "term": "saint",
+        "score": 0.2138
+      },
+      {
+        "term": "filter nofilter",
+        "score": 0.1454
+      },
+      {
+        "term": "nofilter",
+        "score": 0.1439
+      },
+      {
+        "term": "flickrmobile flickriosapp",
+        "score": 0.1381
+      },
+      {
+        "term": "flickriosapp",
+        "score": 0.1367
+      },
+      {
+        "term": "flickriosapp filter",
+        "score": 0.1367
+      },
+      {
+        "term": "flickrmobile",
+        "score": 0.1367
+      }
+    ],
+    "90": [
+      {
+        "term": "laval",
+        "score": 0.3827
+      },
+      {
+        "term": "vallat",
+        "score": 0.3339
+      },
+      {
+        "term": "trax vallat",
+        "score": 0.3339
+      },
+      {
+        "term": "trax",
+        "score": 0.3253
+      },
+      {
+        "term": "pi",
+        "score": 0.3253
+      },
+      {
+        "term": "pi trax",
+        "score": 0.3253
+      },
+      {
+        "term": "tourisme villes",
+        "score": 0.1958
+      },
+      {
+        "term": "villes filoer",
+        "score": 0.1958
+      },
+      {
+        "term": "villages tourisme",
+        "score": 0.1879
+      },
+      {
+        "term": "villages",
+        "score": 0.1854
+      }
+    ],
+    "91": [
+      {
+        "term": "jacobins",
+        "score": 0.4288
+      },
+      {
+        "term": "place jacobins",
+        "score": 0.2808
+      },
+      {
+        "term": "place",
+        "score": 0.1724
+      },
+      {
+        "term": "placedesjacobins",
+        "score": 0.1573
+      },
+      {
+        "term": "justice",
+        "score": 0.1545
+      },
+      {
+        "term": "europe",
+        "score": 0.1435
+      },
+      {
+        "term": "palais",
+        "score": 0.1421
+      },
+      {
+        "term": "passerelle",
+        "score": 0.1406
+      },
+      {
+        "term": "river",
+        "score": 0.1348
+      },
+      {
+        "term": "palais justice",
+        "score": 0.1346
+      }
+    ],
+    "92": [
+      {
+        "term": "celebrity",
+        "score": 0.2157
+      },
+      {
+        "term": "cordeliers",
+        "score": 0.2138
+      },
+      {
+        "term": "bourse",
+        "score": 0.178
+      },
+      {
+        "term": "place",
+        "score": 0.1636
+      },
+      {
+        "term": "night",
+        "score": 0.154
+      },
+      {
+        "term": "city",
+        "score": 0.1386
+      },
+      {
+        "term": "palais",
+        "score": 0.1381
+      },
+      {
+        "term": "lafayette",
+        "score": 0.1378
+      },
+      {
+        "term": "chef",
+        "score": 0.1329
+      },
+      {
+        "term": "rue",
+        "score": 0.1326
+      }
+    ],
+    "93": [
+      {
+        "term": "mignon chaton",
+        "score": 0.3439
+      },
+      {
+        "term": "chat katze",
+        "score": 0.3439
+      },
+      {
+        "term": "choupinou",
+        "score": 0.3439
+      },
+      {
+        "term": "katze",
+        "score": 0.322
+      },
+      {
+        "term": "cute cat",
+        "score": 0.322
+      },
+      {
+        "term": "kitten chat",
+        "score": 0.322
+      },
+      {
+        "term": "chaton",
+        "score": 0.2794
+      },
+      {
+        "term": "kitten",
+        "score": 0.2771
+      },
+      {
+        "term": "mignon",
+        "score": 0.2356
+      },
+      {
+        "term": "cute",
+        "score": 0.1818
+      }
+    ],
+    "94": [
+      {
+        "term": "retraites",
+        "score": 0.3809
+      },
+      {
+        "term": "manifestation",
+        "score": 0.368
+      },
+      {
+        "term": "manifestation retraites",
+        "score": 0.2478
+      },
+      {
+        "term": "sncf",
+        "score": 0.201
+      },
+      {
+        "term": "jean",
+        "score": 0.1812
+      },
+      {
+        "term": "moto",
+        "score": 0.1682
+      },
+      {
+        "term": "retraites partisocialiste",
+        "score": 0.1488
+      },
+      {
+        "term": "ps manifestation",
+        "score": 0.1488
+      },
+      {
+        "term": "retraites manifestation",
+        "score": 0.1485
+      },
+      {
+        "term": "partisocialiste",
+        "score": 0.142
+      }
+    ],
+    "95": [
+      {
+        "term": "romain",
+        "score": 0.318
+      },
+      {
+        "term": "gallo",
+        "score": 0.2856
+      },
+      {
+        "term": "theatre",
+        "score": 0.2808
+      },
+      {
+        "term": "nuits",
+        "score": 0.2765
+      },
+      {
+        "term": "gallo romain",
+        "score": 0.2345
+      },
+      {
+        "term": "antique",
+        "score": 0.2062
+      },
+      {
+        "term": "roman",
+        "score": 0.1769
+      },
+      {
+        "term": "fourviere",
+        "score": 0.1596
+      },
+      {
+        "term": "galloromain",
+        "score": 0.1529
+      },
+      {
+        "term": "romains",
+        "score": 0.1421
+      }
+    ],
+    "96": [
+      {
+        "term": "foy",
+        "score": 0.6313
+      },
+      {
+        "term": "sainte foy",
+        "score": 0.4916
+      },
+      {
+        "term": "sainte",
+        "score": 0.3741
+      },
+      {
+        "term": "bulles",
+        "score": 0.2149
+      },
+      {
+        "term": "moso allons",
+        "score": 0.1813
+      },
+      {
+        "term": "allons moso",
+        "score": 0.179
+      },
+      {
+        "term": "moso",
+        "score": 0.179
+      },
+      {
+        "term": "allons",
+        "score": 0.1393
+      },
+      {
+        "term": "minh",
+        "score": 0.0951
+      },
+      {
+        "term": "cosplay",
+        "score": 0.0851
+      }
+    ],
+    "97": [
+      {
+        "term": "miribel",
+        "score": 0.4278
+      },
+      {
+        "term": "jonage",
+        "score": 0.362
+      },
+      {
+        "term": "parc feu",
+        "score": 0.3531
+      },
+      {
+        "term": "miribel parc",
+        "score": 0.306
+      },
+      {
+        "term": "lac",
+        "score": 0.2723
+      },
+      {
+        "term": "artifices",
+        "score": 0.259
+      },
+      {
+        "term": "vogue",
+        "score": 0.2515
+      },
+      {
+        "term": "roue",
+        "score": 0.2048
+      },
+      {
+        "term": "grande",
+        "score": 0.1633
+      },
+      {
+        "term": "feu",
+        "score": 0.1526
+      }
+    ],
+    "98": [
+      {
+        "term": "vieuxlyon",
+        "score": 0.4363
+      },
+      {
+        "term": "miniature",
+        "score": 0.2306
+      },
+      {
+        "term": "vieux",
+        "score": 0.2122
+      },
+      {
+        "term": "traboule",
+        "score": 0.2028
+      },
+      {
+        "term": "largestrenaissancedistrictoflyon malrauxlaw",
+        "score": 0.1292
+      },
+      {
+        "term": "largestrenaissancedistrictoflyon",
+        "score": 0.1292
+      },
+      {
+        "term": "malrauxlaw",
+        "score": 0.1292
+      },
+      {
+        "term": "oldlyon largestrenaissancedistrictoflyon",
+        "score": 0.1292
+      },
+      {
+        "term": "saint jean",
+        "score": 0.1289
+      },
+      {
+        "term": "vieuxlyon oldlyon",
+        "score": 0.1285
+      }
+    ],
+    "99": [
+      {
+        "term": "croixrousse",
+        "score": 0.4094
+      },
+      {
+        "term": "pasted",
+        "score": 0.3079
+      },
+      {
+        "term": "paper",
+        "score": 0.2699
+      },
+      {
+        "term": "pasted paper",
+        "score": 0.2396
+      },
+      {
+        "term": "streetart",
+        "score": 0.2142
+      },
+      {
+        "term": "europe",
+        "score": 0.2004
+      },
+      {
+        "term": "europe croixrousse",
+        "score": 0.1936
+      },
+      {
+        "term": "croixrousse streetart",
+        "score": 0.1936
+      },
+      {
+        "term": "festivalecransmixtes",
+        "score": 0.166
+      },
+      {
+        "term": "wheatpaste",
+        "score": 0.159
+      }
+    ]
+  }
+}

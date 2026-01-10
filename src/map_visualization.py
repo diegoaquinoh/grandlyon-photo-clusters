@@ -9,11 +9,13 @@ import pandas as pd
 from pathlib import Path
 from typing import Optional, List
 import numpy as np
+import json
 
 from .data_loader import load_cleaned_data, load_and_clean_data, LYON_BBOX, PROJECT_ROOT
 
 # Output paths
 APP_DIR = PROJECT_ROOT / "app"
+REPORTS_DIR = PROJECT_ROOT / "reports"
 DEFAULT_MAP_PATH = APP_DIR / "map.html"
 
 # Lyon center coordinates
@@ -199,6 +201,33 @@ def create_photo_map(
 # CLUSTER VISUALIZATION
 # =============================================================================
 
+def load_cluster_descriptors() -> dict:
+    """
+    Load cluster descriptors from the text mining output.
+    
+    Returns:
+        Dictionary mapping cluster ID to list of top terms
+    """
+    descriptors_path = REPORTS_DIR / "cluster_descriptors.json"
+    
+    if not descriptors_path.exists():
+        print(f"  Warning: No cluster descriptors found at {descriptors_path}")
+        return {}
+    
+    try:
+        with open(descriptors_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Extract just the term names (top 5) for each cluster
+        result = {}
+        for cluster_id, terms in data.get('clusters', {}).items():
+            result[int(cluster_id)] = [t['term'] for t in terms[:5]]
+        
+        return result
+    except Exception as e:
+        print(f"  Warning: Could not load cluster descriptors: {e}")
+        return {}
+
 def generate_cluster_colors(n_clusters: int) -> List[str]:
     """
     Generate a list of distinct colors for clusters.
@@ -234,7 +263,8 @@ def add_cluster_markers(
     min_cluster_size: int = 10,
     show_noise: bool = False,
     sample_per_cluster: int = 200,
-    cluster_colors: Optional[List[str]] = None
+    cluster_colors: Optional[List[str]] = None,
+    cluster_descriptors: Optional[dict] = None
 ) -> folium.Map:
     """
     Add color-coded cluster markers to the map.
@@ -246,12 +276,17 @@ def add_cluster_markers(
         show_noise: Whether to show noise points (cluster=-1)
         sample_per_cluster: Max points to show per cluster (for performance)
         cluster_colors: Optional list of colors for clusters
+        cluster_descriptors: Optional dict mapping cluster ID to list of top terms
     
     Returns:
         Map with cluster markers added
     """
     if 'cluster' not in df.columns:
         raise ValueError("DataFrame must have 'cluster' column")
+    
+    # Load descriptors if not provided
+    if cluster_descriptors is None:
+        cluster_descriptors = load_cluster_descriptors()
     
     # Get cluster info
     cluster_counts = df['cluster'].value_counts()
@@ -272,11 +307,21 @@ def add_cluster_markers(
         cluster_df = df[df['cluster'] == cluster_id]
         cluster_size = len(cluster_df)
         
+        # Get descriptors for this cluster
+        top_terms = cluster_descriptors.get(cluster_id, [])
+        descriptor_str = ", ".join(top_terms) if top_terms else "(no descriptors)"
+        
         # Sample if too many points
         if len(cluster_df) > sample_per_cluster:
             cluster_df = cluster_df.sample(n=sample_per_cluster, random_state=42)
         
-        group = folium.FeatureGroup(name=f"Cluster {cluster_id} (n={cluster_size:,})")
+        # Use descriptors in group name if available
+        group_name = f"Cluster {cluster_id} (n={cluster_size:,})"
+        if top_terms:
+            short_desc = ", ".join(top_terms[:3])
+            group_name = f"Cluster {cluster_id}: {short_desc} (n={cluster_size:,})"
+        
+        group = folium.FeatureGroup(name=group_name)
         
         for _, row in cluster_df.iterrows():
             # Build popup content
@@ -287,9 +332,10 @@ def add_cluster_markers(
             year = int(row.get('date_taken_year', 0)) if pd.notna(row.get('date_taken_year')) else 'N/A'
             
             popup_html = f"""
-            <div style="min-width: 200px;">
+            <div style="min-width: 220px;">
                 <b style="color: {color_map[cluster_id]};">Cluster {cluster_id}</b><br>
                 <b>Size:</b> {cluster_size:,} photos<br>
+                <b>Top terms:</b> <i>{descriptor_str}</i><br>
                 <hr style="margin: 5px 0;">
                 <b>Title:</b> {title}<br>
                 <b>Year:</b> {year}<br>
@@ -304,8 +350,8 @@ def add_cluster_markers(
                 fill=True,
                 fill_color=color_map[cluster_id],
                 fill_opacity=0.7,
-                popup=folium.Popup(popup_html, max_width=300),
-                tooltip=f"Cluster {cluster_id}"
+                popup=folium.Popup(popup_html, max_width=320),
+                tooltip=f"Cluster {cluster_id}: {', '.join(top_terms[:2]) if top_terms else 'No description'}"
             ).add_to(group)
         
         group.add_to(m)
@@ -335,25 +381,38 @@ def add_cluster_markers(
     return m
 
 
-def add_cluster_legend(m: folium.Map, cluster_info: dict) -> folium.Map:
+def add_cluster_legend(
+    m: folium.Map, 
+    cluster_info: dict,
+    cluster_descriptors: Optional[dict] = None
+) -> folium.Map:
     """
-    Add a legend showing cluster colors and sizes.
+    Add a legend showing cluster colors, sizes, and descriptors.
     
     Args:
         m: Folium Map object
         cluster_info: Dict of {cluster_id: (color, size)}
+        cluster_descriptors: Optional dict mapping cluster ID to list of top terms
     
     Returns:
         Map with legend added
     """
+    if cluster_descriptors is None:
+        cluster_descriptors = {}
+    
     # Build legend HTML
     legend_items = ""
-    for cluster_id, (color, size) in sorted(cluster_info.items())[:15]:  # Show top 15
+    for cluster_id, (color, size) in sorted(cluster_info.items(), key=lambda x: -x[1][1])[:15]:  # Top 15 by size
+        # Get short descriptor
+        terms = cluster_descriptors.get(cluster_id, [])
+        desc = ", ".join(terms[:2]) if terms else ""
+        desc_html = f'<span style="color: #666; font-style: italic;"> - {desc}</span>' if desc else ""
+        
         legend_items += f"""
         <div style="display: flex; align-items: center; margin: 2px 0;">
             <span style="background-color: {color}; width: 12px; height: 12px; 
                          border-radius: 50%; display: inline-block; margin-right: 5px;"></span>
-            <span style="font-size: 11px;">Cluster {cluster_id} ({size:,})</span>
+            <span style="font-size: 11px;">Cluster {cluster_id} ({size:,}){desc_html}</span>
         </div>
         """
     
@@ -363,9 +422,9 @@ def add_cluster_legend(m: folium.Map, cluster_info: dict) -> folium.Map:
     legend_html = f"""
     <div style="position: fixed; bottom: 50px; left: 50px; z-index: 1000;
                 background-color: white; padding: 10px; border-radius: 5px;
-                border: 2px solid #ccc; font-family: Arial, sans-serif;">
+                border: 2px solid #ccc; font-family: Arial, sans-serif; max-width: 350px;">
         <div style="font-weight: bold; margin-bottom: 5px; border-bottom: 1px solid #ccc; padding-bottom: 3px;">
-            Clusters
+            Clusters (by size)
         </div>
         {legend_items}
     </div>
@@ -422,6 +481,11 @@ def create_cluster_map(
     # Create base map
     m = create_base_map()
     
+    # Load cluster descriptors
+    cluster_descriptors = load_cluster_descriptors()
+    if cluster_descriptors:
+        print(f"  Loaded descriptors for {len(cluster_descriptors)} clusters")
+    
     # Add heatmap if requested
     if include_heatmap:
         clustered_df = df[df['cluster'] != -1]
@@ -433,7 +497,8 @@ def create_cluster_map(
         m, df, 
         min_cluster_size=min_cluster_size,
         show_noise=show_noise,
-        sample_per_cluster=sample_per_cluster
+        sample_per_cluster=sample_per_cluster,
+        cluster_descriptors=cluster_descriptors
     )
     print(f"  Added {len(valid_clusters)} cluster layers")
     
@@ -442,9 +507,9 @@ def create_cluster_map(
     color_map = {c: cluster_colors[i % len(cluster_colors)] for i, c in enumerate(valid_clusters)}
     cluster_info = {c: (color_map[c], cluster_counts[c]) for c in valid_clusters}
     
-    # Add legend
-    m = add_cluster_legend(m, cluster_info)
-    print("  Added legend")
+    # Add legend with descriptors
+    m = add_cluster_legend(m, cluster_info, cluster_descriptors)
+    print("  Added legend with descriptors")
     
     # Add layer control
     m = add_layer_control(m)
