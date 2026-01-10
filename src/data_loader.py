@@ -13,7 +13,7 @@ from typing import Optional, Tuple
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_PATH = DATA_DIR / "flickr_data2.csv"
-CLEANED_DATA_PATH = DATA_DIR / "flickr_cleaned.parquet"
+CLEANED_DATA_PATH = DATA_DIR / "flickr_cleaned.csv"
 
 # Lyon bounding box (approximate)
 LYON_BBOX = {
@@ -52,7 +52,7 @@ def load_cleaned_data() -> pd.DataFrame:
         DataFrame with cleaned photo data
     """
     if CLEANED_DATA_PATH.exists():
-        return pd.read_parquet(CLEANED_DATA_PATH)
+        return pd.read_csv(CLEANED_DATA_PATH)
     else:
         print("Warning: Cleaned data not found, loading raw data...")
         return load_raw_data()
@@ -103,6 +103,32 @@ def filter_lyon_bbox(df: pd.DataFrame) -> pd.DataFrame:
     return df[mask].copy()
 
 
+def remove_corrupted_dates(df: pd.DataFrame, min_year: int = 1990, max_year: int = 2025) -> pd.DataFrame:
+    """
+    Remove rows with impossible date component values.
+    
+    Found during exploration: some rows have month > 12, day > 31, etc.
+    due to CSV parsing issues (shifted columns). Also found future dates (year 2238).
+    
+    Args:
+        df: DataFrame with date component columns
+        min_year: Minimum valid year (default: 1990, before digital cameras)
+        max_year: Maximum valid year (default: 2025, current year)
+    
+    Returns:
+        DataFrame with corrupted date rows removed
+    """
+    mask = (
+        (df['date_taken_month'] <= 12) & 
+        (df['date_taken_day'] <= 31) & 
+        (df['date_taken_hour'] <= 23) &
+        (df['date_taken_minute'] <= 59) &
+        (df['date_taken_year'] >= min_year) &
+        (df['date_taken_year'] <= max_year)
+    )
+    return df[mask].copy()
+
+
 def remove_duplicates(df: pd.DataFrame, subset: Optional[list] = None) -> Tuple[pd.DataFrame, int]:
     """
     Remove duplicate rows from the dataset.
@@ -148,6 +174,54 @@ def get_data_stats(df: pd.DataFrame) -> dict:
         'empty_tags': (df['tags'].isnull() | (df['tags'] == '')).sum(),
         'empty_titles': (df['title'].isnull() | (df['title'] == '')).sum(),
     }
+
+
+def load_and_clean_data(
+    filter_bbox: bool = True,
+    save_cache: bool = True
+) -> pd.DataFrame:
+    """
+    Load raw data and apply all cleaning steps.
+    
+    Cleaning steps applied:
+    1. Remove rows with corrupted date values
+    2. Remove duplicate photos (by id)
+    3. Optionally filter to Lyon bounding box
+    4. Optionally cache to Parquet for faster future loads
+    
+    Args:
+        filter_bbox: Whether to filter to Lyon area (default: True)
+        save_cache: Whether to save cleaned data to Parquet (default: True)
+    
+    Returns:
+        Cleaned DataFrame ready for analysis
+    """
+    print("Loading raw data...")
+    df = load_raw_data()
+    initial_count = len(df)
+    print(f"  Raw rows: {initial_count:,}")
+    
+    # Step 1: Remove corrupted dates
+    df = remove_corrupted_dates(df)
+    print(f"  After date cleaning: {len(df):,} (removed {initial_count - len(df):,})")
+    
+    # Step 2: Remove duplicates
+    df, dup_removed = remove_duplicates(df, subset=['id'])
+    print(f"  After deduplication: {len(df):,} (removed {dup_removed:,})")
+    
+    # Step 3: Filter to Lyon bbox (optional)
+    if filter_bbox:
+        before_bbox = len(df)
+        df = filter_lyon_bbox(df)
+        print(f"  After Lyon filter: {len(df):,} (removed {before_bbox - len(df):,})")
+    
+    # Step 4: Cache to Parquet (optional)
+    if save_cache:
+        df.to_csv(CLEANED_DATA_PATH, index=False)
+        print(f"  Saved to: {CLEANED_DATA_PATH}")
+    
+    print(f"\nFinal: {len(df):,} rows ({len(df)/initial_count*100:.1f}% of original)")
+    return df
 
 
 if __name__ == "__main__":

@@ -1,0 +1,27 @@
+{
+  "n_clusters": 59,
+  "n_noise": 466,
+  "noise_percentage": 0.2774569227288424,
+  "total_points": 167954,
+  "clustered_points": 167488,
+  "largest_cluster": 140764,
+  "smallest_cluster": 10,
+  "median_cluster_size": 47,
+  "cluster_sizes_top10": [
+    140764,
+    16793,
+    3668,
+    873,
+    809,
+    465,
+    427,
+    419,
+    336,
+    294
+  ],
+  "parameters": {
+    "eps": 0.005,
+    "min_samples": 10
+  },
+  "timestamp": "2026-01-09T20:23:17.909194"
+}

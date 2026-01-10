@@ -1,4 +1,6 @@
 # This directory contains generated reports and visualizations
 # - clustering_comparison.md
+# - data_cleaning_report.md
 # - cluster_descriptions.md
+# - clustering_baseline_stats.json
 # - figures/
