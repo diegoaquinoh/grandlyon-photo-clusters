@@ -14,6 +14,7 @@ Usage:
 Options:
     --skip-cleaning     Skip cleaning if cleaned data already exists
     --skip-clustering   Skip clustering if clustered data already exists
+    --bbox TYPE         Bbox size: 'large', 'metro', or 'center' (default: large)
     --k N               Number of clusters (default: 100)
     --sample N          Sample size for testing (default: all data)
     --dry-run           Show what would be done without executing
@@ -57,6 +58,7 @@ def print_step(step_num: int, total: int, description: str):
 def run_pipeline(
     skip_cleaning: bool = False,
     skip_clustering: bool = False,
+    bbox_type: str = "large",
     n_clusters: int = 100,
     sample_size: int = None,
     dry_run: bool = False
@@ -67,6 +69,7 @@ def run_pipeline(
     Args:
         skip_cleaning: Skip if cleaned data exists
         skip_clustering: Skip if clustered data exists
+        bbox_type: Bbox size - 'large', 'metro', or 'center'
         n_clusters: Number of clusters for K-Means
         sample_size: Optional sample size for testing
         dry_run: Just show what would be done
@@ -75,6 +78,7 @@ def run_pipeline(
     
     print_header("GRAND LYON PHOTO CLUSTERS - FULL PIPELINE")
     print(f"Configuration:")
+    print(f"  - Bbox: {bbox_type}")
     print(f"  - Clusters: {n_clusters}")
     print(f"  - Sample size: {sample_size or 'all data'}")
     print(f"  - Skip cleaning: {skip_cleaning}")
@@ -102,6 +106,7 @@ def run_pipeline(
     else:
         df = load_and_clean_data(
             filter_bbox=True,
+            bbox_type=bbox_type,
             save_cache=True,
             save_log=True,
             verbose=True
@@ -225,6 +230,13 @@ def main():
         action="store_true",
         help="Show what would be done without executing"
     )
+    parser.add_argument(
+        "--bbox",
+        type=str,
+        default="large",
+        choices=["large", "metro", "center"],
+        help="Bbox size: 'large' (1400km²), 'metro' (150km²), 'center' (20km²)"
+    )
     
     args = parser.parse_args()
     
@@ -232,6 +244,7 @@ def main():
         run_pipeline(
             skip_cleaning=args.skip_cleaning,
             skip_clustering=args.skip_clustering,
+            bbox_type=args.bbox,
             n_clusters=args.k,
             sample_size=args.sample,
             dry_run=args.dry_run

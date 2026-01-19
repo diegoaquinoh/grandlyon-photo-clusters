@@ -548,6 +548,140 @@ def run_parameter_sweep(
     return results_df
 
 
+def run_dbscan_grid_search(
+    df: Optional[pd.DataFrame] = None,
+    eps_values: list = None,
+    min_samples_values: list = None,
+    save_results: bool = True,
+    sample_size: int = None
+) -> pd.DataFrame:
+    """
+    Full grid search over DBSCAN parameters (eps × min_samples).
+    
+    This addresses the issue that only eps was being tuned while 
+    min_samples was fixed at 10.
+    
+    Args:
+        df: DataFrame with photo data
+        eps_values: List of eps values to try (default: [0.002, 0.003, 0.004, 0.005, 0.006])
+        min_samples_values: List of min_samples to try (default: [5, 10, 15, 20, 30])
+        save_results: Whether to save results to CSV
+        sample_size: Optional sample size for faster testing
+    
+    Returns:
+        DataFrame with results for each parameter combination
+    """
+    if eps_values is None:
+        eps_values = [0.002, 0.003, 0.004, 0.005, 0.006]
+    if min_samples_values is None:
+        min_samples_values = [5, 10, 15, 20, 30]
+    
+    if df is None:
+        df = load_cleaned_data()
+    
+    # Optional sampling for faster experimentation
+    if sample_size and len(df) > sample_size:
+        print(f"Sampling {sample_size:,} points for faster grid search...")
+        df = df.sample(n=sample_size, random_state=42)
+    
+    coords = prepare_coordinates(df)
+    results = []
+    
+    total_combinations = len(eps_values) * len(min_samples_values)
+    
+    print("=" * 70)
+    print("DBSCAN GRID SEARCH (eps × min_samples)")
+    print("=" * 70)
+    print(f"eps values: {eps_values}")
+    print(f"min_samples values: {min_samples_values}")
+    print(f"Total combinations: {total_combinations}")
+    print(f"Data points: {len(df):,}")
+    print("-" * 70)
+    
+    combo_num = 0
+    for eps in eps_values:
+        for min_s in min_samples_values:
+            combo_num += 1
+            print(f"\n[{combo_num}/{total_combinations}] eps={eps}, min_samples={min_s}...", end=" ")
+            
+            import time
+            start = time.time()
+            
+            # Run DBSCAN
+            labels = run_dbscan(coords, eps=eps, min_samples=min_s)
+            
+            dbscan_time = time.time() - start
+            
+            # Get statistics
+            stats = get_cluster_stats(labels)
+            
+            # Get quality metrics (skip if too few clusters)
+            metrics = calculate_quality_metrics(coords, labels)
+            
+            total_time = time.time() - start
+            
+            result = {
+                'eps': eps,
+                'min_samples': min_s,
+                'n_clusters': stats['n_clusters'],
+                'noise_pct': round(stats['noise_percentage'], 2),
+                'largest_cluster_pct': round(stats['largest_cluster'] / len(labels) * 100, 2),
+                'median_size': stats['median_cluster_size'],
+                'mean_size': round(stats['mean_cluster_size'], 1),
+                'silhouette': round(metrics['silhouette'], 4) if metrics.get('silhouette') else None,
+                'davies_bouldin': round(metrics['davies_bouldin'], 4) if metrics.get('davies_bouldin') else None,
+                'time_sec': round(total_time, 1)
+            }
+            results.append(result)
+            
+            print(f"clusters={result['n_clusters']}, noise={result['noise_pct']}%, sil={result['silhouette']} ({total_time:.1f}s)")
+    
+    # Create results DataFrame
+    results_df = pd.DataFrame(results)
+    
+    print("\n" + "=" * 70)
+    print("GRID SEARCH RESULTS")
+    print("=" * 70)
+    print(results_df.to_string(index=False))
+    
+    # Find best configuration by silhouette (excluding mega-cluster cases)
+    valid_results = results_df[
+        (results_df['silhouette'].notna()) & 
+        (results_df['largest_cluster_pct'] < 50)  # Reject if one cluster has >50%
+    ]
+    
+    if len(valid_results) > 0:
+        best_idx = valid_results['silhouette'].idxmax()
+        best = results_df.loc[best_idx]
+        print(f"\n✅ BEST CONFIGURATION (by silhouette, excluding mega-clusters):")
+        print(f"   eps={best['eps']}, min_samples={best['min_samples']}")
+        print(f"   Clusters: {best['n_clusters']}, Silhouette: {best['silhouette']}")
+        print(f"   Noise: {best['noise_pct']}%, Largest cluster: {best['largest_cluster_pct']}%")
+        
+        # Save best params
+        best_params = {
+            'algorithm': 'DBSCAN',
+            'eps': float(best['eps']),
+            'min_samples': int(best['min_samples']),
+            'silhouette': float(best['silhouette']) if best['silhouette'] else None,
+            'n_clusters': int(best['n_clusters']),
+            'timestamp': datetime.now().isoformat()
+        }
+        best_path = REPORTS_DIR / "best_dbscan_params.json"
+        with open(best_path, 'w') as f:
+            json.dump(best_params, f, indent=2)
+        print(f"\n   Saved best params to: {best_path}")
+    else:
+        print("\n⚠️  No valid configuration found (all have mega-clusters or failed metrics)")
+    
+    # Save full results
+    if save_results:
+        grid_path = REPORTS_DIR / "dbscan_grid_search.csv"
+        results_df.to_csv(grid_path, index=False)
+        print(f"\n📊 Saved grid search results to: {grid_path}")
+    
+    return results_df
+
 def main():
     """Run clustering comparison and print results."""
     print("=" * 70)
