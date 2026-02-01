@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-02-01T22:53:18.318618",
+  "hdbscan": {
+    "min_cluster_size": 30,
+    "min_samples": 40,
+    "silhouette": 0.7715,
+    "n_clusters": 734,
+    "noise_pct": 46.3
+  }
+}

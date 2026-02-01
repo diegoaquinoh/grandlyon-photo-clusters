@@ -4,13 +4,13 @@ Automatic discovery and characterization of Points of Interest (POIs) and events
 
 ## Project Overview
 
-| Phase | Description |
-|-------|-------------|
-| **Data Processing** | Ingest, clean, and filter raw photo data (geolocation, timestamps, text) |
-| **Clustering** | Apply spatial clustering (K-Means, Hierarchical, DBSCAN) to identify areas of interest |
-| **Text Mining** | Generate cluster labels using TF-IDF and Association Rules on tags/titles |
-| **Temporal Analysis** | Distinguish permanent landmarks from one-time/recurring events |
-| **Visualization** | Interactive Folium map to explore discovered clusters |
+| Phase                 | Description                                                                            |
+| --------------------- | -------------------------------------------------------------------------------------- |
+| **Data Processing**   | Ingest, clean, and filter raw photo data (geolocation, timestamps, text)               |
+| **Clustering**        | Apply spatial clustering (K-Means, Hierarchical, DBSCAN) to identify areas of interest |
+| **Text Mining**       | Generate cluster labels using TF-IDF and Association Rules on tags/titles              |
+| **Temporal Analysis** | Distinguish permanent landmarks from one-time/recurring events                         |
+| **Visualization**     | Interactive Folium map to explore discovered clusters                                  |
 
 ## Project Structure
 
@@ -25,6 +25,7 @@ Automatic discovery and characterization of Points of Interest (POIs) and events
 ## Setup
 
 **Option 1 – pip:**
+
 ```bash
 python -m venv venv
 source venv/bin/activate
@@ -32,6 +33,7 @@ pip install -r requirements.txt
 ```
 
 **Option 2 – Conda:**
+
 ```bash
 conda env create -f environment.yml
 conda activate grandlyon-photo-clusters
@@ -40,6 +42,7 @@ conda activate grandlyon-photo-clusters
 ## Data Format
 
 Each photo record contains:
+
 ```
 ⟨photo_id, user_id, latitude, longitude, tags, description, dates⟩
 ```
@@ -49,7 +52,7 @@ Access photos at: `https://www.flickr.com/photos/<user_id>/<photo_id>`
 ## Team
 
 - Diego Aquino
-- [Add team members]
 
 ---
-*IF4 Data Mining Project – INSA Lyon 2025-2026*
+
+_IF4 Data Mining Project – INSA Lyon 2025-2026_

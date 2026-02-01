@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-01-19T11:34:27.805464",
+  "timestamp": "2026-02-01T21:58:39.870353",
   "initial_count": 420240,
-  "final_count": 140040,
-  "total_removed": 280200,
-  "retention_rate": 33.32,
+  "final_count": 138488,
+  "total_removed": 281752,
+  "retention_rate": 32.95,
   "steps": [
     {
       "step": "GPS validation",
@@ -44,6 +44,14 @@
       "rows_removed": 27538,
       "removal_percentage": 16.43,
       "reason": "Kept only photos within Lyon area (lat: 45.69-45.82, lon: 4.77-4.92)"
+    },
+    {
+      "step": "Density-based outlier filtering",
+      "rows_before": 140040,
+      "rows_after": 138488,
+      "rows_removed": 1552,
+      "removal_percentage": 1.11,
+      "reason": "Removed isolated points with < 10 neighbors within 0.002\u00b0 radius (low local density)"
     }
   ]
 }

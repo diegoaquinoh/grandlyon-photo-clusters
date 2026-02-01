@@ -4,7 +4,7 @@ Master pipeline script for Grand Lyon Photo Clusters.
 
 Runs the complete pipeline from raw data to final cluster map:
 1. Data Cleaning (load_and_clean_data)
-2. Clustering (K-Means with k=100)
+2. Clustering (HDBSCAN with min_cluster_size=30)
 3. Text Mining (TF-IDF descriptors)
 4. Map Generation (cluster_map.html)
 
@@ -15,7 +15,7 @@ Options:
     --skip-cleaning     Skip cleaning if cleaned data already exists
     --skip-clustering   Skip clustering if clustered data already exists
     --bbox TYPE         Bbox size: 'large', 'metro', or 'center' (default: large)
-    --k N               Number of clusters (default: 100)
+    --min-cluster-size N   HDBSCAN min_cluster_size (default: 30)
     --sample N          Sample size for testing (default: all data)
     --dry-run           Show what would be done without executing
 """
@@ -33,7 +33,7 @@ from src.data_loader import (
     load_and_clean_data, load_cleaned_data, 
     CLEANED_DATA_PATH, DATA_DIR, REPORTS_DIR
 )
-from src.clustering import prepare_coordinates, run_kmeans, get_cluster_stats
+from src.clustering import prepare_coordinates, run_hdbscan, get_cluster_stats, filter_outliers_and_report
 from src.text_mining import run_text_mining
 from src.map_visualization import create_cluster_map
 
@@ -59,7 +59,8 @@ def run_pipeline(
     skip_cleaning: bool = False,
     skip_clustering: bool = False,
     bbox_type: str = "large",
-    n_clusters: int = 100,
+    filter_outliers: bool = False,
+    min_cluster_size: int = 30,
     sample_size: int = None,
     dry_run: bool = False
 ):
@@ -70,7 +71,7 @@ def run_pipeline(
         skip_cleaning: Skip if cleaned data exists
         skip_clustering: Skip if clustered data exists
         bbox_type: Bbox size - 'large', 'metro', or 'center'
-        n_clusters: Number of clusters for K-Means
+        min_cluster_size: HDBSCAN min_cluster_size parameter
         sample_size: Optional sample size for testing
         dry_run: Just show what would be done
     """
@@ -79,7 +80,8 @@ def run_pipeline(
     print_header("GRAND LYON PHOTO CLUSTERS - FULL PIPELINE")
     print(f"Configuration:")
     print(f"  - Bbox: {bbox_type}")
-    print(f"  - Clusters: {n_clusters}")
+    print(f"  - Filter outliers: {filter_outliers}")
+    print(f"  - HDBSCAN min_cluster_size: {min_cluster_size}")
     print(f"  - Sample size: {sample_size or 'all data'}")
     print(f"  - Skip cleaning: {skip_cleaning}")
     print(f"  - Skip clustering: {skip_clustering}")
@@ -88,7 +90,7 @@ def run_pipeline(
     if dry_run:
         print("\n[DRY RUN] Would execute:")
         print("  1. Load and clean raw data → flickr_cleaned.parquet")
-        print("  2. Run K-Means clustering → flickr_clustered.csv")
+        print("  2. Run HDBSCAN clustering → flickr_clustered.csv")
         print("  3. Generate TF-IDF descriptors → cluster_descriptors.json")
         print("  4. Create cluster map → cluster_map.html")
         return
@@ -117,12 +119,17 @@ def run_pipeline(
         print(f"\nSampling {sample_size:,} rows for testing...")
         df = df.sample(n=sample_size, random_state=42)
     
+    # Optional: density-based outlier filtering (stricter: need 10 neighbors in 200m)
+    if filter_outliers:
+        print("\nApplying density-based outlier filter...")
+        df = filter_outliers_and_report(df, min_neighbors=10, radius=0.002)
+    
     print(f"\n✅ Cleaning complete: {len(df):,} photos ready")
     
     # =========================================================================
     # STAGE 3: CLUSTERING
     # =========================================================================
-    print_step(2, 4, "CLUSTERING (K-Means)")
+    print_step(2, 4, "CLUSTERING (HDBSCAN)")
     
     if skip_clustering and CLUSTERED_DATA_PATH.exists():
         print(f"Skipping clustering - loading from: {CLUSTERED_DATA_PATH}")
@@ -132,19 +139,20 @@ def run_pipeline(
             df = df.sample(n=sample_size, random_state=42)
         print(f"Loaded {len(df):,} rows with cluster labels")
     else:
-        print(f"Running K-Means with k={n_clusters}...")
+        print(f"Running HDBSCAN with min_cluster_size={min_cluster_size}...")
         
-        # Prepare coordinates (scaled for K-Means)
-        coords = prepare_coordinates(df, scale=True)
+        # Prepare coordinates (not scaled for HDBSCAN - uses euclidean distance on lat/lon)
+        coords = prepare_coordinates(df, scale=False)
         print(f"  Prepared {len(coords):,} coordinate pairs")
         
-        # Run K-Means
-        labels = run_kmeans(coords, n_clusters=n_clusters, random_state=42)
+        # Run HDBSCAN
+        labels = run_hdbscan(coords, min_cluster_size=min_cluster_size)
         df['cluster'] = labels
         
         # Print stats
         stats = get_cluster_stats(labels)
         print(f"\n  Clusters created: {stats['n_clusters']}")
+        print(f"  Noise points: {stats['n_noise']:,} ({stats['noise_percentage']:.1f}%)")
         print(f"  Largest cluster: {stats['largest_cluster']:,} points")
         print(f"  Median cluster size: {stats['median_cluster_size']}")
         
@@ -170,10 +178,11 @@ def run_pipeline(
     
     create_cluster_map(
         df=df,
-        min_cluster_size=10,
+        min_cluster_size=100,  # Only show clusters with ≥100 points
         show_noise=False,
-        sample_per_cluster=200,
+        sample_per_cluster=50,  # Reduced for HDBSCAN's 924 clusters
         include_heatmap=False,
+        use_polygons=True,  # Use polygon areas instead of individual points
         output_path=CLUSTER_MAP_PATH
     )
     
@@ -214,10 +223,10 @@ def main():
         help="Skip clustering if clustered data exists"
     )
     parser.add_argument(
-        "--k",
+        "--min-cluster-size",
         type=int,
-        default=100,
-        help="Number of clusters (default: 100)"
+        default=30,
+        help="HDBSCAN min_cluster_size parameter (default: 30)"
     )
     parser.add_argument(
         "--sample",
@@ -237,6 +246,11 @@ def main():
         choices=["large", "metro", "center"],
         help="Bbox size: 'large' (1400km²), 'metro' (150km²), 'center' (20km²)"
     )
+    parser.add_argument(
+        "--filter-outliers",
+        action="store_true",
+        help="Apply density-based outlier filtering"
+    )
     
     args = parser.parse_args()
     
@@ -245,7 +259,8 @@ def main():
             skip_cleaning=args.skip_cleaning,
             skip_clustering=args.skip_clustering,
             bbox_type=args.bbox,
-            n_clusters=args.k,
+            filter_outliers=args.filter_outliers,
+            min_cluster_size=args.min_cluster_size,
             sample_size=args.sample,
             dry_run=args.dry_run
         )

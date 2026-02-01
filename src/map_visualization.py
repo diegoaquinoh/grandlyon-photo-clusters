@@ -257,6 +257,112 @@ def generate_cluster_colors(n_clusters: int) -> List[str]:
     return colors
 
 
+def add_cluster_polygons(
+    m: folium.Map,
+    df: pd.DataFrame,
+    min_cluster_size: int = 10,
+    cluster_colors: Optional[List[str]] = None,
+    cluster_descriptors: Optional[dict] = None
+) -> folium.Map:
+    """
+    Add convex hull polygons for each cluster to the map.
+    
+    Much more efficient than individual markers - one polygon per cluster.
+    
+    Args:
+        m: Folium Map object
+        df: DataFrame with photo data (must have 'cluster' column)
+        min_cluster_size: Minimum cluster size to display
+        cluster_colors: Optional list of colors for clusters
+        cluster_descriptors: Optional dict mapping cluster ID to list of top terms
+    
+    Returns:
+        Map with cluster polygons added
+    """
+    from scipy.spatial import ConvexHull
+    
+    if 'cluster' not in df.columns:
+        raise ValueError("DataFrame must have 'cluster' column")
+    
+    # Load descriptors if not provided
+    if cluster_descriptors is None:
+        cluster_descriptors = load_cluster_descriptors()
+    
+    # Get cluster info
+    cluster_counts = df['cluster'].value_counts()
+    unique_clusters = sorted([c for c in df['cluster'].unique() if c != -1])
+    
+    # Filter clusters by size
+    valid_clusters = [c for c in unique_clusters if cluster_counts.get(c, 0) >= min_cluster_size]
+    
+    # Generate colors
+    if cluster_colors is None:
+        cluster_colors = generate_cluster_colors(len(valid_clusters))
+    
+    color_map = {c: cluster_colors[i % len(cluster_colors)] for i, c in enumerate(valid_clusters)}
+    
+    # Create a single feature group for all polygons
+    polygon_group = folium.FeatureGroup(name="Cluster Areas")
+    
+    for cluster_id in valid_clusters:
+        cluster_df = df[df['cluster'] == cluster_id]
+        cluster_size = len(cluster_df)
+        
+        # Get coordinates
+        coords = cluster_df[['lat', 'long']].values
+        
+        # Need at least 3 points for a polygon
+        if len(coords) < 3:
+            continue
+        
+        # Compute convex hull
+        try:
+            hull = ConvexHull(coords)
+            hull_points = coords[hull.vertices]
+            # Close the polygon by adding first point at end
+            hull_points = np.vstack([hull_points, hull_points[0]])
+            # Convert to list of [lat, lon] for folium
+            polygon_coords = hull_points.tolist()
+        except Exception:
+            # If convex hull fails, skip this cluster
+            continue
+        
+        # Get descriptors for this cluster
+        top_terms = cluster_descriptors.get(cluster_id, [])
+        descriptor_str = ", ".join(top_terms[:3]) if top_terms else "(no descriptors)"
+        
+        # Calculate centroid for popup placement
+        centroid_lat = np.mean(coords[:, 0])
+        centroid_lon = np.mean(coords[:, 1])
+        
+        # Build popup content
+        import html
+        safe_descriptor = html.escape(descriptor_str).replace('{', '&#123;').replace('}', '&#125;')
+        
+        popup_html = f"""
+        <div style="min-width: 200px;">
+            <b style="color: {color_map[cluster_id]};">Cluster {cluster_id}</b><br>
+            <b>Size:</b> {cluster_size:,} photos<br>
+            <b>Keywords:</b> <i>{safe_descriptor}</i>
+        </div>
+        """
+        
+        # Create polygon
+        folium.Polygon(
+            locations=polygon_coords,
+            color=color_map[cluster_id],
+            weight=2,
+            fill=True,
+            fill_color=color_map[cluster_id],
+            fill_opacity=0.4,
+            popup=folium.Popup(popup_html, max_width=300),
+            tooltip=f"Cluster {cluster_id}: {descriptor_str} ({cluster_size:,} photos)"
+        ).add_to(polygon_group)
+    
+    polygon_group.add_to(m)
+    return m
+
+
 def add_cluster_markers(
     m: folium.Map,
     df: pd.DataFrame,
@@ -324,18 +430,22 @@ def add_cluster_markers(
         group = folium.FeatureGroup(name=group_name)
         
         for _, row in cluster_df.iterrows():
-            # Build popup content
-            tags = str(row.get('tags', ''))[:80]
+            # Build popup content with HTML escaping AND Jinja2-safe escaping
+            import html
+            raw_tags = str(row.get('tags', ''))[:80]
             if len(str(row.get('tags', ''))) > 80:
-                tags += '...'
-            title = str(row.get('title', 'No title'))[:50]
+                raw_tags += '...'
+            # Escape HTML and replace curly braces (Jinja2 interprets { and })
+            tags = html.escape(raw_tags).replace('{', '&#123;').replace('}', '&#125;')
+            title = html.escape(str(row.get('title', 'No title'))[:50]).replace('{', '&#123;').replace('}', '&#125;')
             year = int(row.get('date_taken_year', 0)) if pd.notna(row.get('date_taken_year')) else 'N/A'
+            safe_descriptor = html.escape(descriptor_str).replace('{', '&#123;').replace('}', '&#125;')
             
             popup_html = f"""
             <div style="min-width: 220px;">
                 <b style="color: {color_map[cluster_id]};">Cluster {cluster_id}</b><br>
                 <b>Size:</b> {cluster_size:,} photos<br>
-                <b>Top terms:</b> <i>{descriptor_str}</i><br>
+                <b>Top terms:</b> <i>{safe_descriptor}</i><br>
                 <hr style="margin: 5px 0;">
                 <b>Title:</b> {title}<br>
                 <b>Year:</b> {year}<br>
@@ -440,6 +550,7 @@ def create_cluster_map(
     show_noise: bool = False,
     sample_per_cluster: int = 200,
     include_heatmap: bool = False,
+    use_polygons: bool = True,
     output_path: Optional[Path] = None
 ) -> folium.Map:
     """
@@ -451,6 +562,7 @@ def create_cluster_map(
         show_noise: Whether to show noise points
         sample_per_cluster: Max points per cluster for performance
         include_heatmap: Whether to add density heatmap layer
+        use_polygons: If True, show cluster areas as polygons; if False, show individual points
         output_path: Path to save HTML (None to skip saving)
     
     Returns:
@@ -476,6 +588,7 @@ def create_cluster_map(
     print(f"Noise: {n_noise:,} ({n_noise/n_total*100:.1f}%)")
     print(f"Total clusters: {len(unique_clusters)}")
     print(f"Clusters >= {min_cluster_size} points: {len(valid_clusters)}")
+    print(f"Visualization mode: {'polygons' if use_polygons else 'markers'}")
     print()
     
     # Create base map
@@ -492,15 +605,23 @@ def create_cluster_map(
         m = add_heatmap(m, clustered_df, name="Cluster Density")
         print("  Added heatmap layer")
     
-    # Add cluster markers
-    m = add_cluster_markers(
-        m, df, 
-        min_cluster_size=min_cluster_size,
-        show_noise=show_noise,
-        sample_per_cluster=sample_per_cluster,
-        cluster_descriptors=cluster_descriptors
-    )
-    print(f"  Added {len(valid_clusters)} cluster layers")
+    # Add cluster visualization (polygons or markers)
+    if use_polygons:
+        m = add_cluster_polygons(
+            m, df,
+            min_cluster_size=min_cluster_size,
+            cluster_descriptors=cluster_descriptors
+        )
+        print(f"  Added {len(valid_clusters)} cluster polygons")
+    else:
+        m = add_cluster_markers(
+            m, df, 
+            min_cluster_size=min_cluster_size,
+            show_noise=show_noise,
+            sample_per_cluster=sample_per_cluster,
+            cluster_descriptors=cluster_descriptors
+        )
+        print(f"  Added {len(valid_clusters)} cluster layers")
     
     # Generate legend info
     cluster_colors = generate_cluster_colors(len(valid_clusters))
