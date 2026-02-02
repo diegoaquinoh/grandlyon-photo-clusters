@@ -1,0 +1,2639 @@
+{
+  "128.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 154.0,
+      "december_ratio": 0.09090909090909091,
+      "summer_ratio": 0.2662337662337662,
+      "peak_month": 8.0
+    }
+  },
+  "120.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 241.0,
+      "december_ratio": 0.04564315352697095,
+      "summer_ratio": 0.07883817427385892,
+      "peak_month": 3.0
+    }
+  },
+  "152.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 559.0,
+      "december_ratio": 0.26118067978533094,
+      "summer_ratio": 0.04114490161001789,
+      "peak_month": 9.0
+    }
+  },
+  "31.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 2683.0,
+      "december_ratio": 0.09019754006708908,
+      "summer_ratio": 0.20163995527394707,
+      "peak_month": 3.0
+    }
+  },
+  "143.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 1840.0,
+      "december_ratio": 0.16684782608695653,
+      "summer_ratio": 0.14945652173913043,
+      "peak_month": 12.0
+    }
+  },
+  "167.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 772.0,
+      "december_ratio": 0.10492227979274611,
+      "summer_ratio": 0.17357512953367876,
+      "peak_month": 6.0
+    }
+  },
+  "158.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 187.0,
+      "december_ratio": 0.09090909090909091,
+      "summer_ratio": 0.0748663101604278,
+      "peak_month": 6.0
+    }
+  },
+  "123.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 391.0,
+      "december_ratio": 0.07161125319693094,
+      "summer_ratio": 0.340153452685422,
+      "peak_month": 7.0
+    }
+  },
+  "195.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 238.0,
+      "december_ratio": 0.046218487394957986,
+      "summer_ratio": 0.29831932773109243,
+      "peak_month": 9.0
+    }
+  },
+  "127.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 224.0,
+      "december_ratio": 0.008928571428571428,
+      "summer_ratio": 0.13392857142857142,
+      "peak_month": 9.0
+    }
+  },
+  "200.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 171.0,
+      "december_ratio": 0.04093567251461988,
+      "summer_ratio": 0.08187134502923976,
+      "peak_month": 9.0
+    }
+  },
+  "32.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 5054.0,
+      "december_ratio": 0.08626830233478433,
+      "summer_ratio": 0.2338741590819153,
+      "peak_month": 9.0
+    }
+  },
+  "218.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 347.0,
+      "december_ratio": 0.1844380403458213,
+      "summer_ratio": 0.1988472622478386,
+      "peak_month": 12.0
+    }
+  },
+  "214.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 272.0,
+      "december_ratio": 0.12867647058823528,
+      "summer_ratio": 0.22794117647058823,
+      "peak_month": 3.0
+    }
+  },
+  "217.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 469.0,
+      "december_ratio": 0.27505330490405117,
+      "summer_ratio": 0.07462686567164178,
+      "peak_month": 12.0
+    }
+  },
+  "118.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 210.0,
+      "december_ratio": 0.6761904761904762,
+      "summer_ratio": 0.02857142857142857,
+      "peak_month": 12.0
+    }
+  },
+  "169.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 1547.0,
+      "december_ratio": 0.259857789269554,
+      "summer_ratio": 0.15255332902391727,
+      "peak_month": 12.0
+    }
+  },
+  "212.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 208.0,
+      "december_ratio": 0.23076923076923078,
+      "summer_ratio": 0.08653846153846154,
+      "peak_month": 12.0
+    }
+  },
+  "125.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 601.0,
+      "december_ratio": 0.07154742096505824,
+      "summer_ratio": 0.18302828618968386,
+      "peak_month": 1.0
+    }
+  },
+  "144.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 146.0,
+      "december_ratio": 0.18493150684931506,
+      "summer_ratio": 0.547945205479452,
+      "peak_month": 8.0
+    }
+  },
+  "132.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 1010.0,
+      "december_ratio": 0.03663366336633663,
+      "summer_ratio": 0.16831683168316833,
+      "peak_month": 5.0
+    }
+  },
+  "224.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 514.0,
+      "december_ratio": 0.38910505836575876,
+      "summer_ratio": 0.301556420233463,
+      "peak_month": 12.0
+    }
+  },
+  "208.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 575.0,
+      "december_ratio": 0.2382608695652174,
+      "summer_ratio": 0.21217391304347827,
+      "peak_month": 12.0
+    }
+  },
+  "192.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 377.0,
+      "december_ratio": 0.13527851458885942,
+      "summer_ratio": 0.11140583554376658,
+      "peak_month": 11.0
+    }
+  },
+  "134.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 301.0,
+      "december_ratio": 0.12292358803986711,
+      "summer_ratio": 0.18604651162790697,
+      "peak_month": 6.0
+    }
+  },
+  "193.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 183.0,
+      "december_ratio": 0.6338797814207651,
+      "summer_ratio": 0.06557377049180328,
+      "peak_month": 12.0
+    }
+  },
+  "59.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 724.0,
+      "december_ratio": 0.12292817679558012,
+      "summer_ratio": 0.287292817679558,
+      "peak_month": 8.0
+    }
+  },
+  "175.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 184.0,
+      "december_ratio": 0.19021739130434784,
+      "summer_ratio": 0.18478260869565216,
+      "peak_month": 12.0
+    }
+  },
+  "207.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 850.0,
+      "december_ratio": 0.3411764705882353,
+      "summer_ratio": 0.12352941176470589,
+      "peak_month": 12.0
+    }
+  },
+  "225.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 1126.0,
+      "december_ratio": 0.40763765541740676,
+      "summer_ratio": 0.11900532859680284,
+      "peak_month": 12.0
+    }
+  },
+  "115.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 436.0,
+      "december_ratio": 0.06422018348623854,
+      "summer_ratio": 0.13073394495412843,
+      "peak_month": 4.0
+    }
+  },
+  "135.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 421.0,
+      "december_ratio": 0.5534441805225653,
+      "summer_ratio": 0.09501187648456057,
+      "peak_month": 12.0
+    }
+  },
+  "194.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 655.0,
+      "december_ratio": 0.3938931297709924,
+      "summer_ratio": 0.09618320610687023,
+      "peak_month": 12.0
+    }
+  },
+  "173.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 1142.0,
+      "december_ratio": 0.3809106830122592,
+      "summer_ratio": 0.14711033274956217,
+      "peak_month": 12.0
+    }
+  },
+  "210.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 132.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.20454545454545456,
+      "peak_month": 10.0
+    }
+  },
+  "180.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 1293.0,
+      "december_ratio": 0.39984532095901004,
+      "summer_ratio": 0.08275328692962104,
+      "peak_month": 12.0
+    }
+  },
+  "68.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 172.0,
+      "december_ratio": 0.046511627906976744,
+      "summer_ratio": 0.05232558139534884,
+      "peak_month": 9.0
+    }
+  },
+  "140.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 465.0,
+      "december_ratio": 0.2129032258064516,
+      "summer_ratio": 0.16989247311827957,
+      "peak_month": 12.0
+    }
+  },
+  "196.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 291.0,
+      "december_ratio": 0.16151202749140894,
+      "summer_ratio": 0.25773195876288657,
+      "peak_month": 12.0
+    }
+  },
+  "53.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 200.0,
+      "december_ratio": 0.1,
+      "summer_ratio": 0.175,
+      "peak_month": 4.0
+    }
+  },
+  "191.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 719.0,
+      "december_ratio": 0.25312934631432543,
+      "summer_ratio": 0.08344923504867872,
+      "peak_month": 12.0
+    }
+  },
+  "174.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 245.0,
+      "december_ratio": 0.06938775510204082,
+      "summer_ratio": 0.21224489795918366,
+      "peak_month": 10.0
+    }
+  },
+  "92.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 129.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 10.0
+    }
+  },
+  "85.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 1026.0,
+      "december_ratio": 0.06432748538011696,
+      "summer_ratio": 0.10136452241715399,
+      "peak_month": 4.0
+    }
+  },
+  "114.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 519.0,
+      "december_ratio": 0.18689788053949905,
+      "summer_ratio": 0.13102119460500963,
+      "peak_month": 4.0
+    }
+  },
+  "204.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 343.0,
+      "december_ratio": 0.15451895043731778,
+      "summer_ratio": 0.15451895043731778,
+      "peak_month": 12.0
+    }
+  },
+  "136.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 656.0,
+      "december_ratio": 0.20884146341463414,
+      "summer_ratio": 0.07164634146341463,
+      "peak_month": 5.0
+    }
+  },
+  "177.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 683.0,
+      "december_ratio": 0.22693997071742314,
+      "summer_ratio": 0.05417276720351391,
+      "peak_month": 12.0
+    }
+  },
+  "139.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 193.0,
+      "december_ratio": 0.06735751295336788,
+      "summer_ratio": 0.05181347150259067,
+      "peak_month": 4.0
+    }
+  },
+  "69.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 263.0,
+      "december_ratio": 0.0038022813688212928,
+      "summer_ratio": 0.0076045627376425855,
+      "peak_month": 1.0
+    }
+  },
+  "124.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 742.0,
+      "december_ratio": 0.09973045822102426,
+      "summer_ratio": 0.16037735849056603,
+      "peak_month": 4.0
+    }
+  },
+  "113.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 431.0,
+      "december_ratio": 0.08352668213457076,
+      "summer_ratio": 0.0765661252900232,
+      "peak_month": 10.0
+    }
+  },
+  "109.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 158.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.012658227848101266,
+      "peak_month": 6.0
+    }
+  },
+  "220.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 454.0,
+      "december_ratio": 0.06387665198237885,
+      "summer_ratio": 0.20044052863436124,
+      "peak_month": 5.0
+    }
+  },
+  "157.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 364.0,
+      "december_ratio": 0.024725274725274724,
+      "summer_ratio": 0.1346153846153846,
+      "peak_month": 5.0
+    }
+  },
+  "165.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 536.0,
+      "december_ratio": 0.05783582089552239,
+      "summer_ratio": 0.3358208955223881,
+      "peak_month": 7.0
+    }
+  },
+  "164.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 691.0,
+      "december_ratio": 0.31982633863965265,
+      "summer_ratio": 0.16063675832127353,
+      "peak_month": 12.0
+    }
+  },
+  "188.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 454.0,
+      "december_ratio": 0.1762114537444934,
+      "summer_ratio": 0.08370044052863436,
+      "peak_month": 12.0
+    }
+  },
+  "86.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 205.0,
+      "december_ratio": 0.15609756097560976,
+      "summer_ratio": 0.0,
+      "peak_month": 1.0
+    }
+  },
+  "211.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 360.0,
+      "december_ratio": 0.6527777777777778,
+      "summer_ratio": 0.03333333333333333,
+      "peak_month": 12.0
+    }
+  },
+  "209.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 225.0,
+      "december_ratio": 0.06222222222222222,
+      "summer_ratio": 0.28,
+      "peak_month": 5.0
+    }
+  },
+  "62.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 194.0,
+      "december_ratio": 0.015463917525773196,
+      "summer_ratio": 0.03608247422680412,
+      "peak_month": 6.0
+    }
+  },
+  "122.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 223.0,
+      "december_ratio": 0.05829596412556054,
+      "summer_ratio": 0.16143497757847533,
+      "peak_month": 5.0
+    }
+  },
+  "161.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 217.0,
+      "december_ratio": 0.12903225806451613,
+      "summer_ratio": 0.2903225806451613,
+      "peak_month": 7.0
+    }
+  },
+  "184.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 128.0,
+      "december_ratio": 0.046875,
+      "summer_ratio": 0.1875,
+      "peak_month": 6.0
+    }
+  },
+  "82.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 332.0,
+      "december_ratio": 0.1746987951807229,
+      "summer_ratio": 0.18373493975903615,
+      "peak_month": 12.0
+    }
+  },
+  "130.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 685.0,
+      "december_ratio": 0.06569343065693431,
+      "summer_ratio": 0.15474452554744525,
+      "peak_month": 6.0
+    }
+  },
+  "94.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 873.0,
+      "december_ratio": 0.37800687285223367,
+      "summer_ratio": 0.17869415807560138,
+      "peak_month": 12.0
+    }
+  },
+  "50.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 150.0,
+      "december_ratio": 0.5066666666666667,
+      "summer_ratio": 0.04666666666666667,
+      "peak_month": 12.0
+    }
+  },
+  "55.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 375.0,
+      "december_ratio": 0.20533333333333334,
+      "summer_ratio": 0.08266666666666667,
+      "peak_month": 6.0
+    }
+  },
+  "56.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 126.0,
+      "december_ratio": 0.10317460317460317,
+      "summer_ratio": 0.023809523809523808,
+      "peak_month": 6.0
+    }
+  },
+  "199.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 145.0,
+      "december_ratio": 0.1103448275862069,
+      "summer_ratio": 0.2620689655172414,
+      "peak_month": 8.0
+    }
+  },
+  "83.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 441.0,
+      "december_ratio": 0.045351473922902494,
+      "summer_ratio": 0.05442176870748299,
+      "peak_month": 11.0
+    }
+  },
+  "151.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 723.0,
+      "december_ratio": 0.14661134163208853,
+      "summer_ratio": 0.20193637621023514,
+      "peak_month": 12.0
+    }
+  },
+  "215.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Quais du Polar",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 383.0,
+      "december_ratio": 0.08877284595300261,
+      "summer_ratio": 0.24804177545691905,
+      "peak_month": 4.0
+    }
+  },
+  "104.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 227.0,
+      "december_ratio": 0.01762114537444934,
+      "summer_ratio": 0.20704845814977973,
+      "peak_month": 5.0
+    }
+  },
+  "129.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Biennale de la Danse",
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 298.0,
+      "december_ratio": 0.09060402684563758,
+      "summer_ratio": 0.19463087248322147,
+      "peak_month": 9.0
+    }
+  },
+  "150.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 401.0,
+      "december_ratio": 0.24438902743142144,
+      "summer_ratio": 0.18453865336658354,
+      "peak_month": 12.0
+    }
+  },
+  "93.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 217.0,
+      "december_ratio": 0.8387096774193549,
+      "summer_ratio": 0.0,
+      "peak_month": 12.0
+    }
+  },
+  "221.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 1256.0,
+      "december_ratio": 0.11146496815286625,
+      "summer_ratio": 0.3463375796178344,
+      "peak_month": 8.0
+    }
+  },
+  "183.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 595.0,
+      "december_ratio": 0.3092436974789916,
+      "summer_ratio": 0.11092436974789915,
+      "peak_month": 12.0
+    }
+  },
+  "6.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Biennale de la Danse",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 218.0,
+      "december_ratio": 0.0045871559633027525,
+      "summer_ratio": 0.28440366972477066,
+      "peak_month": 9.0
+    }
+  },
+  "99.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 937.0,
+      "december_ratio": 0.23159018143009605,
+      "summer_ratio": 0.08751334044823907,
+      "peak_month": 11.0
+    }
+  },
+  "116.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 562.0,
+      "december_ratio": 0.2793594306049822,
+      "summer_ratio": 0.05693950177935943,
+      "peak_month": 12.0
+    }
+  },
+  "131.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 292.0,
+      "december_ratio": 0.0410958904109589,
+      "summer_ratio": 0.0684931506849315,
+      "peak_month": 9.0
+    }
+  },
+  "138.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 259.0,
+      "december_ratio": 0.05019305019305019,
+      "summer_ratio": 0.2084942084942085,
+      "peak_month": 2.0
+    }
+  },
+  "222.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 289.0,
+      "december_ratio": 0.8581314878892734,
+      "summer_ratio": 0.010380622837370242,
+      "peak_month": 12.0
+    }
+  },
+  "149.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 309.0,
+      "december_ratio": 0.13268608414239483,
+      "summer_ratio": 0.1488673139158576,
+      "peak_month": 12.0
+    }
+  },
+  "103.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 521.0,
+      "december_ratio": 0.04990403071017274,
+      "summer_ratio": 0.2495201535508637,
+      "peak_month": 5.0
+    }
+  },
+  "219.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 303.0,
+      "december_ratio": 0.15841584158415842,
+      "summer_ratio": 0.20462046204620463,
+      "peak_month": 5.0
+    }
+  },
+  "106.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 147.0,
+      "december_ratio": 0.047619047619047616,
+      "summer_ratio": 0.3945578231292517,
+      "peak_month": 8.0
+    }
+  },
+  "47.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 338.0,
+      "december_ratio": 0.047337278106508875,
+      "summer_ratio": 0.21893491124260356,
+      "peak_month": 4.0
+    }
+  },
+  "216.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 1072.0,
+      "december_ratio": 0.20615671641791045,
+      "summer_ratio": 0.375,
+      "peak_month": 7.0
+    }
+  },
+  "168.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 362.0,
+      "december_ratio": 0.48066298342541436,
+      "summer_ratio": 0.08011049723756906,
+      "peak_month": 12.0
+    }
+  },
+  "0.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 914.0,
+      "december_ratio": 0.0032822757111597373,
+      "summer_ratio": 0.962800875273523,
+      "peak_month": 7.0
+    }
+  },
+  "153.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 129.0,
+      "december_ratio": 0.031007751937984496,
+      "summer_ratio": 0.8914728682170543,
+      "peak_month": 7.0
+    }
+  },
+  "181.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 331.0,
+      "december_ratio": 0.21148036253776434,
+      "summer_ratio": 0.18731117824773413,
+      "peak_month": 12.0
+    }
+  },
+  "102.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 238.0,
+      "december_ratio": 0.02100840336134454,
+      "summer_ratio": 0.23949579831932774,
+      "peak_month": 4.0
+    }
+  },
+  "197.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 304.0,
+      "december_ratio": 0.3980263157894737,
+      "summer_ratio": 0.1118421052631579,
+      "peak_month": 12.0
+    }
+  },
+  "145.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 757.0,
+      "december_ratio": 0.12549537648612946,
+      "summer_ratio": 0.40290620871862615,
+      "peak_month": 7.0
+    }
+  },
+  "190.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 192.0,
+      "december_ratio": 0.265625,
+      "summer_ratio": 0.22395833333333334,
+      "peak_month": 12.0
+    }
+  },
+  "112.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 522.0,
+      "december_ratio": 0.24329501915708812,
+      "summer_ratio": 0.1417624521072797,
+      "peak_month": 12.0
+    }
+  },
+  "162.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 266.0,
+      "december_ratio": 0.13533834586466165,
+      "summer_ratio": 0.07518796992481203,
+      "peak_month": 11.0
+    }
+  },
+  "186.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 333.0,
+      "december_ratio": 0.15015015015015015,
+      "summer_ratio": 0.16216216216216217,
+      "peak_month": 12.0
+    }
+  },
+  "81.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 389.0,
+      "december_ratio": 0.29562982005141386,
+      "summer_ratio": 0.09511568123393316,
+      "peak_month": 6.0
+    }
+  },
+  "10.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 652.0,
+      "december_ratio": 0.007668711656441718,
+      "summer_ratio": 0.25153374233128833,
+      "peak_month": 6.0
+    }
+  },
+  "110.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 497.0,
+      "december_ratio": 0.15090543259557343,
+      "summer_ratio": 0.2193158953722334,
+      "peak_month": 8.0
+    }
+  },
+  "37.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 294.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 10.0
+    }
+  },
+  "105.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 171.0,
+      "december_ratio": 0.06432748538011696,
+      "summer_ratio": 0.7485380116959064,
+      "peak_month": 7.0
+    }
+  },
+  "54.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 495.0,
+      "december_ratio": 0.06262626262626263,
+      "summer_ratio": 0.3434343434343434,
+      "peak_month": 7.0
+    }
+  },
+  "73.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 141.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 3.0
+    }
+  },
+  "8.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 277.0,
+      "december_ratio": 0.08664259927797834,
+      "summer_ratio": 0.1588447653429603,
+      "peak_month": 1.0
+    }
+  },
+  "51.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 214.0,
+      "december_ratio": 0.20093457943925233,
+      "summer_ratio": 0.14485981308411214,
+      "peak_month": 5.0
+    }
+  },
+  "17.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 191.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 2.0
+    }
+  },
+  "1.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 494.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.016194331983805668,
+      "peak_month": 11.0
+    }
+  },
+  "101.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 222.0,
+      "december_ratio": 0.02702702702702703,
+      "summer_ratio": 0.25675675675675674,
+      "peak_month": 10.0
+    }
+  },
+  "72.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 422.0,
+      "december_ratio": 0.06398104265402843,
+      "summer_ratio": 0.07345971563981042,
+      "peak_month": 9.0
+    }
+  },
+  "42.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 235.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.01702127659574468,
+      "peak_month": 3.0
+    }
+  },
+  "66.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 543.0,
+      "december_ratio": 0.06261510128913444,
+      "summer_ratio": 0.2154696132596685,
+      "peak_month": 9.0
+    }
+  },
+  "65.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 409.0,
+      "december_ratio": 0.03178484107579462,
+      "summer_ratio": 0.1100244498777506,
+      "peak_month": 3.0
+    }
+  },
+  "63.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 173.0,
+      "december_ratio": 0.06358381502890173,
+      "summer_ratio": 0.09826589595375723,
+      "peak_month": 11.0
+    }
+  },
+  "100.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 437.0,
+      "december_ratio": 0.23569794050343248,
+      "summer_ratio": 0.059496567505720827,
+      "peak_month": 12.0
+    }
+  },
+  "91.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 190.0,
+      "december_ratio": 0.1,
+      "summer_ratio": 0.08421052631578947,
+      "peak_month": 10.0
+    }
+  },
+  "171.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 762.0,
+      "december_ratio": 0.11023622047244094,
+      "summer_ratio": 0.19553805774278216,
+      "peak_month": 5.0
+    }
+  },
+  "146.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 272.0,
+      "december_ratio": 0.1213235294117647,
+      "summer_ratio": 0.21691176470588236,
+      "peak_month": 4.0
+    }
+  },
+  "163.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 343.0,
+      "december_ratio": 0.32653061224489793,
+      "summer_ratio": 0.11370262390670553,
+      "peak_month": 12.0
+    }
+  },
+  "88.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 203.0,
+      "december_ratio": 0.08866995073891626,
+      "summer_ratio": 0.019704433497536946,
+      "peak_month": 3.0
+    }
+  },
+  "4.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 622.0,
+      "december_ratio": 0.05144694533762058,
+      "summer_ratio": 0.20739549839228297,
+      "peak_month": 11.0
+    }
+  },
+  "18.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 184.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 4.0
+    }
+  },
+  "28.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 433.0,
+      "december_ratio": 0.013856812933025405,
+      "summer_ratio": 0.10161662817551963,
+      "peak_month": 4.0
+    }
+  },
+  "21.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 149.0,
+      "december_ratio": 0.06040268456375839,
+      "summer_ratio": 0.006711409395973154,
+      "peak_month": 3.0
+    }
+  },
+  "16.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 197.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.7969543147208121,
+      "peak_month": 7.0
+    }
+  },
+  "97.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 336.0,
+      "december_ratio": 0.06845238095238096,
+      "summer_ratio": 0.13095238095238096,
+      "peak_month": 9.0
+    }
+  },
+  "205.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 569.0,
+      "december_ratio": 0.10720562390158173,
+      "summer_ratio": 0.2548330404217926,
+      "peak_month": 10.0
+    }
+  },
+  "98.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 580.0,
+      "december_ratio": 0.08793103448275862,
+      "summer_ratio": 0.13448275862068965,
+      "peak_month": 10.0
+    }
+  },
+  "206.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 138.0,
+      "december_ratio": 0.10869565217391304,
+      "summer_ratio": 0.17391304347826086,
+      "peak_month": 7.0
+    }
+  },
+  "137.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Quais du Polar",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 249.0,
+      "december_ratio": 0.04819277108433735,
+      "summer_ratio": 0.13654618473895583,
+      "peak_month": 6.0
+    }
+  },
+  "49.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 278.0,
+      "december_ratio": 0.01079136690647482,
+      "summer_ratio": 0.07194244604316546,
+      "peak_month": 5.0
+    }
+  },
+  "95.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 162.0,
+      "december_ratio": 0.006172839506172839,
+      "summer_ratio": 0.043209876543209874,
+      "peak_month": 3.0
+    }
+  },
+  "3.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 183.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.2568306010928962,
+      "peak_month": 7.0
+    }
+  },
+  "90.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 2303.0,
+      "december_ratio": 0.1276595744680851,
+      "summer_ratio": 0.25271385149804604,
+      "peak_month": 7.0
+    }
+  },
+  "203.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 250.0,
+      "december_ratio": 0.088,
+      "summer_ratio": 0.012,
+      "peak_month": 5.0
+    }
+  },
+  "187.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 130.0,
+      "december_ratio": 0.015384615384615385,
+      "summer_ratio": 0.23076923076923078,
+      "peak_month": 7.0
+    }
+  },
+  "148.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 161.0,
+      "december_ratio": 0.018633540372670808,
+      "summer_ratio": 0.7701863354037267,
+      "peak_month": 7.0
+    }
+  },
+  "52.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 184.0,
+      "december_ratio": 0.08695652173913043,
+      "summer_ratio": 0.010869565217391304,
+      "peak_month": 3.0
+    }
+  },
+  "198.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 307.0,
+      "december_ratio": 0.019543973941368076,
+      "summer_ratio": 0.05211726384364821,
+      "peak_month": 6.0
+    }
+  },
+  "2.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 1032.0,
+      "december_ratio": 0.045542635658914726,
+      "summer_ratio": 0.1560077519379845,
+      "peak_month": 6.0
+    }
+  },
+  "170.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 162.0,
+      "december_ratio": 0.043209876543209874,
+      "summer_ratio": 0.2037037037037037,
+      "peak_month": 10.0
+    }
+  },
+  "57.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 241.0,
+      "december_ratio": 0.058091286307053944,
+      "summer_ratio": 0.008298755186721992,
+      "peak_month": 9.0
+    }
+  },
+  "117.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 797.0,
+      "december_ratio": 0.002509410288582183,
+      "summer_ratio": 0.0012547051442910915,
+      "peak_month": 4.0
+    }
+  },
+  "179.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 147.0,
+      "december_ratio": 0.04081632653061224,
+      "summer_ratio": 0.0,
+      "peak_month": 5.0
+    }
+  },
+  "119.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 155.0,
+      "december_ratio": 0.0064516129032258064,
+      "summer_ratio": 0.6903225806451613,
+      "peak_month": 7.0
+    }
+  },
+  "176.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 134.0,
+      "december_ratio": 0.06716417910447761,
+      "summer_ratio": 0.014925373134328358,
+      "peak_month": 6.0
+    }
+  },
+  "64.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 270.0,
+      "december_ratio": 0.003703703703703704,
+      "summer_ratio": 0.6814814814814815,
+      "peak_month": 8.0
+    }
+  },
+  "20.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 253.0,
+      "december_ratio": 0.6679841897233202,
+      "summer_ratio": 0.011857707509881422,
+      "peak_month": 12.0
+    }
+  },
+  "84.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 136.0,
+      "december_ratio": 0.08823529411764706,
+      "summer_ratio": 0.10294117647058823,
+      "peak_month": 10.0
+    }
+  },
+  "185.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 207.0,
+      "december_ratio": 0.7632850241545893,
+      "summer_ratio": 0.03864734299516908,
+      "peak_month": 12.0
+    }
+  },
+  "75.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 268.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 10.0
+    }
+  },
+  "76.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 548.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 4.0
+    }
+  },
+  "182.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 170.0,
+      "december_ratio": 0.8,
+      "summer_ratio": 0.011764705882352941,
+      "peak_month": 12.0
+    }
+  },
+  "30.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 128.0,
+      "december_ratio": 0.9453125,
+      "summer_ratio": 0.0078125,
+      "peak_month": 12.0
+    }
+  },
+  "156.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 136.0,
+      "december_ratio": 0.07352941176470588,
+      "summer_ratio": 0.19852941176470587,
+      "peak_month": 10.0
+    }
+  },
+  "45.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 144.0,
+      "december_ratio": 0.027777777777777776,
+      "summer_ratio": 0.0763888888888889,
+      "peak_month": 11.0
+    }
+  },
+  "26.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 195.0,
+      "december_ratio": 0.07179487179487179,
+      "summer_ratio": 0.5076923076923077,
+      "peak_month": 8.0
+    }
+  },
+  "141.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 213.0,
+      "december_ratio": 0.009389671361502348,
+      "summer_ratio": 0.10328638497652583,
+      "peak_month": 3.0
+    }
+  },
+  "48.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 280.0,
+      "december_ratio": 0.11428571428571428,
+      "summer_ratio": 0.04642857142857143,
+      "peak_month": 3.0
+    }
+  },
+  "15.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 220.0,
+      "december_ratio": 0.022727272727272728,
+      "summer_ratio": 0.09545454545454546,
+      "peak_month": 3.0
+    }
+  },
+  "142.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 258.0,
+      "december_ratio": 0.046511627906976744,
+      "summer_ratio": 0.17829457364341086,
+      "peak_month": 7.0
+    }
+  },
+  "202.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 166.0,
+      "december_ratio": 0.24096385542168675,
+      "summer_ratio": 0.030120481927710843,
+      "peak_month": 4.0
+    }
+  },
+  "126.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 145.0,
+      "december_ratio": 0.15862068965517243,
+      "summer_ratio": 0.04827586206896552,
+      "peak_month": 2.0
+    }
+  },
+  "223.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 137.0,
+      "december_ratio": 0.08029197080291971,
+      "summer_ratio": 0.35766423357664234,
+      "peak_month": 2.0
+    }
+  },
+  "35.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 146.0,
+      "december_ratio": 0.136986301369863,
+      "summer_ratio": 0.1095890410958904,
+      "peak_month": 9.0
+    }
+  },
+  "38.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 164.0,
+      "december_ratio": 0.14634146341463414,
+      "summer_ratio": 0.054878048780487805,
+      "peak_month": 4.0
+    }
+  },
+  "178.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 151.0,
+      "december_ratio": 0.10596026490066225,
+      "summer_ratio": 0.7086092715231788,
+      "peak_month": 8.0
+    }
+  },
+  "201.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 126.0,
+      "december_ratio": 0.10317460317460317,
+      "summer_ratio": 0.03968253968253968,
+      "peak_month": 4.0
+    }
+  },
+  "67.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 285.0,
+      "december_ratio": 0.6105263157894737,
+      "summer_ratio": 0.014035087719298246,
+      "peak_month": 12.0
+    }
+  },
+  "172.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 154.0,
+      "december_ratio": 0.06493506493506493,
+      "summer_ratio": 0.15584415584415584,
+      "peak_month": 4.0
+    }
+  },
+  "154.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 152.0,
+      "december_ratio": 0.013157894736842105,
+      "summer_ratio": 0.08552631578947369,
+      "peak_month": 11.0
+    }
+  },
+  "79.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 124.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 11.0
+    }
+  },
+  "27.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 170.0,
+      "december_ratio": 0.01764705882352941,
+      "summer_ratio": 0.0058823529411764705,
+      "peak_month": 6.0
+    }
+  },
+  "29.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 619.0,
+      "december_ratio": 0.008077544426494346,
+      "summer_ratio": 0.004846526655896607,
+      "peak_month": 5.0
+    }
+  },
+  "36.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Biennale de la Danse",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 124.0,
+      "december_ratio": 0.016129032258064516,
+      "summer_ratio": 0.24193548387096775,
+      "peak_month": 9.0
+    }
+  },
+  "71.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 337.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 11.0
+    }
+  },
+  "9.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 443.0,
+      "december_ratio": 0.01580135440180587,
+      "summer_ratio": 0.15349887133182843,
+      "peak_month": 1.0
+    }
+  },
+  "107.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 175.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.005714285714285714,
+      "peak_month": 10.0
+    }
+  },
+  "189.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 358.0,
+      "december_ratio": 0.025139664804469275,
+      "summer_ratio": 0.055865921787709494,
+      "peak_month": 5.0
+    }
+  },
+  "46.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 469.0,
+      "december_ratio": 0.06609808102345416,
+      "summer_ratio": 0.0042643923240938165,
+      "peak_month": 3.0
+    }
+  },
+  "108.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 232.0,
+      "december_ratio": 0.28879310344827586,
+      "summer_ratio": 0.02586206896551724,
+      "peak_month": 3.0
+    }
+  },
+  "14.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 161.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 2.0
+    }
+  },
+  "60.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Biennale de la Danse",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 305.0,
+      "december_ratio": 0.09180327868852459,
+      "summer_ratio": 0.23934426229508196,
+      "peak_month": 7.0
+    }
+  },
+  "61.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Biennale de la Danse",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 276.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 9.0
+    }
+  },
+  "147.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 185.0,
+      "december_ratio": 0.010810810810810811,
+      "summer_ratio": 0.4918918918918919,
+      "peak_month": 8.0
+    }
+  },
+  "41.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 221.0,
+      "december_ratio": 0.9592760180995475,
+      "summer_ratio": 0.0,
+      "peak_month": 12.0
+    }
+  },
+  "33.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Quais du Polar",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 3146.0,
+      "december_ratio": 0.094723458359822,
+      "summer_ratio": 0.2196439923712651,
+      "peak_month": 8.0
+    }
+  },
+  "213.0": {
+    "type": "permanent",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 155.0,
+      "december_ratio": 0.18064516129032257,
+      "summer_ratio": 0.1935483870967742,
+      "peak_month": 12.0
+    }
+  },
+  "87.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 227.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 1.0
+    }
+  },
+  "5.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 142.0,
+      "december_ratio": 0.007042253521126761,
+      "summer_ratio": 0.8873239436619719,
+      "peak_month": 8.0
+    }
+  },
+  "159.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res",
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 132.0,
+      "december_ratio": 0.5227272727272727,
+      "summer_ratio": 0.007575757575757576,
+      "peak_month": 12.0
+    }
+  },
+  "89.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 139.0,
+      "december_ratio": 0.050359712230215826,
+      "summer_ratio": 0.1510791366906475,
+      "peak_month": 11.0
+    }
+  },
+  "111.0": {
+    "type": "permanent",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 227.0,
+      "december_ratio": 0.06607929515418502,
+      "summer_ratio": 0.12334801762114538,
+      "peak_month": 11.0
+    }
+  },
+  "70.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 149.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.013422818791946308,
+      "peak_month": 2.0
+    }
+  },
+  "78.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 154.0,
+      "december_ratio": 0.006493506493506494,
+      "summer_ratio": 0.0,
+      "peak_month": 10.0
+    }
+  },
+  "160.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 132.0,
+      "december_ratio": 0.09848484848484848,
+      "summer_ratio": 0.3181818181818182,
+      "peak_month": 4.0
+    }
+  },
+  "96.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 124.0,
+      "december_ratio": 0.12096774193548387,
+      "summer_ratio": 0.3709677419354839,
+      "peak_month": 7.0
+    }
+  },
+  "12.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 202.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 10.0
+    }
+  },
+  "80.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 491.0,
+      "december_ratio": 0.07331975560081466,
+      "summer_ratio": 0.0,
+      "peak_month": 10.0
+    }
+  },
+  "74.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 317.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.006309148264984227,
+      "peak_month": 4.0
+    }
+  },
+  "24.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 574.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 11.0
+    }
+  },
+  "7.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 154.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 6.0
+    }
+  },
+  "11.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 751.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 5.0
+    }
+  },
+  "13.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 442.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 10.0
+    }
+  },
+  "40.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 180.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 1.0,
+      "peak_month": 7.0
+    }
+  },
+  "39.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 351.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 1.0,
+      "peak_month": 7.0
+    }
+  },
+  "166.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 293.0,
+      "december_ratio": 0.33447098976109213,
+      "summer_ratio": 0.013651877133105802,
+      "peak_month": 12.0
+    }
+  },
+  "58.0": {
+    "type": "permanent",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Quais du Polar",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 132.0,
+      "december_ratio": 0.030303030303030304,
+      "summer_ratio": 0.26515151515151514,
+      "peak_month": 4.0
+    }
+  },
+  "155.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 123.0,
+      "december_ratio": 0.08943089430894309,
+      "summer_ratio": 0.43089430894308944,
+      "peak_month": 7.0
+    }
+  },
+  "23.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 624.0,
+      "december_ratio": 0.5160256410256411,
+      "summer_ratio": 0.0,
+      "peak_month": 12.0
+    }
+  },
+  "133.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Biennale de la Danse"
+    ],
+    "stats": {
+      "total_photos": 126.0,
+      "december_ratio": 0.07936507936507936,
+      "summer_ratio": 0.0,
+      "peak_month": 9.0
+    }
+  },
+  "77.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 355.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 10.0
+    }
+  },
+  "121.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Just4U"
+    ],
+    "stats": {
+      "total_photos": 1700.0,
+      "december_ratio": 0.0029411764705882353,
+      "summer_ratio": 0.001176470588235294,
+      "peak_month": 6.0
+    }
+  },
+  "34.0": {
+    "type": "recurring",
+    "matched_events": [
+      "F\u00eate des Lumi\u00e8res"
+    ],
+    "stats": {
+      "total_photos": 565.0,
+      "december_ratio": 0.4176991150442478,
+      "summer_ratio": 0.2088495575221239,
+      "peak_month": 12.0
+    }
+  },
+  "19.0": {
+    "type": "recurring",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 717.0,
+      "december_ratio": 0.1589958158995816,
+      "summer_ratio": 0.0,
+      "peak_month": 1.0
+    }
+  },
+  "22.0": {
+    "type": "one_time",
+    "matched_events": [
+      "Quais du Polar"
+    ],
+    "stats": {
+      "total_photos": 584.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.0,
+      "peak_month": 4.0
+    }
+  },
+  "25.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 262.0,
+      "december_ratio": 0.007633587786259542,
+      "summer_ratio": 0.0,
+      "peak_month": 5.0
+    }
+  },
+  "44.0": {
+    "type": "recurring",
+    "matched_events": [
+      "Nuits de Fourvi\u00e8re",
+      "Summer Tourism"
+    ],
+    "stats": {
+      "total_photos": 359.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.6740947075208914,
+      "peak_month": 7.0
+    }
+  },
+  "43.0": {
+    "type": "one_time",
+    "matched_events": [],
+    "stats": {
+      "total_photos": 170.0,
+      "december_ratio": 0.0,
+      "summer_ratio": 0.3352941176470588,
+      "peak_month": 3.0
+    }
+  }
+}
