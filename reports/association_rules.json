@@ -1,0 +1,3703 @@
+{
+  "generated_at": "2026-02-02T08:13:17.465169",
+  "method": "hybrid_association_tfidf_v3",
+  "total_clusters": 924,
+  "clusters": {
+    "0": {
+      "name": "Cluster 0",
+      "method": "fallback"
+    },
+    "1": {
+      "name": "Cluster 1",
+      "method": "fallback"
+    },
+    "2": {
+      "name": "Lyautey | Rillieux",
+      "method": "tfidf"
+    },
+    "3": {
+      "name": "Cluster 3",
+      "method": "fallback"
+    },
+    "4": {
+      "name": "Cluster 4",
+      "method": "fallback"
+    },
+    "5": {
+      "name": "Moulin | Georges",
+      "method": "tfidf"
+    },
+    "6": {
+      "name": "Cluster 6",
+      "method": "fallback"
+    },
+    "7": {
+      "name": "Audiovisuel + Bts",
+      "method": "association_rule"
+    },
+    "8": {
+      "name": "Mur | Pierre",
+      "method": "tfidf"
+    },
+    "9": {
+      "name": "Cluster 9",
+      "method": "fallback"
+    },
+    "10": {
+      "name": "Emtvénissieux + Rotonde",
+      "method": "association_rule"
+    },
+    "11": {
+      "name": "Bouddhisme + Dragon",
+      "method": "association_rule"
+    },
+    "12": {
+      "name": "Decine | Capteur",
+      "method": "tfidf"
+    },
+    "13": {
+      "name": "Bocuse | Collonges",
+      "method": "tfidf"
+    },
+    "14": {
+      "name": "Bocuse + Paul",
+      "method": "association_rule"
+    },
+    "15": {
+      "name": "Bron",
+      "method": "tfidf"
+    },
+    "16": {
+      "name": "Bron + Uni",
+      "method": "association_rule"
+    },
+    "17": {
+      "name": "Rhonealpes + Uni",
+      "method": "association_rule"
+    },
+    "18": {
+      "name": "Cluster 18",
+      "method": "fallback"
+    },
+    "19": {
+      "name": "Demi | Lune",
+      "method": "tfidf"
+    },
+    "20": {
+      "name": "Autre + Soie",
+      "method": "association_rule"
+    },
+    "21": {
+      "name": "Villeurbanne | Urbanisme",
+      "method": "tfidf"
+    },
+    "22": {
+      "name": "Football | Playing",
+      "method": "tfidf"
+    },
+    "23": {
+      "name": "Asvel + Rugby",
+      "method": "association_rule"
+    },
+    "24": {
+      "name": "Cluster 24",
+      "method": "fallback"
+    },
+    "25": {
+      "name": "Urba | Urba Urba",
+      "method": "tfidf"
+    },
+    "26": {
+      "name": "Karaté + Kyokushin",
+      "method": "association_rule"
+    },
+    "27": {
+      "name": "Boxe + Villeurbanne",
+      "method": "association_rule"
+    },
+    "28": {
+      "name": "Asvel + Basket",
+      "method": "association_rule"
+    },
+    "29": {
+      "name": "Handisport + Ipca",
+      "method": "association_rule"
+    },
+    "30": {
+      "name": "Championnat | Monde",
+      "method": "tfidf"
+    },
+    "31": {
+      "name": "Fresque | Fresque Murpeint",
+      "method": "tfidf"
+    },
+    "32": {
+      "name": "Deux + Marceldallière",
+      "method": "association_rule"
+    },
+    "33": {
+      "name": "Lost | Cat",
+      "method": "tfidf"
+    },
+    "34": {
+      "name": "Semaine | Parti",
+      "method": "tfidf"
+    },
+    "35": {
+      "name": "Papa | Noel",
+      "method": "tfidf"
+    },
+    "36": {
+      "name": "Oullins | Lever",
+      "method": "tfidf"
+    },
+    "37": {
+      "name": "Live + Show",
+      "method": "association_rule"
+    },
+    "38": {
+      "name": "Festival + Mars",
+      "method": "association_rule"
+    },
+    "39": {
+      "name": "Allons + Moso",
+      "method": "association_rule"
+    },
+    "40": {
+      "name": "Aux + Puces",
+      "method": "association_rule"
+    },
+    "41": {
+      "name": "Artcontemporain + Artwork",
+      "method": "association_rule"
+    },
+    "42": {
+      "name": "Caluire | Jean Moulin",
+      "method": "tfidf"
+    },
+    "43": {
+      "name": "Decay + Pression",
+      "method": "association_rule"
+    },
+    "44": {
+      "name": "Lou + Rugby",
+      "method": "association_rule"
+    },
+    "45": {
+      "name": "Lou + Rugby",
+      "method": "association_rule"
+    },
+    "46": {
+      "name": "Ghost | Concertlive Live",
+      "method": "tfidf"
+    },
+    "47": {
+      "name": "Mariage | Laurent",
+      "method": "tfidf"
+    },
+    "48": {
+      "name": "Barbe | Ile Barbe",
+      "method": "tfidf"
+    },
+    "49": {
+      "name": "Studio",
+      "method": "tfidf"
+    },
+    "50": {
+      "name": "Asmaa | Jade",
+      "method": "tfidf"
+    },
+    "51": {
+      "name": "Flickriosapp + Sharpei",
+      "method": "association_rule"
+    },
+    "52": {
+      "name": "Barbe | Ile",
+      "method": "tfidf"
+    },
+    "53": {
+      "name": "Huilesurtoile + Peinture",
+      "method": "association_rule"
+    },
+    "54": {
+      "name": "Fluviale + Nikon",
+      "method": "association_rule"
+    },
+    "55": {
+      "name": "Doua | Villeurbanne",
+      "method": "tfidf"
+    },
+    "56": {
+      "name": "Repas | Bulle",
+      "method": "tfidf"
+    },
+    "57": {
+      "name": "Chat + Mignon",
+      "method": "association_rule"
+    },
+    "58": {
+      "name": "Villeurbanne | Insa",
+      "method": "tfidf"
+    },
+    "59": {
+      "name": "Urba | Canal",
+      "method": "tfidf"
+    },
+    "60": {
+      "name": "Garnier + Tonygarnier",
+      "method": "association_rule"
+    },
+    "61": {
+      "name": "Cuisine | Fire",
+      "method": "tfidf"
+    },
+    "62": {
+      "name": "Geotagged + Inte",
+      "method": "association_rule"
+    },
+    "63": {
+      "name": "Agir + Des",
+      "method": "association_rule"
+    },
+    "64": {
+      "name": "Flower | Spring",
+      "method": "tfidf"
+    },
+    "65": {
+      "name": "Bilan + Des",
+      "method": "association_rule"
+    },
+    "66": {
+      "name": "Cluster 66",
+      "method": "fallback"
+    },
+    "67": {
+      "name": "Streetart Streetart | Streetart",
+      "method": "tfidf"
+    },
+    "68": {
+      "name": "Curve + Line",
+      "method": "association_rule"
+    },
+    "69": {
+      "name": "Villeurbanne | Format",
+      "method": "tfidf"
+    },
+    "70": {
+      "name": "Filter + Flickriosapp",
+      "method": "association_rule"
+    },
+    "71": {
+      "name": "Pro + Win",
+      "method": "association_rule"
+    },
+    "72": {
+      "name": "Allons + Moso",
+      "method": "association_rule"
+    },
+    "73": {
+      "name": "Travaux | Exte",
+      "method": "tfidf"
+    },
+    "74": {
+      "name": "Filter + Flickriosapp",
+      "method": "association_rule"
+    },
+    "75": {
+      "name": "Sierra | Nouilles",
+      "method": "tfidf"
+    },
+    "76": {
+      "name": "Chambreétudiant + Lesbellesannées",
+      "method": "association_rule"
+    },
+    "77": {
+      "name": "15Ème + Biennale",
+      "method": "association_rule"
+    },
+    "78": {
+      "name": "Inte | Chat",
+      "method": "tfidf"
+    },
+    "79": {
+      "name": "Session | Inkwell",
+      "method": "tfidf"
+    },
+    "80": {
+      "name": "Villeurbanne | Piscine",
+      "method": "tfidf"
+    },
+    "81": {
+      "name": "None",
+      "method": "tfidf"
+    },
+    "82": {
+      "name": "Rhônealpes + Villeurbanne",
+      "method": "association_rule"
+    },
+    "83": {
+      "name": "Urba | Urba Urba",
+      "method": "tfidf"
+    },
+    "84": {
+      "name": "Nuits Sonores | Sonores",
+      "method": "tfidf"
+    },
+    "85": {
+      "name": "Lyb Onlylyon | Lyb",
+      "method": "tfidf"
+    },
+    "86": {
+      "name": "Rhônealpes + Villeurbanne",
+      "method": "association_rule"
+    },
+    "87": {
+      "name": "Perpetua",
+      "method": "tfidf"
+    },
+    "88": {
+      "name": "Tbd + Urm",
+      "method": "association_rule"
+    },
+    "89": {
+      "name": "Aden | Unknown",
+      "method": "tfidf"
+    },
+    "90": {
+      "name": "Xproii",
+      "method": "tfidf"
+    },
+    "91": {
+      "name": "Frmusique + Toïtoïlezinc",
+      "method": "association_rule"
+    },
+    "92": {
+      "name": "Music + Toitoilezinc",
+      "method": "association_rule"
+    },
+    "93": {
+      "name": "Hôtel + Hôtelariana",
+      "method": "association_rule"
+    },
+    "94": {
+      "name": "Ciel + Gratte",
+      "method": "association_rule"
+    },
+    "95": {
+      "name": "Gig + Stage",
+      "method": "association_rule"
+    },
+    "96": {
+      "name": "Cco + Live",
+      "method": "association_rule"
+    },
+    "97": {
+      "name": "Sac | Bronze",
+      "method": "tfidf"
+    },
+    "98": {
+      "name": "Ciel + Gratte",
+      "method": "association_rule"
+    },
+    "99": {
+      "name": "Afriquedel + Spectacle",
+      "method": "association_rule"
+    },
+    "100": {
+      "name": "Villeurbanne | Mairie",
+      "method": "tfidf"
+    },
+    "101": {
+      "name": "Villeurbanne | Tnp",
+      "method": "tfidf"
+    },
+    "102": {
+      "name": "Villeurbanne | Brumpicts",
+      "method": "tfidf"
+    },
+    "103": {
+      "name": "Mark Ii | Mark",
+      "method": "tfidf"
+    },
+    "104": {
+      "name": "Gerland | Alpha",
+      "method": "tfidf"
+    },
+    "105": {
+      "name": "Azizaoubaita + Fabricetiozzo",
+      "method": "association_rule"
+    },
+    "106": {
+      "name": "Jump + Tricks",
+      "method": "association_rule"
+    },
+    "107": {
+      "name": "Moto | Rights",
+      "method": "tfidf"
+    },
+    "108": {
+      "name": "Boirongranger + Bordeaux",
+      "method": "association_rule"
+    },
+    "109": {
+      "name": "Lou + Rugby",
+      "method": "association_rule"
+    },
+    "110": {
+      "name": "Art + Streetart",
+      "method": "association_rule"
+    },
+    "111": {
+      "name": "Footféminin + Psg",
+      "method": "association_rule"
+    },
+    "112": {
+      "name": "Lou + Ubb",
+      "method": "association_rule"
+    },
+    "113": {
+      "name": "Lou + Toulouse",
+      "method": "association_rule"
+    },
+    "114": {
+      "name": "Frankreich + Olympique",
+      "method": "association_rule"
+    },
+    "115": {
+      "name": "Retraites Manifestation | Retraites",
+      "method": "tfidf"
+    },
+    "116": {
+      "name": "Pose | Murs",
+      "method": "tfidf"
+    },
+    "117": {
+      "name": "Snow | Cat",
+      "method": "tfidf"
+    },
+    "118": {
+      "name": "Lysistrata | Noise",
+      "method": "tfidf"
+    },
+    "119": {
+      "name": "Ninkasikao | Ninkasi",
+      "method": "tfidf"
+    },
+    "120": {
+      "name": "Gerland + Ninkasi",
+      "method": "association_rule"
+    },
+    "121": {
+      "name": "Livepic + Pentax",
+      "method": "association_rule"
+    },
+    "122": {
+      "name": "Alpes + Tige",
+      "method": "association_rule"
+    },
+    "123": {
+      "name": "Issmys",
+      "method": "tfidf"
+    },
+    "124": {
+      "name": "Issmys",
+      "method": "tfidf"
+    },
+    "125": {
+      "name": "Contest | Skatepark",
+      "method": "tfidf"
+    },
+    "126": {
+      "name": "Programcefam + Termsummeri",
+      "method": "association_rule"
+    },
+    "127": {
+      "name": "Flickriosapp + Placesanssouci",
+      "method": "association_rule"
+    },
+    "128": {
+      "name": "Manifestation + Ville",
+      "method": "association_rule"
+    },
+    "129": {
+      "name": "Paris Paris | Paris",
+      "method": "tfidf"
+    },
+    "130": {
+      "name": "Oumar Ly | Oumarly",
+      "method": "tfidf"
+    },
+    "131": {
+      "name": "Ancienne | Flickrmobile",
+      "method": "tfidf"
+    },
+    "132": {
+      "name": "Informatique Inte | Informatique",
+      "method": "tfidf"
+    },
+    "133": {
+      "name": "Dxo + Fêtedeslumières",
+      "method": "association_rule"
+    },
+    "134": {
+      "name": "Concrete | Crane",
+      "method": "tfidf"
+    },
+    "135": {
+      "name": "Villa | Institut",
+      "method": "tfidf"
+    },
+    "136": {
+      "name": "Institut | Lumiere",
+      "method": "tfidf"
+    },
+    "137": {
+      "name": "Lyoncity Villedelyon | Villedelyon Lyoncity",
+      "method": "tfidf"
+    },
+    "138": {
+      "name": "Pont + Schuman",
+      "method": "association_rule"
+    },
+    "139": {
+      "name": "Institutlumière + Lumièremusée",
+      "method": "association_rule"
+    },
+    "140": {
+      "name": "Lumière + Muséelumière",
+      "method": "association_rule"
+    },
+    "141": {
+      "name": "Show + Spectacle",
+      "method": "association_rule"
+    },
+    "142": {
+      "name": "Geotagged + Inte",
+      "method": "association_rule"
+    },
+    "143": {
+      "name": "Rhônealps + Tattoos",
+      "method": "association_rule"
+    },
+    "144": {
+      "name": "Rnbm",
+      "method": "tfidf"
+    },
+    "145": {
+      "name": "Mini | Hall",
+      "method": "tfidf"
+    },
+    "146": {
+      "name": "Japan + Touch",
+      "method": "association_rule"
+    },
+    "147": {
+      "name": "Danse + Insa",
+      "method": "association_rule"
+    },
+    "148": {
+      "name": "Humanitaire + Karnaval",
+      "method": "association_rule"
+    },
+    "149": {
+      "name": "Insa + Villeurbanne",
+      "method": "association_rule"
+    },
+    "150": {
+      "name": "Insa + Villeurbanne",
+      "method": "association_rule"
+    },
+    "151": {
+      "name": "Insa + Villeurbanne",
+      "method": "association_rule"
+    },
+    "152": {
+      "name": "Arbre | Paris",
+      "method": "tfidf"
+    },
+    "153": {
+      "name": "Vaise | Train",
+      "method": "tfidf"
+    },
+    "154": {
+      "name": "Brannan",
+      "method": "tfidf"
+    },
+    "155": {
+      "name": "Baduk + Weiqi",
+      "method": "association_rule"
+    },
+    "156": {
+      "name": "Weiqi | Baduk Go",
+      "method": "tfidf"
+    },
+    "157": {
+      "name": "Octobre + Villeurbanne",
+      "method": "association_rule"
+    },
+    "158": {
+      "name": "Convention + Octogônes",
+      "method": "association_rule"
+    },
+    "159": {
+      "name": "Dollcon + Ldoll",
+      "method": "association_rule"
+    },
+    "160": {
+      "name": "Aeg + Ccg",
+      "method": "association_rule"
+    },
+    "161": {
+      "name": "Japan + Touch",
+      "method": "association_rule"
+    },
+    "162": {
+      "name": "Bjd + Ldoll",
+      "method": "association_rule"
+    },
+    "163": {
+      "name": "Cluster 163",
+      "method": "fallback"
+    },
+    "164": {
+      "name": "Cluster 164",
+      "method": "fallback"
+    },
+    "165": {
+      "name": "Cluster 165",
+      "method": "fallback"
+    },
+    "166": {
+      "name": "Normal | Xproii",
+      "method": "tfidf"
+    },
+    "167": {
+      "name": "Xproii",
+      "method": "tfidf"
+    },
+    "168": {
+      "name": "Xproii",
+      "method": "tfidf"
+    },
+    "169": {
+      "name": "Perpetua | Amaro",
+      "method": "tfidf"
+    },
+    "170": {
+      "name": "Amaro | Perpetua",
+      "method": "tfidf"
+    },
+    "171": {
+      "name": "Xproii",
+      "method": "tfidf"
+    },
+    "172": {
+      "name": "Xproii",
+      "method": "tfidf"
+    },
+    "173": {
+      "name": "Cimetière + Loyasse",
+      "method": "association_rule"
+    },
+    "174": {
+      "name": "Tunnel | Tunnel Croix",
+      "method": "tfidf"
+    },
+    "175": {
+      "name": "Sada | Brasilfr Sada",
+      "method": "tfidf"
+    },
+    "176": {
+      "name": "Jean + Macé",
+      "method": "association_rule"
+    },
+    "177": {
+      "name": "Retraites Partisocialiste | Ps Manifestation",
+      "method": "tfidf"
+    },
+    "178": {
+      "name": "Gouttedeau + Macro",
+      "method": "association_rule"
+    },
+    "179": {
+      "name": "Rousse | Croix",
+      "method": "tfidf"
+    },
+    "180": {
+      "name": "Archives | Publictransport",
+      "method": "tfidf"
+    },
+    "181": {
+      "name": "Exposition | Eljlyon",
+      "method": "tfidf"
+    },
+    "182": {
+      "name": "Bal Bal | Bal",
+      "method": "tfidf"
+    },
+    "183": {
+      "name": "Chartreux + Des",
+      "method": "association_rule"
+    },
+    "184": {
+      "name": "Courtmétrage + Miel",
+      "method": "association_rule"
+    },
+    "185": {
+      "name": "Moulage + Musées",
+      "method": "association_rule"
+    },
+    "186": {
+      "name": "Partisocialiste + Retraites",
+      "method": "association_rule"
+    },
+    "187": {
+      "name": "Landscape + Ville",
+      "method": "association_rule"
+    },
+    "188": {
+      "name": "Blackmetal + Pagan",
+      "method": "association_rule"
+    },
+    "189": {
+      "name": "Fourvière + Juillet",
+      "method": "association_rule"
+    },
+    "190": {
+      "name": "Boottocht | Saone",
+      "method": "tfidf"
+    },
+    "191": {
+      "name": "Locomotive | Gare Perrache",
+      "method": "tfidf"
+    },
+    "192": {
+      "name": "Gay | Pride",
+      "method": "tfidf"
+    },
+    "193": {
+      "name": "Sudo | Chocolat",
+      "method": "tfidf"
+    },
+    "194": {
+      "name": "Gay + Pride",
+      "method": "association_rule"
+    },
+    "195": {
+      "name": "Gaypride | Gay Pride",
+      "method": "tfidf"
+    },
+    "196": {
+      "name": "Gare + Marché",
+      "method": "association_rule"
+    },
+    "197": {
+      "name": "Eglise | Vitrail",
+      "method": "tfidf"
+    },
+    "198": {
+      "name": "Halle | Ghost",
+      "method": "tfidf"
+    },
+    "199": {
+      "name": "Mer | Poisson",
+      "method": "tfidf"
+    },
+    "200": {
+      "name": "Norbert",
+      "method": "tfidf"
+    },
+    "201": {
+      "name": "Poisson | Ange",
+      "method": "tfidf"
+    },
+    "202": {
+      "name": "Lenny + Lennykravitz",
+      "method": "association_rule"
+    },
+    "203": {
+      "name": "Concert + Garnier",
+      "method": "association_rule"
+    },
+    "204": {
+      "name": "Cluster 204",
+      "method": "fallback"
+    },
+    "205": {
+      "name": "Arch | Amorphis",
+      "method": "tfidf"
+    },
+    "206": {
+      "name": "Capturedalive + Concert",
+      "method": "association_rule"
+    },
+    "207": {
+      "name": "Garnier + Music",
+      "method": "association_rule"
+    },
+    "208": {
+      "name": "Singer | Dancer",
+      "method": "tfidf"
+    },
+    "209": {
+      "name": "Comédie + Résiste",
+      "method": "association_rule"
+    },
+    "210": {
+      "name": "Concert + Hotel",
+      "method": "association_rule"
+    },
+    "211": {
+      "name": "Metallica | Metallica Metallica",
+      "method": "tfidf"
+    },
+    "212": {
+      "name": "Manifestation Manifestation | Manifestation",
+      "method": "tfidf"
+    },
+    "213": {
+      "name": "Avalanche + Cup",
+      "method": "association_rule"
+    },
+    "214": {
+      "name": "Mosaic | Installation",
+      "method": "tfidf"
+    },
+    "215": {
+      "name": "Filter + Flickriosapp",
+      "method": "association_rule"
+    },
+    "216": {
+      "name": "Froide + Matinée",
+      "method": "association_rule"
+    },
+    "217": {
+      "name": "Cluster 217",
+      "method": "fallback"
+    },
+    "218": {
+      "name": "Cluster 218",
+      "method": "fallback"
+    },
+    "219": {
+      "name": "Pont | Confluence",
+      "method": "tfidf"
+    },
+    "220": {
+      "name": "Canon + Concert",
+      "method": "association_rule"
+    },
+    "221": {
+      "name": "Concert + Marchégare",
+      "method": "association_rule"
+    },
+    "222": {
+      "name": "Marchégare + Show",
+      "method": "association_rule"
+    },
+    "223": {
+      "name": "Architecture + Confluence",
+      "method": "association_rule"
+    },
+    "224": {
+      "name": "Confluence | River",
+      "method": "tfidf"
+    },
+    "225": {
+      "name": "Lyr | Lyr Lyr",
+      "method": "tfidf"
+    },
+    "226": {
+      "name": "Pont | Pont Raymond",
+      "method": "tfidf"
+    },
+    "227": {
+      "name": "Concert + Phm",
+      "method": "association_rule"
+    },
+    "228": {
+      "name": "Jardin | Skyline",
+      "method": "tfidf"
+    },
+    "229": {
+      "name": "Pict | Pict Pict",
+      "method": "tfidf"
+    },
+    "230": {
+      "name": "Canuts + Des",
+      "method": "association_rule"
+    },
+    "231": {
+      "name": "Lions + Patinoire",
+      "method": "association_rule"
+    },
+    "232": {
+      "name": "Hockey + Lions",
+      "method": "association_rule"
+    },
+    "233": {
+      "name": "Art + Show",
+      "method": "association_rule"
+    },
+    "234": {
+      "name": "Pont + Raymondbarre",
+      "method": "association_rule"
+    },
+    "235": {
+      "name": "Architecture + Confluence",
+      "method": "association_rule"
+    },
+    "236": {
+      "name": "Danse | Mains",
+      "method": "tfidf"
+    },
+    "237": {
+      "name": "Comitérhône + Ong",
+      "method": "association_rule"
+    },
+    "238": {
+      "name": "Bokeh + Day",
+      "method": "association_rule"
+    },
+    "239": {
+      "name": "Cluster 239",
+      "method": "fallback"
+    },
+    "240": {
+      "name": "Lowlight | Light",
+      "method": "tfidf"
+    },
+    "241": {
+      "name": "Confluences | Confluence",
+      "method": "tfidf"
+    },
+    "242": {
+      "name": "Pool + Swimming",
+      "method": "association_rule"
+    },
+    "243": {
+      "name": "Renouveler + Une",
+      "method": "association_rule"
+    },
+    "244": {
+      "name": "Confluence + Villedelyon",
+      "method": "association_rule"
+    },
+    "245": {
+      "name": "Confluence | Confluence Confluence",
+      "method": "tfidf"
+    },
+    "246": {
+      "name": "Euronews | Confluence",
+      "method": "tfidf"
+    },
+    "247": {
+      "name": "Dec + Garden",
+      "method": "association_rule"
+    },
+    "248": {
+      "name": "Juillet + Ota",
+      "method": "association_rule"
+    },
+    "249": {
+      "name": "Euronews | Confluence",
+      "method": "tfidf"
+    },
+    "250": {
+      "name": "Lune | Juillet",
+      "method": "tfidf"
+    },
+    "251": {
+      "name": "Landscape + Musée",
+      "method": "association_rule"
+    },
+    "252": {
+      "name": "Accor | Culture",
+      "method": "tfidf"
+    },
+    "253": {
+      "name": "Confluence | Orange",
+      "method": "tfidf"
+    },
+    "254": {
+      "name": "Creativecommons | Commons",
+      "method": "tfidf"
+    },
+    "255": {
+      "name": "Confluence + Twunch",
+      "method": "association_rule"
+    },
+    "256": {
+      "name": "Art + Biennaledelyon",
+      "method": "association_rule"
+    },
+    "257": {
+      "name": "Rambaud | Midi",
+      "method": "tfidf"
+    },
+    "258": {
+      "name": "Confluence | Confluence Frankrig",
+      "method": "tfidf"
+    },
+    "259": {
+      "name": "Lasco | Croixrousse",
+      "method": "tfidf"
+    },
+    "260": {
+      "name": "Architecture + Brotteaux",
+      "method": "association_rule"
+    },
+    "261": {
+      "name": "Confluence + Orange",
+      "method": "association_rule"
+    },
+    "262": {
+      "name": "Confluence | Orange",
+      "method": "tfidf"
+    },
+    "263": {
+      "name": "Confluence | Lyoncity",
+      "method": "tfidf"
+    },
+    "264": {
+      "name": "Confluence | Gauche",
+      "method": "tfidf"
+    },
+    "265": {
+      "name": "Fete + Lumieres",
+      "method": "association_rule"
+    },
+    "266": {
+      "name": "Businessdrink + Modesaas",
+      "method": "association_rule"
+    },
+    "267": {
+      "name": "Confluence | Lfl",
+      "method": "tfidf"
+    },
+    "268": {
+      "name": "Confluence | Confluence Confluence",
+      "method": "tfidf"
+    },
+    "269": {
+      "name": "Confluence | Confluence Confluence",
+      "method": "tfidf"
+    },
+    "270": {
+      "name": "Confluence + Lasucrière",
+      "method": "association_rule"
+    },
+    "271": {
+      "name": "Hôtel + Région",
+      "method": "association_rule"
+    },
+    "272": {
+      "name": "Digital + Summit",
+      "method": "association_rule"
+    },
+    "273": {
+      "name": "Starwars",
+      "method": "tfidf"
+    },
+    "274": {
+      "name": "Mondes Flottants | Mondes",
+      "method": "tfidf"
+    },
+    "275": {
+      "name": "Confluence | Lego",
+      "method": "tfidf"
+    },
+    "276": {
+      "name": "Artcontemporain + Biennaledelyon",
+      "method": "association_rule"
+    },
+    "277": {
+      "name": "Cluster 277",
+      "method": "fallback"
+    },
+    "278": {
+      "name": "Artcontemporain + Biennale",
+      "method": "association_rule"
+    },
+    "279": {
+      "name": "Musée + Sucrière",
+      "method": "association_rule"
+    },
+    "280": {
+      "name": "Onlylyon Onlylyon | Onlylyon",
+      "method": "tfidf"
+    },
+    "281": {
+      "name": "Scaronne | Ter",
+      "method": "tfidf"
+    },
+    "282": {
+      "name": "Confluence + Nikon",
+      "method": "association_rule"
+    },
+    "283": {
+      "name": "Blood + Dead",
+      "method": "association_rule"
+    },
+    "284": {
+      "name": "Confluences + Musée",
+      "method": "association_rule"
+    },
+    "285": {
+      "name": "Confluences + Musée",
+      "method": "association_rule"
+    },
+    "286": {
+      "name": "Confluences + Musée",
+      "method": "association_rule"
+    },
+    "287": {
+      "name": "Confluence | Confluence Confluence",
+      "method": "tfidf"
+    },
+    "288": {
+      "name": "Art + Confluence",
+      "method": "association_rule"
+    },
+    "289": {
+      "name": "Confluence | Confluence Confluence",
+      "method": "tfidf"
+    },
+    "290": {
+      "name": "Confluence + Light",
+      "method": "association_rule"
+    },
+    "291": {
+      "name": "Confluence | Light Light",
+      "method": "tfidf"
+    },
+    "292": {
+      "name": "Architecture + Confluence",
+      "method": "association_rule"
+    },
+    "293": {
+      "name": "Ibanez | Vieille",
+      "method": "tfidf"
+    },
+    "294": {
+      "name": "Confluence | Confluence Confluence",
+      "method": "tfidf"
+    },
+    "295": {
+      "name": "Décembre + Rouge",
+      "method": "association_rule"
+    },
+    "296": {
+      "name": "Est + Photogeorges",
+      "method": "association_rule"
+    },
+    "297": {
+      "name": "Show + Sonic",
+      "method": "association_rule"
+    },
+    "298": {
+      "name": "Musique + Sonic",
+      "method": "association_rule"
+    },
+    "299": {
+      "name": "Sanscontact + Territoriales",
+      "method": "association_rule"
+    },
+    "300": {
+      "name": "Confluences + Des",
+      "method": "association_rule"
+    },
+    "301": {
+      "name": "Geotagged + Ville",
+      "method": "association_rule"
+    },
+    "302": {
+      "name": "Confluences + Musée",
+      "method": "association_rule"
+    },
+    "303": {
+      "name": "Convention + Octogônes",
+      "method": "association_rule"
+    },
+    "304": {
+      "name": "Rhonealpes + Ruedebonnel",
+      "method": "association_rule"
+    },
+    "305": {
+      "name": "Confluences + Des",
+      "method": "association_rule"
+    },
+    "306": {
+      "name": "Tram | Spring",
+      "method": "tfidf"
+    },
+    "307": {
+      "name": "Exhibition | Work",
+      "method": "tfidf"
+    },
+    "308": {
+      "name": "Mdc | Mdc Mdc",
+      "method": "tfidf"
+    },
+    "309": {
+      "name": "Museum + Musée",
+      "method": "association_rule"
+    },
+    "310": {
+      "name": "Confluences + Musée",
+      "method": "association_rule"
+    },
+    "311": {
+      "name": "Fransa + Franța",
+      "method": "association_rule"
+    },
+    "312": {
+      "name": "Garage | Hall",
+      "method": "tfidf"
+    },
+    "313": {
+      "name": "Creativecommons + Lyons",
+      "method": "association_rule"
+    },
+    "314": {
+      "name": "Unesco + Worldheritage",
+      "method": "association_rule"
+    },
+    "315": {
+      "name": "Confluences + Musée",
+      "method": "association_rule"
+    },
+    "316": {
+      "name": "Confluences + Des",
+      "method": "association_rule"
+    },
+    "317": {
+      "name": "Confluences + Musée",
+      "method": "association_rule"
+    },
+    "318": {
+      "name": "Confluences + Des",
+      "method": "association_rule"
+    },
+    "319": {
+      "name": "Des + Musée",
+      "method": "association_rule"
+    },
+    "320": {
+      "name": "2Ème + Confluences",
+      "method": "association_rule"
+    },
+    "321": {
+      "name": "Confluences + Des",
+      "method": "association_rule"
+    },
+    "322": {
+      "name": "Blandine | Eglise",
+      "method": "tfidf"
+    },
+    "323": {
+      "name": "Rivercruise | River",
+      "method": "tfidf"
+    },
+    "324": {
+      "name": "Borgonha | Rivercruise Road",
+      "method": "tfidf"
+    },
+    "325": {
+      "name": "River | Sunnyday",
+      "method": "tfidf"
+    },
+    "326": {
+      "name": "Filter + Lyonfrance",
+      "method": "association_rule"
+    },
+    "327": {
+      "name": "7Ème + Lights",
+      "method": "association_rule"
+    },
+    "328": {
+      "name": "Coworking + Mutualisation",
+      "method": "association_rule"
+    },
+    "329": {
+      "name": "Dîner + Entre",
+      "method": "association_rule"
+    },
+    "330": {
+      "name": "Metal + Show",
+      "method": "association_rule"
+    },
+    "331": {
+      "name": "Metalshow + Nikon",
+      "method": "association_rule"
+    },
+    "332": {
+      "name": "Music + Transbordeur",
+      "method": "association_rule"
+    },
+    "333": {
+      "name": "Manifestation Mai | Manifestation",
+      "method": "tfidf"
+    },
+    "334": {
+      "name": "Musique + Ragga",
+      "method": "association_rule"
+    },
+    "335": {
+      "name": "Canon + Lights",
+      "method": "association_rule"
+    },
+    "336": {
+      "name": "Transbordeur | Live",
+      "method": "tfidf"
+    },
+    "337": {
+      "name": "Letransbordeur + Shannonleto",
+      "method": "association_rule"
+    },
+    "338": {
+      "name": "Com + From",
+      "method": "association_rule"
+    },
+    "339": {
+      "name": "Halles | Address",
+      "method": "tfidf"
+    },
+    "340": {
+      "name": "Citadis | Part Dieu",
+      "method": "tfidf"
+    },
+    "341": {
+      "name": "Perl + Pts",
+      "method": "association_rule"
+    },
+    "342": {
+      "name": "Dieu + Part",
+      "method": "association_rule"
+    },
+    "343": {
+      "name": "Video",
+      "method": "tfidf"
+    },
+    "344": {
+      "name": "Photostream Photostream | Photostream",
+      "method": "tfidf"
+    },
+    "345": {
+      "name": "Halles | Concrete",
+      "method": "tfidf"
+    },
+    "346": {
+      "name": "Architecture + Pentax",
+      "method": "association_rule"
+    },
+    "347": {
+      "name": "Auditorium | Partdieu",
+      "method": "tfidf"
+    },
+    "348": {
+      "name": "Commercial | Sansflash",
+      "method": "tfidf"
+    },
+    "349": {
+      "name": "Dieu + Part",
+      "method": "association_rule"
+    },
+    "350": {
+      "name": "Evénement + Septembre",
+      "method": "association_rule"
+    },
+    "351": {
+      "name": "Crayon | Partdieu",
+      "method": "tfidf"
+    },
+    "352": {
+      "name": "Radisson | Crayon",
+      "method": "tfidf"
+    },
+    "353": {
+      "name": "Adcet | Tour",
+      "method": "tfidf"
+    },
+    "354": {
+      "name": "Tour + Tower",
+      "method": "association_rule"
+    },
+    "355": {
+      "name": "Rhonealpes + Voiturepilote",
+      "method": "association_rule"
+    },
+    "356": {
+      "name": "Halles | Halles Paul",
+      "method": "tfidf"
+    },
+    "357": {
+      "name": "Incity + Tower",
+      "method": "association_rule"
+    },
+    "358": {
+      "name": "Botanique + Jardin",
+      "method": "association_rule"
+    },
+    "359": {
+      "name": "Mediadesign | Mdh",
+      "method": "tfidf"
+    },
+    "360": {
+      "name": "Radissonblu Hotel | Radissonblu",
+      "method": "tfidf"
+    },
+    "361": {
+      "name": "Flore | Instaart",
+      "method": "tfidf"
+    },
+    "362": {
+      "name": "Vintage | Neige",
+      "method": "tfidf"
+    },
+    "363": {
+      "name": "Interpol + Khôra",
+      "method": "association_rule"
+    },
+    "364": {
+      "name": "3Ème + Flacking",
+      "method": "association_rule"
+    },
+    "365": {
+      "name": "Tete | Dor",
+      "method": "tfidf"
+    },
+    "366": {
+      "name": "Part Dieu | Part",
+      "method": "tfidf"
+    },
+    "367": {
+      "name": "Ter | Part",
+      "method": "tfidf"
+    },
+    "368": {
+      "name": "Roux | Chaton",
+      "method": "tfidf"
+    },
+    "369": {
+      "name": "Manifestation | Fresque",
+      "method": "tfidf"
+    },
+    "370": {
+      "name": "Côté + Pont",
+      "method": "association_rule"
+    },
+    "371": {
+      "name": "Passerelle | Neige",
+      "method": "tfidf"
+    },
+    "372": {
+      "name": "7Ème + Lights",
+      "method": "association_rule"
+    },
+    "373": {
+      "name": "Onlylyon Lyf | Lyf",
+      "method": "tfidf"
+    },
+    "374": {
+      "name": "Tennis | Openparc",
+      "method": "tfidf"
+    },
+    "375": {
+      "name": "Dor | Autumn Fall",
+      "method": "tfidf"
+    },
+    "376": {
+      "name": "Cité + Internationale",
+      "method": "association_rule"
+    },
+    "377": {
+      "name": "Pride | Gay",
+      "method": "tfidf"
+    },
+    "378": {
+      "name": "Onlylyon | Onlylyon Onlylyon",
+      "method": "tfidf"
+    },
+    "379": {
+      "name": "Sleeping | Parcdelatetedor",
+      "method": "tfidf"
+    },
+    "380": {
+      "name": "Autumn + Parcdelatêtedor",
+      "method": "association_rule"
+    },
+    "381": {
+      "name": "Fleur + Nikon",
+      "method": "association_rule"
+    },
+    "382": {
+      "name": "Serres | Instapic",
+      "method": "tfidf"
+    },
+    "383": {
+      "name": "Lake | Dor",
+      "method": "tfidf"
+    },
+    "384": {
+      "name": "Greenhouse | Serre",
+      "method": "tfidf"
+    },
+    "385": {
+      "name": "Tower | Vieuxlyon",
+      "method": "tfidf"
+    },
+    "386": {
+      "name": "Contest + Descente",
+      "method": "association_rule"
+    },
+    "387": {
+      "name": "Serre | Botany",
+      "method": "tfidf"
+    },
+    "388": {
+      "name": "Flowers | Flor",
+      "method": "tfidf"
+    },
+    "389": {
+      "name": "Accrobranche + Pirate",
+      "method": "association_rule"
+    },
+    "390": {
+      "name": "Cosplay + Tête",
+      "method": "association_rule"
+    },
+    "391": {
+      "name": "Aout + Cosplay",
+      "method": "association_rule"
+    },
+    "392": {
+      "name": "Dor + Tete",
+      "method": "association_rule"
+    },
+    "393": {
+      "name": "Pransiya | Dor",
+      "method": "tfidf"
+    },
+    "394": {
+      "name": "Paix + Passerelle",
+      "method": "association_rule"
+    },
+    "395": {
+      "name": "Caluireetcuire + Roses",
+      "method": "association_rule"
+    },
+    "396": {
+      "name": "Cosplay + Cosplaygirl",
+      "method": "association_rule"
+    },
+    "397": {
+      "name": "Piano | Geek Chic",
+      "method": "tfidf"
+    },
+    "398": {
+      "name": "Ain + Nicolas",
+      "method": "association_rule"
+    },
+    "399": {
+      "name": "Parcdelatêtedor + Serre",
+      "method": "association_rule"
+    },
+    "400": {
+      "name": "Beach | Nyc",
+      "method": "tfidf"
+    },
+    "401": {
+      "name": "Panorama | Super",
+      "method": "tfidf"
+    },
+    "402": {
+      "name": "4Ème + Graffiti",
+      "method": "association_rule"
+    },
+    "403": {
+      "name": "Fleur + Tête",
+      "method": "association_rule"
+    },
+    "404": {
+      "name": "Serre | Botanicgarden",
+      "method": "tfidf"
+    },
+    "405": {
+      "name": "Sunnyday | Bluesky",
+      "method": "tfidf"
+    },
+    "406": {
+      "name": "Roof | Cours",
+      "method": "tfidf"
+    },
+    "407": {
+      "name": "Passerelle | Roche",
+      "method": "tfidf"
+    },
+    "408": {
+      "name": "Roseraie | Roseraie Roseraie",
+      "method": "tfidf"
+    },
+    "409": {
+      "name": "Roseraie | Cosplay",
+      "method": "tfidf"
+    },
+    "410": {
+      "name": "Ngc | Tetedor",
+      "method": "tfidf"
+    },
+    "411": {
+      "name": "Rose | Roseraie",
+      "method": "tfidf"
+    },
+    "412": {
+      "name": "Quais | Pasted",
+      "method": "tfidf"
+    },
+    "413": {
+      "name": "Chartreux + Des",
+      "method": "association_rule"
+    },
+    "414": {
+      "name": "Bal | Subsistances",
+      "method": "tfidf"
+    },
+    "415": {
+      "name": "Giraffe | Girafe",
+      "method": "tfidf"
+    },
+    "416": {
+      "name": "Brasserie | Brasserie Georges",
+      "method": "tfidf"
+    },
+    "417": {
+      "name": "Art + Biennaledelyon",
+      "method": "association_rule"
+    },
+    "418": {
+      "name": "Zoo | Novembre",
+      "method": "tfidf"
+    },
+    "419": {
+      "name": "Concert + Live",
+      "method": "association_rule"
+    },
+    "420": {
+      "name": "Prison | Fotos",
+      "method": "tfidf"
+    },
+    "421": {
+      "name": "Sticker | Saone",
+      "method": "tfidf"
+    },
+    "422": {
+      "name": "Sonores | Nuits",
+      "method": "tfidf"
+    },
+    "423": {
+      "name": "Mdh + Mediadesign",
+      "method": "association_rule"
+    },
+    "424": {
+      "name": "Zoo | Dor",
+      "method": "tfidf"
+    },
+    "425": {
+      "name": "Zoo | Amour",
+      "method": "tfidf"
+    },
+    "426": {
+      "name": "Des + Lumières",
+      "method": "association_rule"
+    },
+    "427": {
+      "name": "Cor + Hiver",
+      "method": "association_rule"
+    },
+    "428": {
+      "name": "Centauresse | Lake Water",
+      "method": "tfidf"
+    },
+    "429": {
+      "name": "Des + Lumières",
+      "method": "association_rule"
+    },
+    "430": {
+      "name": "Chocolat + Robes",
+      "method": "association_rule"
+    },
+    "431": {
+      "name": "Iot + Sido",
+      "method": "association_rule"
+    },
+    "432": {
+      "name": "Contemporain | Grdiii",
+      "method": "tfidf"
+    },
+    "433": {
+      "name": "Untitled | Salon",
+      "method": "tfidf"
+    },
+    "434": {
+      "name": "Anniversaire + Jules",
+      "method": "association_rule"
+    },
+    "435": {
+      "name": "Benvautier + Expo",
+      "method": "association_rule"
+    },
+    "436": {
+      "name": "Flux | Flux Flux",
+      "method": "tfidf"
+    },
+    "437": {
+      "name": "Pasted Paper | Pasted",
+      "method": "tfidf"
+    },
+    "438": {
+      "name": "Canuts | Silk",
+      "method": "tfidf"
+    },
+    "439": {
+      "name": "Forumled + Led",
+      "method": "association_rule"
+    },
+    "440": {
+      "name": "Flickrmobile Flickriosapp | Flickrmobile",
+      "method": "tfidf"
+    },
+    "441": {
+      "name": "Cité + Internationale",
+      "method": "association_rule"
+    },
+    "442": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "443": {
+      "name": "Silk | Jacquard",
+      "method": "tfidf"
+    },
+    "444": {
+      "name": "Conference",
+      "method": "tfidf"
+    },
+    "445": {
+      "name": "Internationale | Couleur Patman",
+      "method": "tfidf"
+    },
+    "446": {
+      "name": "Library + Wlic",
+      "method": "association_rule"
+    },
+    "447": {
+      "name": "Filter + Flickriosapp",
+      "method": "association_rule"
+    },
+    "448": {
+      "name": "Eau + Water",
+      "method": "association_rule"
+    },
+    "449": {
+      "name": "Bird + Oiseau",
+      "method": "association_rule"
+    },
+    "450": {
+      "name": "Ptdo + Supermimil",
+      "method": "association_rule"
+    },
+    "451": {
+      "name": "Artcontemporain + Biennaledelyon",
+      "method": "association_rule"
+    },
+    "452": {
+      "name": "Maclyon | Mac",
+      "method": "tfidf"
+    },
+    "453": {
+      "name": "Fdl + Supermimil",
+      "method": "association_rule"
+    },
+    "454": {
+      "name": "Art + Musée",
+      "method": "association_rule"
+    },
+    "455": {
+      "name": "Confluences + Des",
+      "method": "association_rule"
+    },
+    "456": {
+      "name": "Basilique + Fourvière",
+      "method": "association_rule"
+    },
+    "457": {
+      "name": "Cathedral | Lyoncathedral",
+      "method": "tfidf"
+    },
+    "458": {
+      "name": "Arts + Des",
+      "method": "association_rule"
+    },
+    "459": {
+      "name": "Grandlyon + Rhônealpes",
+      "method": "association_rule"
+    },
+    "460": {
+      "name": "Basilique | Basilique Basilique",
+      "method": "tfidf"
+    },
+    "461": {
+      "name": "Artifice + Fourviere",
+      "method": "association_rule"
+    },
+    "462": {
+      "name": "Zombie | Zombies Zombie",
+      "method": "tfidf"
+    },
+    "463": {
+      "name": "Improvidence + Www",
+      "method": "association_rule"
+    },
+    "464": {
+      "name": "Nashville | Impro",
+      "method": "tfidf"
+    },
+    "465": {
+      "name": "Nashville | Impro",
+      "method": "tfidf"
+    },
+    "466": {
+      "name": "Basilique | Dame",
+      "method": "tfidf"
+    },
+    "467": {
+      "name": "Clarendon | Hotel",
+      "method": "tfidf"
+    },
+    "468": {
+      "name": "Harveybarrison | Hbarrison",
+      "method": "tfidf"
+    },
+    "469": {
+      "name": "Basilique + Martin",
+      "method": "association_rule"
+    },
+    "470": {
+      "name": "Exif | Geo",
+      "method": "tfidf"
+    },
+    "471": {
+      "name": "Museu | Borgonha",
+      "method": "tfidf"
+    },
+    "472": {
+      "name": "Ainay + Basilique",
+      "method": "association_rule"
+    },
+    "473": {
+      "name": "Ainay + Basilique",
+      "method": "association_rule"
+    },
+    "474": {
+      "name": "Perpetua | Clarendon",
+      "method": "tfidf"
+    },
+    "475": {
+      "name": "Grandlyon Light | Grandlyon",
+      "method": "tfidf"
+    },
+    "476": {
+      "name": "Hôtel + Perrache",
+      "method": "association_rule"
+    },
+    "477": {
+      "name": "Perrache | Tgv",
+      "method": "tfidf"
+    },
+    "478": {
+      "name": "Zombie | Zombie Walk",
+      "method": "tfidf"
+    },
+    "479": {
+      "name": "Students | University",
+      "method": "tfidf"
+    },
+    "480": {
+      "name": "Art + Container",
+      "method": "association_rule"
+    },
+    "481": {
+      "name": "Perrache | Gare",
+      "method": "tfidf"
+    },
+    "482": {
+      "name": "Perrache | Lyonperrache",
+      "method": "tfidf"
+    },
+    "483": {
+      "name": "Pont Wilson | Wilson",
+      "method": "tfidf"
+    },
+    "484": {
+      "name": "Onlylyon Ilovelyon | Igersfrance",
+      "method": "tfidf"
+    },
+    "485": {
+      "name": "Cruise + River",
+      "method": "association_rule"
+    },
+    "486": {
+      "name": "Lumignons | Gallo",
+      "method": "tfidf"
+    },
+    "487": {
+      "name": "Antiquaille + Lumiere",
+      "method": "association_rule"
+    },
+    "488": {
+      "name": "Guignol | Moulin",
+      "method": "tfidf"
+    },
+    "489": {
+      "name": "Manguin + Stiere",
+      "method": "association_rule"
+    },
+    "490": {
+      "name": "Exif | Arosa",
+      "method": "tfidf"
+    },
+    "491": {
+      "name": "Nuits | Odeon",
+      "method": "tfidf"
+    },
+    "492": {
+      "name": "Européenne + Partis",
+      "method": "association_rule"
+    },
+    "493": {
+      "name": "Fourviere + Nuits",
+      "method": "association_rule"
+    },
+    "494": {
+      "name": "Frankrike | Pont",
+      "method": "tfidf"
+    },
+    "495": {
+      "name": "Ville Lieux | Basilque",
+      "method": "tfidf"
+    },
+    "496": {
+      "name": "Onlylyon Lyn | Lyn",
+      "method": "tfidf"
+    },
+    "497": {
+      "name": "Pont | Piscine",
+      "method": "tfidf"
+    },
+    "498": {
+      "name": "Apnée + Open",
+      "method": "association_rule"
+    },
+    "499": {
+      "name": "Apnée + Open",
+      "method": "association_rule"
+    },
+    "500": {
+      "name": "Maria | Model",
+      "method": "tfidf"
+    },
+    "501": {
+      "name": "Streetart | Address",
+      "method": "tfidf"
+    },
+    "502": {
+      "name": "Maristes | Solitude",
+      "method": "tfidf"
+    },
+    "503": {
+      "name": "Tkkim + Vernissage",
+      "method": "association_rule"
+    },
+    "504": {
+      "name": "Croixrousse | Kesa",
+      "method": "tfidf"
+    },
+    "505": {
+      "name": "Mg Mg | Roman",
+      "method": "tfidf"
+    },
+    "506": {
+      "name": "Lever | Lever Leverdesoleil",
+      "method": "tfidf"
+    },
+    "507": {
+      "name": "Romain + Théâtre",
+      "method": "association_rule"
+    },
+    "508": {
+      "name": "Frankrijk + Ilce",
+      "method": "association_rule"
+    },
+    "509": {
+      "name": "Gallo | Gallo Romain",
+      "method": "tfidf"
+    },
+    "510": {
+      "name": "Galloromain + Museomix",
+      "method": "association_rule"
+    },
+    "511": {
+      "name": "Lugdunum + Romains",
+      "method": "association_rule"
+    },
+    "512": {
+      "name": "Pont | Wilson",
+      "method": "tfidf"
+    },
+    "513": {
+      "name": "Wilson | Pont Wilson",
+      "method": "tfidf"
+    },
+    "514": {
+      "name": "Exif | Romain",
+      "method": "tfidf"
+    },
+    "515": {
+      "name": "Inside | Panorama",
+      "method": "tfidf"
+    },
+    "516": {
+      "name": "Echo | Sonore",
+      "method": "tfidf"
+    },
+    "517": {
+      "name": "Basilica | Dame",
+      "method": "tfidf"
+    },
+    "518": {
+      "name": "Winter + Лион",
+      "method": "association_rule"
+    },
+    "519": {
+      "name": "Rodrigo | Live Musique",
+      "method": "tfidf"
+    },
+    "520": {
+      "name": "Harveybarrison + Hbarrison",
+      "method": "association_rule"
+    },
+    "521": {
+      "name": "Neige | Neige Grandlyon",
+      "method": "tfidf"
+    },
+    "522": {
+      "name": "Elton + Fourviere",
+      "method": "association_rule"
+    },
+    "523": {
+      "name": "Pride | Gay Pride",
+      "method": "tfidf"
+    },
+    "524": {
+      "name": "Pont | Retraites",
+      "method": "tfidf"
+    },
+    "525": {
+      "name": "Monlyon + Onlylyon",
+      "method": "association_rule"
+    },
+    "526": {
+      "name": "Fourvière + Nuits",
+      "method": "association_rule"
+    },
+    "527": {
+      "name": "England | Panoramicview Panoramic",
+      "method": "tfidf"
+    },
+    "528": {
+      "name": "Fourviere | Panoramicview",
+      "method": "tfidf"
+    },
+    "529": {
+      "name": "Battle + Des",
+      "method": "association_rule"
+    },
+    "530": {
+      "name": "Lumiere + Theatre",
+      "method": "association_rule"
+    },
+    "531": {
+      "name": "Lyautey | Fountain",
+      "method": "tfidf"
+    },
+    "532": {
+      "name": "Skate | Skatepark",
+      "method": "tfidf"
+    },
+    "533": {
+      "name": "Basilique + Fourvière",
+      "method": "association_rule"
+    },
+    "534": {
+      "name": "Frankrijk + Ilce",
+      "method": "association_rule"
+    },
+    "535": {
+      "name": "Light Illuminations | River",
+      "method": "tfidf"
+    },
+    "536": {
+      "name": "Protest | Blood Attack",
+      "method": "tfidf"
+    },
+    "537": {
+      "name": "Basilique + Dame",
+      "method": "association_rule"
+    },
+    "538": {
+      "name": "Exif | Make Apple",
+      "method": "tfidf"
+    },
+    "539": {
+      "name": "Crs + Retraite",
+      "method": "association_rule"
+    },
+    "540": {
+      "name": "Berges | Lightfestival",
+      "method": "tfidf"
+    },
+    "541": {
+      "name": "Fleuve + River",
+      "method": "association_rule"
+    },
+    "542": {
+      "name": "Basilique Basilique | Basilique",
+      "method": "tfidf"
+    },
+    "543": {
+      "name": "Fourvière + Saone",
+      "method": "association_rule"
+    },
+    "544": {
+      "name": "Dame + Notre",
+      "method": "association_rule"
+    },
+    "545": {
+      "name": "Bmx + Bowl",
+      "method": "association_rule"
+    },
+    "546": {
+      "name": "Bmx + Skatepark",
+      "method": "association_rule"
+    },
+    "547": {
+      "name": "Dame + Notre",
+      "method": "association_rule"
+    },
+    "548": {
+      "name": "Feuxdartifice | Lights Premier",
+      "method": "tfidf"
+    },
+    "549": {
+      "name": "Feudartifice + Juillet",
+      "method": "association_rule"
+    },
+    "550": {
+      "name": "Basilique + Fourvière",
+      "method": "association_rule"
+    },
+    "551": {
+      "name": "Fireworks | Basilica",
+      "method": "tfidf"
+    },
+    "552": {
+      "name": "Artifice + Juillet",
+      "method": "association_rule"
+    },
+    "553": {
+      "name": "Artifice + Mattt",
+      "method": "association_rule"
+    },
+    "554": {
+      "name": "Basilique + Dame",
+      "method": "association_rule"
+    },
+    "555": {
+      "name": "Neobyzantine | Basilica",
+      "method": "tfidf"
+    },
+    "556": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "557": {
+      "name": "Dame | Basilique",
+      "method": "tfidf"
+    },
+    "558": {
+      "name": "Basilique + Fourvière",
+      "method": "association_rule"
+    },
+    "559": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "560": {
+      "name": "Cluster 560",
+      "method": "fallback"
+    },
+    "561": {
+      "name": "Cruise + River",
+      "method": "association_rule"
+    },
+    "562": {
+      "name": "Dame + Notre",
+      "method": "association_rule"
+    },
+    "563": {
+      "name": "Fransa + Franța",
+      "method": "association_rule"
+    },
+    "564": {
+      "name": "Church + Colline",
+      "method": "association_rule"
+    },
+    "565": {
+      "name": "Fourvière + Peste",
+      "method": "association_rule"
+    },
+    "566": {
+      "name": "Basilica + Basilique",
+      "method": "association_rule"
+    },
+    "567": {
+      "name": "Dame + Notre",
+      "method": "association_rule"
+    },
+    "568": {
+      "name": "Ceiling | Basilique",
+      "method": "tfidf"
+    },
+    "569": {
+      "name": "Basilique | Basilique Dame",
+      "method": "tfidf"
+    },
+    "570": {
+      "name": "Dame + Notre",
+      "method": "association_rule"
+    },
+    "571": {
+      "name": "Atra + Francophonie",
+      "method": "association_rule"
+    },
+    "572": {
+      "name": "Croixrousse | Rousse",
+      "method": "tfidf"
+    },
+    "573": {
+      "name": "Basilica | Onlylon",
+      "method": "tfidf"
+    },
+    "574": {
+      "name": "Basilique | Basilique Basilique",
+      "method": "tfidf"
+    },
+    "575": {
+      "name": "Fourviere | Basilique",
+      "method": "tfidf"
+    },
+    "576": {
+      "name": "Bellecour + Merciere",
+      "method": "association_rule"
+    },
+    "577": {
+      "name": "Fransa + Franța",
+      "method": "association_rule"
+    },
+    "578": {
+      "name": "Church + Dame",
+      "method": "association_rule"
+    },
+    "579": {
+      "name": "Bird Water | Swan",
+      "method": "tfidf"
+    },
+    "580": {
+      "name": "Passerelle | Pont",
+      "method": "tfidf"
+    },
+    "581": {
+      "name": "Gospel + Gospels",
+      "method": "association_rule"
+    },
+    "582": {
+      "name": "Biennale + Lavieenrose",
+      "method": "association_rule"
+    },
+    "583": {
+      "name": "Des + Lumières",
+      "method": "association_rule"
+    },
+    "584": {
+      "name": "Ville Lieux | Tsugi",
+      "method": "tfidf"
+    },
+    "585": {
+      "name": "Croixrousse | Steel",
+      "method": "tfidf"
+    },
+    "586": {
+      "name": "Cluster 586",
+      "method": "fallback"
+    },
+    "587": {
+      "name": "Heure + Juin",
+      "method": "association_rule"
+    },
+    "588": {
+      "name": "Rose | Roses",
+      "method": "tfidf"
+    },
+    "589": {
+      "name": "Stilllife | Naturemorte",
+      "method": "tfidf"
+    },
+    "590": {
+      "name": "Biennale Danse | Xphotographer",
+      "method": "tfidf"
+    },
+    "591": {
+      "name": "Lombard | Pierrealain",
+      "method": "tfidf"
+    },
+    "592": {
+      "name": "Bourse | Decembre Fete",
+      "method": "tfidf"
+    },
+    "593": {
+      "name": "Monuments Paysages | Landscapes",
+      "method": "tfidf"
+    },
+    "594": {
+      "name": "Tsugi | Sonores",
+      "method": "tfidf"
+    },
+    "595": {
+      "name": "Croixrousse | Bistrot",
+      "method": "tfidf"
+    },
+    "596": {
+      "name": "Palais Bourse | Bourse",
+      "method": "tfidf"
+    },
+    "597": {
+      "name": "Cordeliers | Creativecommons",
+      "method": "tfidf"
+    },
+    "598": {
+      "name": "Flickriosapp + Leparadis",
+      "method": "association_rule"
+    },
+    "599": {
+      "name": "Aux + Van",
+      "method": "association_rule"
+    },
+    "600": {
+      "name": "Des + Light",
+      "method": "association_rule"
+    },
+    "601": {
+      "name": "Illuminations | Illuminations Ville",
+      "method": "tfidf"
+    },
+    "602": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "603": {
+      "name": "Zombie | Walk Croixrousse",
+      "method": "tfidf"
+    },
+    "604": {
+      "name": "Origo + Restaurant",
+      "method": "association_rule"
+    },
+    "605": {
+      "name": "Croixrousse | Soleil",
+      "method": "tfidf"
+    },
+    "606": {
+      "name": "Croixrousse | Pasted",
+      "method": "tfidf"
+    },
+    "607": {
+      "name": "Eolight | Passerelle",
+      "method": "tfidf"
+    },
+    "608": {
+      "name": "Passerelle | Eolight",
+      "method": "tfidf"
+    },
+    "609": {
+      "name": "Celebrity + Chef",
+      "method": "association_rule"
+    },
+    "610": {
+      "name": "Restaurant | Bistrot",
+      "method": "tfidf"
+    },
+    "611": {
+      "name": "Vitrine | Magasin",
+      "method": "tfidf"
+    },
+    "612": {
+      "name": "Lion | Magasin",
+      "method": "tfidf"
+    },
+    "613": {
+      "name": "Lafayette | Pont Lafayette",
+      "method": "tfidf"
+    },
+    "614": {
+      "name": "Antonin | Poncet",
+      "method": "tfidf"
+    },
+    "615": {
+      "name": "Jules | Burgundy",
+      "method": "tfidf"
+    },
+    "616": {
+      "name": "Lafayette | Pont Lafayette",
+      "method": "tfidf"
+    },
+    "617": {
+      "name": "Lafayette | Pont",
+      "method": "tfidf"
+    },
+    "618": {
+      "name": "Jaunes | Bowl",
+      "method": "tfidf"
+    },
+    "619": {
+      "name": "Republique | Fete",
+      "method": "tfidf"
+    },
+    "620": {
+      "name": "Carnot | Finiculaire",
+      "method": "tfidf"
+    },
+    "621": {
+      "name": "Restaurant | Gastronomie",
+      "method": "tfidf"
+    },
+    "622": {
+      "name": "Camino | Vieuxlyon",
+      "method": "tfidf"
+    },
+    "623": {
+      "name": "Dieu + Hôtel",
+      "method": "association_rule"
+    },
+    "624": {
+      "name": "Travaux | Dieu",
+      "method": "tfidf"
+    },
+    "625": {
+      "name": "Dieu | Grand Dieu",
+      "method": "tfidf"
+    },
+    "626": {
+      "name": "Flickriosapp + Flickrmobile",
+      "method": "association_rule"
+    },
+    "627": {
+      "name": "Des + Jacobins",
+      "method": "association_rule"
+    },
+    "628": {
+      "name": "Dieu | Grand Dieu",
+      "method": "tfidf"
+    },
+    "629": {
+      "name": "Croixrousse | Vogue",
+      "method": "tfidf"
+    },
+    "630": {
+      "name": "Lr Ilce | Oss",
+      "method": "tfidf"
+    },
+    "631": {
+      "name": "Cluster 631",
+      "method": "fallback"
+    },
+    "632": {
+      "name": "Les + Oeil",
+      "method": "association_rule"
+    },
+    "633": {
+      "name": "Biennale + Places",
+      "method": "association_rule"
+    },
+    "634": {
+      "name": "Jacobins | Gay Pride",
+      "method": "tfidf"
+    },
+    "635": {
+      "name": "Festa + Luci",
+      "method": "association_rule"
+    },
+    "636": {
+      "name": "Lesbian | Pride",
+      "method": "tfidf"
+    },
+    "637": {
+      "name": "Fontaine + Jacobins",
+      "method": "association_rule"
+    },
+    "638": {
+      "name": "Lugdunum + Roller",
+      "method": "association_rule"
+    },
+    "639": {
+      "name": "Mdc + Passages",
+      "method": "association_rule"
+    },
+    "640": {
+      "name": "Fnac | Bellecour",
+      "method": "tfidf"
+    },
+    "641": {
+      "name": "Alligator + Dubai",
+      "method": "association_rule"
+    },
+    "642": {
+      "name": "Pentax + Sigma",
+      "method": "association_rule"
+    },
+    "643": {
+      "name": "Impressions | Confluence",
+      "method": "tfidf"
+    },
+    "644": {
+      "name": "Vincent | Passerelle",
+      "method": "tfidf"
+    },
+    "645": {
+      "name": "Fresque Lyonnais | Fresque",
+      "method": "tfidf"
+    },
+    "646": {
+      "name": "Along River | Georges",
+      "method": "tfidf"
+    },
+    "647": {
+      "name": "River + Saône",
+      "method": "association_rule"
+    },
+    "648": {
+      "name": "Baduk + Jeudego",
+      "method": "association_rule"
+    },
+    "649": {
+      "name": "Georges | Passerelle",
+      "method": "tfidf"
+    },
+    "650": {
+      "name": "Georges | Georges Eglise",
+      "method": "tfidf"
+    },
+    "651": {
+      "name": "Danse | Mexicaine",
+      "method": "tfidf"
+    },
+    "652": {
+      "name": "Creative + Creativecommons",
+      "method": "association_rule"
+    },
+    "653": {
+      "name": "Music + Musique",
+      "method": "association_rule"
+    },
+    "654": {
+      "name": "Saxotaz | Ilove",
+      "method": "tfidf"
+    },
+    "655": {
+      "name": "Saxotaz | Ilove",
+      "method": "tfidf"
+    },
+    "656": {
+      "name": "Fall + Saxotaz",
+      "method": "association_rule"
+    },
+    "657": {
+      "name": "Café + Coffee",
+      "method": "association_rule"
+    },
+    "658": {
+      "name": "Louis | Famille",
+      "method": "tfidf"
+    },
+    "659": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "660": {
+      "name": "Xproii | Dog Ilove",
+      "method": "tfidf"
+    },
+    "661": {
+      "name": "Cluster 661",
+      "method": "fallback"
+    },
+    "662": {
+      "name": "Fall + Saxotaz",
+      "method": "association_rule"
+    },
+    "663": {
+      "name": "Trail Pieds | Course Trail",
+      "method": "tfidf"
+    },
+    "664": {
+      "name": "Manifestation | Bellecour",
+      "method": "tfidf"
+    },
+    "665": {
+      "name": "Jade | Asmaa",
+      "method": "tfidf"
+    },
+    "666": {
+      "name": "Jade | Bellecour",
+      "method": "tfidf"
+    },
+    "667": {
+      "name": "Brass | Trumpet",
+      "method": "tfidf"
+    },
+    "668": {
+      "name": "Lr Lr | Museum",
+      "method": "tfidf"
+    },
+    "669": {
+      "name": "Bellecour | Pluie",
+      "method": "tfidf"
+    },
+    "670": {
+      "name": "Dance | Costumes",
+      "method": "tfidf"
+    },
+    "671": {
+      "name": "Lyons Fourviere | Commons Cc",
+      "method": "tfidf"
+    },
+    "672": {
+      "name": "Pasted | Paper",
+      "method": "tfidf"
+    },
+    "673": {
+      "name": "Cairn + Spectacle",
+      "method": "association_rule"
+    },
+    "674": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "675": {
+      "name": "Artistes | Quai",
+      "method": "tfidf"
+    },
+    "676": {
+      "name": "Tango + Tangodesoie",
+      "method": "association_rule"
+    },
+    "677": {
+      "name": "Paper | Pasted",
+      "method": "tfidf"
+    },
+    "678": {
+      "name": "Cinema + Museum",
+      "method": "association_rule"
+    },
+    "679": {
+      "name": "Croixrousse + Winter",
+      "method": "association_rule"
+    },
+    "680": {
+      "name": "Chouette + Pierrick",
+      "method": "association_rule"
+    },
+    "681": {
+      "name": "Visiosfeir | Galerie",
+      "method": "tfidf"
+    },
+    "682": {
+      "name": "Voraces | Cour Voraces",
+      "method": "tfidf"
+    },
+    "683": {
+      "name": "Creativecommons + Lyons",
+      "method": "association_rule"
+    },
+    "684": {
+      "name": "Clubs | Club",
+      "method": "tfidf"
+    },
+    "685": {
+      "name": "Capucins + Concert",
+      "method": "association_rule"
+    },
+    "686": {
+      "name": "Music + Rock",
+      "method": "association_rule"
+    },
+    "687": {
+      "name": "Nizier | Church",
+      "method": "tfidf"
+    },
+    "688": {
+      "name": "Nizier | Pransiya",
+      "method": "tfidf"
+    },
+    "689": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "690": {
+      "name": "Paper + Pasteup",
+      "method": "association_rule"
+    },
+    "691": {
+      "name": "Roue | Bellecour",
+      "method": "tfidf"
+    },
+    "692": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "693": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "694": {
+      "name": "Ps Manifestation | Retraites Partisocialiste",
+      "method": "tfidf"
+    },
+    "695": {
+      "name": "Pro Wp | Wp Pro",
+      "method": "tfidf"
+    },
+    "696": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "697": {
+      "name": "Festif | Rassemblement",
+      "method": "tfidf"
+    },
+    "698": {
+      "name": "Frankreich + Saone",
+      "method": "association_rule"
+    },
+    "699": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "700": {
+      "name": "Michel + Micheldas",
+      "method": "association_rule"
+    },
+    "701": {
+      "name": "Visiosfeir | Galerie",
+      "method": "tfidf"
+    },
+    "702": {
+      "name": "Pasted | Paper",
+      "method": "tfidf"
+    },
+    "703": {
+      "name": "Croixrousse | Pasted",
+      "method": "tfidf"
+    },
+    "704": {
+      "name": "Visiosfeir | Pasted",
+      "method": "tfidf"
+    },
+    "705": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "706": {
+      "name": "Fête + Lumières",
+      "method": "association_rule"
+    },
+    "707": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "708": {
+      "name": "Festival Grande | Grande Cote",
+      "method": "tfidf"
+    },
+    "709": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "710": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "711": {
+      "name": "Art + Artcontemporain",
+      "method": "association_rule"
+    },
+    "712": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "713": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "714": {
+      "name": "Des + Fête",
+      "method": "association_rule"
+    },
+    "715": {
+      "name": "Des + Feste",
+      "method": "association_rule"
+    },
+    "716": {
+      "name": "Ngc | Paysage",
+      "method": "tfidf"
+    },
+    "717": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "718": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "719": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "720": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "721": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "722": {
+      "name": "Paper + Pasteup",
+      "method": "association_rule"
+    },
+    "723": {
+      "name": "Eyefi + Rhônealpes",
+      "method": "association_rule"
+    },
+    "724": {
+      "name": "Pentes | Pentes Croix",
+      "method": "tfidf"
+    },
+    "725": {
+      "name": "Concert + Musique",
+      "method": "association_rule"
+    },
+    "726": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "727": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "728": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "729": {
+      "name": "Lagrooverie + Tantans",
+      "method": "association_rule"
+    },
+    "730": {
+      "name": "Celestins | Miroir",
+      "method": "tfidf"
+    },
+    "731": {
+      "name": "Des + Lumières",
+      "method": "association_rule"
+    },
+    "732": {
+      "name": "Cluster 732",
+      "method": "fallback"
+    },
+    "733": {
+      "name": "Fêtedeslumières + Lumières",
+      "method": "association_rule"
+    },
+    "734": {
+      "name": "Pont | Pont Juin",
+      "method": "tfidf"
+    },
+    "735": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "736": {
+      "name": "Croixrousse + Streetart",
+      "method": "association_rule"
+    },
+    "737": {
+      "name": "Eyefi + Rhônealpes",
+      "method": "association_rule"
+    },
+    "738": {
+      "name": "Vieux Borgonha | Borgonha Vieux",
+      "method": "tfidf"
+    },
+    "739": {
+      "name": "Flickrmobile + Nofilter",
+      "method": "association_rule"
+    },
+    "740": {
+      "name": "Day + Zombie",
+      "method": "association_rule"
+    },
+    "741": {
+      "name": "Revolutions | Zombie",
+      "method": "tfidf"
+    },
+    "742": {
+      "name": "Filter + Flickriosapp",
+      "method": "association_rule"
+    },
+    "743": {
+      "name": "Bellecour + Places",
+      "method": "association_rule"
+    },
+    "744": {
+      "name": "Disquaire + Vinyle",
+      "method": "association_rule"
+    },
+    "745": {
+      "name": "Célestins + Des",
+      "method": "association_rule"
+    },
+    "746": {
+      "name": "Lights + Lumières",
+      "method": "association_rule"
+    },
+    "747": {
+      "name": "Bigwheel + Granderoue",
+      "method": "association_rule"
+    },
+    "748": {
+      "name": "Tamron | Notte",
+      "method": "tfidf"
+    },
+    "749": {
+      "name": "Retraite Riots | Riots",
+      "method": "tfidf"
+    },
+    "750": {
+      "name": "Eos + Lyons",
+      "method": "association_rule"
+    },
+    "751": {
+      "name": "Strikes + War",
+      "method": "association_rule"
+    },
+    "752": {
+      "name": "Onlylyon Onlylyon | Onlylyon",
+      "method": "tfidf"
+    },
+    "753": {
+      "name": "Flickrmobile Flickriosapp | Flickriosapp",
+      "method": "tfidf"
+    },
+    "754": {
+      "name": "Jean Croix | Fulchiron",
+      "method": "tfidf"
+    },
+    "755": {
+      "name": "2Ème + Fêtedeslumières",
+      "method": "association_rule"
+    },
+    "756": {
+      "name": "Analogue + Film",
+      "method": "association_rule"
+    },
+    "757": {
+      "name": "Bellecour",
+      "method": "tfidf"
+    },
+    "758": {
+      "name": "Anniversaire + Libération",
+      "method": "association_rule"
+    },
+    "759": {
+      "name": "Saxotaz | Croixrousse",
+      "method": "tfidf"
+    },
+    "760": {
+      "name": "Tanz | Frau",
+      "method": "tfidf"
+    },
+    "761": {
+      "name": "Photostream | Photostream Photostream",
+      "method": "tfidf"
+    },
+    "762": {
+      "name": "Saxotaz | Saxotaz Fall",
+      "method": "tfidf"
+    },
+    "763": {
+      "name": "Superposition | Wall Painting",
+      "method": "tfidf"
+    },
+    "764": {
+      "name": "Des + Rhônealpes",
+      "method": "association_rule"
+    },
+    "765": {
+      "name": "Frankrig Frankrike | Frankreich Frankrig",
+      "method": "tfidf"
+    },
+    "766": {
+      "name": "Goutte + Macro",
+      "method": "association_rule"
+    },
+    "767": {
+      "name": "Lou | Time",
+      "method": "tfidf"
+    },
+    "768": {
+      "name": "Feudartifice + Fireworks",
+      "method": "association_rule"
+    },
+    "769": {
+      "name": "5Ème + Artifice",
+      "method": "association_rule"
+    },
+    "770": {
+      "name": "Fresque | Journal",
+      "method": "tfidf"
+    },
+    "771": {
+      "name": "Saintpaul | Pub",
+      "method": "tfidf"
+    },
+    "772": {
+      "name": "Saone | Pont",
+      "method": "tfidf"
+    },
+    "773": {
+      "name": "Antoine | Saintjean Vieuxlyon",
+      "method": "tfidf"
+    },
+    "774": {
+      "name": "Carnaval + Des",
+      "method": "association_rule"
+    },
+    "775": {
+      "name": "Rolland | Romain Rolland",
+      "method": "tfidf"
+    },
+    "776": {
+      "name": "Nikkor + Nikon",
+      "method": "association_rule"
+    },
+    "777": {
+      "name": "Rhonealpes + Unesco",
+      "method": "association_rule"
+    },
+    "778": {
+      "name": "Pradel | Louis Pradel",
+      "method": "tfidf"
+    },
+    "779": {
+      "name": "Paul | Eglise",
+      "method": "tfidf"
+    },
+    "780": {
+      "name": "Sarcophagus | Palaisdesarts",
+      "method": "tfidf"
+    },
+    "781": {
+      "name": "Beaux + Des",
+      "method": "association_rule"
+    },
+    "782": {
+      "name": "Beaux + Des",
+      "method": "association_rule"
+    },
+    "783": {
+      "name": "Hotêl + Patrimoine",
+      "method": "association_rule"
+    },
+    "784": {
+      "name": "Knar | Hoteldeville",
+      "method": "tfidf"
+    },
+    "785": {
+      "name": "Terreaux | Bartholdi",
+      "method": "tfidf"
+    },
+    "786": {
+      "name": "Mbalyon | Mexique",
+      "method": "tfidf"
+    },
+    "787": {
+      "name": "Fete + Fête",
+      "method": "association_rule"
+    },
+    "788": {
+      "name": "Lr Lr | Contemporary",
+      "method": "tfidf"
+    },
+    "789": {
+      "name": "Nealpes + Rho",
+      "method": "association_rule"
+    },
+    "790": {
+      "name": "Concert + Music",
+      "method": "association_rule"
+    },
+    "791": {
+      "name": "Fête + Lumières",
+      "method": "association_rule"
+    },
+    "792": {
+      "name": "Lesarcades | Friends",
+      "method": "tfidf"
+    },
+    "793": {
+      "name": "Coffee | Coffee Friends",
+      "method": "tfidf"
+    },
+    "794": {
+      "name": "Hoteldeville | Lumix",
+      "method": "tfidf"
+    },
+    "795": {
+      "name": "Palais | Jean",
+      "method": "tfidf"
+    },
+    "796": {
+      "name": "Alps + Ville",
+      "method": "association_rule"
+    },
+    "797": {
+      "name": "Exif | Lgbt",
+      "method": "tfidf"
+    },
+    "798": {
+      "name": "Justice + Palais",
+      "method": "association_rule"
+    },
+    "799": {
+      "name": "Des + Lumières",
+      "method": "association_rule"
+    },
+    "800": {
+      "name": "Opera | Martinesodaigui",
+      "method": "tfidf"
+    },
+    "801": {
+      "name": "Festa + Luci",
+      "method": "association_rule"
+    },
+    "802": {
+      "name": "Weight | Justice",
+      "method": "tfidf"
+    },
+    "803": {
+      "name": "Justice | Palais Justice",
+      "method": "tfidf"
+    },
+    "804": {
+      "name": "Vieuxlyon | Traboules",
+      "method": "tfidf"
+    },
+    "805": {
+      "name": "Opera | Nouvel",
+      "method": "tfidf"
+    },
+    "806": {
+      "name": "Opera | Fetedeslumieres Lights",
+      "method": "tfidf"
+    },
+    "807": {
+      "name": "Opera | Hiphop Oper",
+      "method": "tfidf"
+    },
+    "808": {
+      "name": "Evento | Festa Delle",
+      "method": "tfidf"
+    },
+    "809": {
+      "name": "Beaux + Des",
+      "method": "association_rule"
+    },
+    "810": {
+      "name": "Expo + Rembrandt",
+      "method": "association_rule"
+    },
+    "811": {
+      "name": "Frankrijk + Rhônealpes",
+      "method": "association_rule"
+    },
+    "812": {
+      "name": "Des + Musée",
+      "method": "association_rule"
+    },
+    "813": {
+      "name": "Lovely | Basilica Dame",
+      "method": "tfidf"
+    },
+    "814": {
+      "name": "Des + Fete",
+      "method": "association_rule"
+    },
+    "815": {
+      "name": "Gare | Paul",
+      "method": "tfidf"
+    },
+    "816": {
+      "name": "Paul | Feste",
+      "method": "tfidf"
+    },
+    "817": {
+      "name": "Decembre + Lumiere",
+      "method": "association_rule"
+    },
+    "818": {
+      "name": "Illuminations | Onlylyon Onlylyon",
+      "method": "tfidf"
+    },
+    "819": {
+      "name": "Passerelle | Justice",
+      "method": "tfidf"
+    },
+    "820": {
+      "name": "Light + Lumière",
+      "method": "association_rule"
+    },
+    "821": {
+      "name": "Pho | Placeduchange",
+      "method": "tfidf"
+    },
+    "822": {
+      "name": "Zombies | Terreaux",
+      "method": "tfidf"
+    },
+    "823": {
+      "name": "Pont Bonaparte | Bonaparte",
+      "method": "tfidf"
+    },
+    "824": {
+      "name": "Benj + Uploader",
+      "method": "association_rule"
+    },
+    "825": {
+      "name": "Lfl | Lfl Lfl",
+      "method": "tfidf"
+    },
+    "826": {
+      "name": "Beaux + Des",
+      "method": "association_rule"
+    },
+    "827": {
+      "name": "Beaux + Musée",
+      "method": "association_rule"
+    },
+    "828": {
+      "name": "Fete | Fete Fete",
+      "method": "tfidf"
+    },
+    "829": {
+      "name": "Fêtedeslumières + Lumières",
+      "method": "association_rule"
+    },
+    "830": {
+      "name": "Lumix + Panasonic",
+      "method": "association_rule"
+    },
+    "831": {
+      "name": "Beaux + Des",
+      "method": "association_rule"
+    },
+    "832": {
+      "name": "Palaisdejustice | River",
+      "method": "tfidf"
+    },
+    "833": {
+      "name": "Zombie | Zombieday",
+      "method": "tfidf"
+    },
+    "834": {
+      "name": "Fhrainc | Frankrijk Fhrainc",
+      "method": "tfidf"
+    },
+    "835": {
+      "name": "Vieux Vieux | Vieux",
+      "method": "tfidf"
+    },
+    "836": {
+      "name": "Festa | Luci",
+      "method": "tfidf"
+    },
+    "837": {
+      "name": "Goutte | File",
+      "method": "tfidf"
+    },
+    "838": {
+      "name": "Exif | Sec Bij",
+      "method": "tfidf"
+    },
+    "839": {
+      "name": "Passerelle | Justice",
+      "method": "tfidf"
+    },
+    "840": {
+      "name": "Lyons | Lyons Lyons",
+      "method": "tfidf"
+    },
+    "841": {
+      "name": "Juiverie | Vieuxlyon",
+      "method": "tfidf"
+    },
+    "842": {
+      "name": "Borgonha Vieux | Borgonha",
+      "method": "tfidf"
+    },
+    "843": {
+      "name": "Popart | Graffs",
+      "method": "tfidf"
+    },
+    "844": {
+      "name": "Chazeaux | Saintjean Vieuxlyon",
+      "method": "tfidf"
+    },
+    "845": {
+      "name": "Flickrmobile + Nofilter",
+      "method": "association_rule"
+    },
+    "846": {
+      "name": "Des + Lightfestival",
+      "method": "association_rule"
+    },
+    "847": {
+      "name": "Des + Terreaux",
+      "method": "association_rule"
+    },
+    "848": {
+      "name": "Bartholdi + Terreaux",
+      "method": "association_rule"
+    },
+    "849": {
+      "name": "Exif | Gadagne",
+      "method": "tfidf"
+    },
+    "850": {
+      "name": "Musée + Vieuxlyon",
+      "method": "association_rule"
+    },
+    "851": {
+      "name": "Gadagne + Rhônealpes",
+      "method": "association_rule"
+    },
+    "852": {
+      "name": "Terreaux",
+      "method": "tfidf"
+    },
+    "853": {
+      "name": "Terreaux | Festa",
+      "method": "tfidf"
+    },
+    "854": {
+      "name": "Lumiere + Terreaux",
+      "method": "association_rule"
+    },
+    "855": {
+      "name": "Bartholdi + Terreaux",
+      "method": "association_rule"
+    },
+    "856": {
+      "name": "Fetedeslumieres + Lumieres",
+      "method": "association_rule"
+    },
+    "857": {
+      "name": "Vieuxlyon | Frankreich Frankrig",
+      "method": "tfidf"
+    },
+    "858": {
+      "name": "Lfl | Lfl Lfl",
+      "method": "tfidf"
+    },
+    "859": {
+      "name": "Citoyen | Rassemblement",
+      "method": "tfidf"
+    },
+    "860": {
+      "name": "Des + Journée",
+      "method": "association_rule"
+    },
+    "861": {
+      "name": "Des + Ville",
+      "method": "association_rule"
+    },
+    "862": {
+      "name": "Gens + People",
+      "method": "association_rule"
+    },
+    "863": {
+      "name": "2Ème + Festival",
+      "method": "association_rule"
+    },
+    "864": {
+      "name": "Terreaux | Palais",
+      "method": "tfidf"
+    },
+    "865": {
+      "name": "Pro Wp | Wp Pro",
+      "method": "tfidf"
+    },
+    "866": {
+      "name": "Christina | Kyan",
+      "method": "tfidf"
+    },
+    "867": {
+      "name": "Couleur + Fetedeslumieres",
+      "method": "association_rule"
+    },
+    "868": {
+      "name": "Finiculaire | Jean",
+      "method": "tfidf"
+    },
+    "869": {
+      "name": "Maries | Vieux",
+      "method": "tfidf"
+    },
+    "870": {
+      "name": "Exif | Vieuxlyon",
+      "method": "tfidf"
+    },
+    "871": {
+      "name": "Ruesaintjean Shop | Malrauxlaw Ruesaintjean",
+      "method": "tfidf"
+    },
+    "872": {
+      "name": "Change | Temple",
+      "method": "tfidf"
+    },
+    "873": {
+      "name": "Boeuf | Rueduboeuf",
+      "method": "tfidf"
+    },
+    "874": {
+      "name": "Leeloo | Leeloo Mai",
+      "method": "tfidf"
+    },
+    "875": {
+      "name": "Tour Rose | Vieuxlyon",
+      "method": "tfidf"
+    },
+    "876": {
+      "name": "Vieuxlyon | Google",
+      "method": "tfidf"
+    },
+    "877": {
+      "name": "Tattoo",
+      "method": "tfidf"
+    },
+    "878": {
+      "name": "Traboule | Traboule Vieuxlyon",
+      "method": "tfidf"
+    },
+    "879": {
+      "name": "Jean | Malrauxlaw",
+      "method": "tfidf"
+    },
+    "880": {
+      "name": "Ardeche Avignon | Champageardenne",
+      "method": "tfidf"
+    },
+    "881": {
+      "name": "Miniature | Movie",
+      "method": "tfidf"
+    },
+    "882": {
+      "name": "Jean | Funiculaire",
+      "method": "tfidf"
+    },
+    "883": {
+      "name": "Vintage | Traboule",
+      "method": "tfidf"
+    },
+    "884": {
+      "name": "Cathédrale + Jean",
+      "method": "association_rule"
+    },
+    "885": {
+      "name": "Fotos | Fotografia",
+      "method": "tfidf"
+    },
+    "886": {
+      "name": "Saintjean | Gothique",
+      "method": "tfidf"
+    },
+    "887": {
+      "name": "Worldheritage Unesco | Unesco Worldheritage",
+      "method": "tfidf"
+    },
+    "888": {
+      "name": "Jean | Saintjean",
+      "method": "tfidf"
+    },
+    "889": {
+      "name": "Texture | Frankreich Nikkor",
+      "method": "tfidf"
+    },
+    "890": {
+      "name": "Maison | Vieuxlyon",
+      "method": "tfidf"
+    },
+    "891": {
+      "name": "Europa | Plaza",
+      "method": "tfidf"
+    },
+    "892": {
+      "name": "Vieuxlyon | Frankreich",
+      "method": "tfidf"
+    },
+    "893": {
+      "name": "Cinéma + Minatures",
+      "method": "association_rule"
+    },
+    "894": {
+      "name": "Cinéma + Miniature",
+      "method": "association_rule"
+    },
+    "895": {
+      "name": "Cinéma + Musée",
+      "method": "association_rule"
+    },
+    "896": {
+      "name": "Cinéma + Miniature",
+      "method": "association_rule"
+    },
+    "897": {
+      "name": "Flickrmobile Flickriosapp | Flickrmobile",
+      "method": "tfidf"
+    },
+    "898": {
+      "name": "Teamyoungmarkof | Exotic",
+      "method": "tfidf"
+    },
+    "899": {
+      "name": "Miniature | Miniature Miniature",
+      "method": "tfidf"
+    },
+    "900": {
+      "name": "Museum + Musée",
+      "method": "association_rule"
+    },
+    "901": {
+      "name": "Stitch | Primatiale",
+      "method": "tfidf"
+    },
+    "902": {
+      "name": "Stjean + 里昂聖約翰主教大教堂",
+      "method": "association_rule"
+    },
+    "903": {
+      "name": "Chiesa + Evento",
+      "method": "association_rule"
+    },
+    "904": {
+      "name": "5Ème + Evolutions",
+      "method": "association_rule"
+    },
+    "905": {
+      "name": "Frankreich + Rhônealpes",
+      "method": "association_rule"
+    },
+    "906": {
+      "name": "Cie + Compagnie",
+      "method": "association_rule"
+    },
+    "907": {
+      "name": "Cathédrale + Jean",
+      "method": "association_rule"
+    },
+    "908": {
+      "name": "Des + Lumieres",
+      "method": "association_rule"
+    },
+    "909": {
+      "name": "Cathedral Nacht | Places Saintjean",
+      "method": "tfidf"
+    },
+    "910": {
+      "name": "Cluster 910",
+      "method": "fallback"
+    },
+    "911": {
+      "name": "Jean | Saintjean",
+      "method": "tfidf"
+    },
+    "912": {
+      "name": "Chrysalides + Jean",
+      "method": "association_rule"
+    },
+    "913": {
+      "name": "Church + Rhoneriver",
+      "method": "association_rule"
+    },
+    "914": {
+      "name": "Cathedral + Jean",
+      "method": "association_rule"
+    },
+    "915": {
+      "name": "Espaces + Latinos",
+      "method": "association_rule"
+    },
+    "916": {
+      "name": "Des + Fête",
+      "method": "association_rule"
+    },
+    "917": {
+      "name": "Soir",
+      "method": "tfidf"
+    },
+    "918": {
+      "name": "Onlylyon Onlylyon | Onlylyon",
+      "method": "tfidf"
+    },
+    "919": {
+      "name": "Cathédrale + Saintjean",
+      "method": "association_rule"
+    },
+    "920": {
+      "name": "Des + Fête",
+      "method": "association_rule"
+    },
+    "921": {
+      "name": "Res | Flickriosapp Flickrmobile",
+      "method": "tfidf"
+    },
+    "922": {
+      "name": "Cathédrale + Des",
+      "method": "association_rule"
+    },
+    "923": {
+      "name": "Nikon + Saone",
+      "method": "association_rule"
+    }
+  }
+}
