@@ -57,3 +57,26 @@ logs/
 # Cached data
 *.pkl
 *.pickle
+
+# Environment variables (may contain secrets)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Editor configs (user-specific)
+.idea/
+*.code-workspace
+
+# Credentials and secrets
+*.pem
+*.key
+secrets/
+credentials/
+
+# Backup files
+*.bak
+*.backup
+
+# Jupyter temp files
+*.nbconvert.ipynb

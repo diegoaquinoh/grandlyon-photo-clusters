@@ -1,16 +1,22 @@
 # Grand Lyon Photo Clusters
 
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 Automatic discovery and characterization of Points of Interest (POIs) and events from 400,000+ geolocated Flickr photos in the Lyon metropolitan area.
 
 ## 🎯 Key Results
 
 | Metric                                | Value   |
 | ------------------------------------- | ------- |
-| Photos analyzed                       | 140,040 |
-| Clusters discovered                   | 924     |
-| Permanent landmarks                   | 265     |
-| Recurring events (🎄 Dec / ☀️ Summer) | 439     |
-| One-time events                       | 220     |
+| Original dataset                      | 420,240 |
+| Photos after cleaning                 | 167,578 |
+| Photos in clusters (non-noise)        | 95,637  |
+| Clusters discovered                   | 277     |
+| Permanent landmarks                   | 111     |
+| Recurring events (🎄 Dec / ☀️ Summer) | 112     |
+| One-time events                       | 54      |
 
 ## 🗺️ Interactive Map
 
@@ -30,19 +36,25 @@ open app/cluster_map_v2.html
 ## Project Structure
 
 ```
-├── data/              # Raw and processed datasets
-├── src/               # Python modules
-│   ├── data_loader.py   # Data cleaning & filtering
-│   ├── clustering.py    # HDBSCAN clustering
-│   ├── text_mining.py   # TF-IDF & association rules
+├── data/                  # Raw and processed datasets
+├── src/                   # Python modules
+│   ├── data_loader.py        # Data cleaning & filtering
+│   ├── clustering.py         # Clustering algorithms (HDBSCAN, DBSCAN, K-Means, Hierarchical)
+│   ├── text_mining.py        # TF-IDF & association rules
 │   ├── temporal_analysis.py  # Temporal classification
 │   └── map_visualization.py  # Folium map generation
-├── scripts/           # Pipeline scripts
-│   ├── run_full_pipeline.py      # Complete Session 3 pipeline
-│   └── create_enhanced_map_v2.py # Enhanced map with month slider
-├── notebooks/         # Jupyter notebooks for experimentation
-├── app/               # Interactive map outputs
-└── reports/           # Generated reports & visualizations
+├── scripts/               # Pipeline scripts
+│   ├── run_full_pipeline.py      # Complete pipeline (recommended)
+│   ├── create_enhanced_map_v2.py # Enhanced map with month slider
+│   ├── run_cleaning.py           # Data cleaning only
+│   └── run_parameter_tuning.py   # Parameter optimization
+├── notebooks/             # Jupyter notebooks
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_clustering_experimentation.ipynb
+│   └── 03_hdbscan_experimentation.ipynb
+├── app/                   # Interactive map outputs
+│   └── cluster_map_v2.html
+└── reports/               # Generated reports & visualizations
 ```
 
 ## Quick Start
@@ -108,6 +120,20 @@ Access photos at: `https://www.flickr.com/photos/<user_id>/<photo_id>`
 ## Team
 
 - Diego Aquino
+
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Data source: [Flickr API](https://www.flickr.com/services/api/)
+- Map visualization: [Folium](https://python-visualization.github.io/folium/)
+- Clustering: [scikit-learn](https://scikit-learn.org/)
 
 ---
 
