@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-10T13:22:39.548733",
+  "timestamp": "2026-02-02T12:41:51.565124",
   "initial_count": 420240,
   "final_count": 167578,
   "total_removed": 252662,
@@ -38,7 +38,7 @@
       "reason": "Removed duplicate photo entries (same photo ID)"
     },
     {
-      "step": "Lyon bbox filter",
+      "step": "Lyon bbox filter (large)",
       "rows_before": 167578,
       "rows_after": 167578,
       "rows_removed": 0,

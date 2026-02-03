@@ -1,5 +1,14 @@
 {
-  "timestamp": "2026-01-10T15:25:53.684115",
+  "timestamp": "2026-02-01T22:16:00",
+  "selected_algorithm": "hdbscan",
+  "hdbscan": {
+    "min_cluster_size": 30,
+    "min_samples": 30,
+    "silhouette": 0.7674,
+    "n_clusters": 924,
+    "noise_percentage": 44.8,
+    "largest_cluster_pct": 1.2
+  },
   "dbscan": {
     "eps": 0.005,
     "min_samples": 10,
@@ -7,12 +16,13 @@
     "n_clusters": 59
   },
   "kmeans": {
-    "k": 100,
-    "silhouette": 0.5343997223568664
+    "k": 120,
+    "silhouette": 0.5414
   },
   "hierarchical": {
     "n_clusters": 100,
     "linkage": "ward",
     "silhouette": 0.513
-  }
+  },
+  "notes": "HDBSCAN selected as best algorithm - 42% improvement in silhouette score over K-Means"
 }

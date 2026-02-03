@@ -8,6 +8,7 @@ Session 2: Enhanced with K-Means, Hierarchical, and improved DBSCAN.
 import numpy as np
 import pandas as pd
 from sklearn.cluster import DBSCAN, KMeans, AgglomerativeClustering
+import hdbscan
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 from pathlib import Path
@@ -20,6 +21,127 @@ from .data_loader import load_cleaned_data, PROJECT_ROOT
 # Output paths
 REPORTS_DIR = PROJECT_ROOT / "reports"
 DATA_DIR = PROJECT_ROOT / "data"
+
+
+# =============================================================================
+# DENSITY-BASED OUTLIER DETECTION
+# =============================================================================
+
+def filter_low_density_points(
+    coords: np.ndarray,
+    min_neighbors: int = 5,
+    radius: float = 0.003
+) -> np.ndarray:
+    """
+    Density-based outlier detection.
+    
+    Points with fewer than `min_neighbors` within `radius` are considered
+    outliers (low local density). This is conceptually similar to how
+    DBSCAN identifies noise points.
+    
+    Args:
+        coords: Array of [lat, lon] coordinates (NOT scaled)
+        min_neighbors: Minimum neighbors required to be considered dense
+        radius: Search radius in degrees (~0.003 ≈ 300m at Lyon latitude)
+    
+    Returns:
+        Boolean mask (True = keep, False = outlier)
+    
+    Example:
+        >>> mask = filter_low_density_points(coords, min_neighbors=5, radius=0.003)
+        >>> df_clean = df[mask]
+        >>> print(f"Removed {(~mask).sum()} outliers")
+    """
+    from sklearn.neighbors import NearestNeighbors
+    
+    # Build neighbor index
+    nn = NearestNeighbors(radius=radius, algorithm='ball_tree', metric='euclidean')
+    nn.fit(coords)
+    
+    # Find neighbors within radius for each point
+    neighbors = nn.radius_neighbors(coords, return_distance=False)
+    
+    # Count neighbors (excluding self)
+    neighbor_counts = np.array([len(n) - 1 for n in neighbors])
+    
+    # Points with enough neighbors are "dense" (not outliers)
+    mask = neighbor_counts >= min_neighbors
+    
+    return mask
+
+
+def filter_outliers_and_report(
+    df: pd.DataFrame,
+    min_neighbors: int = 5,
+    radius: float = 0.003,
+    verbose: bool = True,
+    update_log: bool = True
+) -> pd.DataFrame:
+    """
+    Apply density-based outlier filtering with a summary report.
+    
+    Args:
+        df: DataFrame with 'lat' and 'long' columns
+        min_neighbors: Minimum neighbors required (default: 5)
+        radius: Search radius in degrees (default: 0.003 ≈ 300m)
+        verbose: Print summary
+        update_log: Whether to append to cleaning_log.json
+    
+    Returns:
+        Filtered DataFrame with outliers removed
+    """
+    coords = df[['lat', 'long']].values
+    initial_count = len(df)
+    
+    mask = filter_low_density_points(coords, min_neighbors=min_neighbors, radius=radius)
+    
+    n_outliers = (~mask).sum()
+    pct_outliers = n_outliers / initial_count * 100
+    final_count = mask.sum()
+    
+    if verbose:
+        print(f"\n{'=' * 50}")
+        print("DENSITY-BASED OUTLIER FILTERING")
+        print(f"{'=' * 50}")
+        print(f"Parameters: min_neighbors={min_neighbors}, radius={radius}")
+        print(f"Total points: {initial_count:,}")
+        print(f"Outliers (low density): {n_outliers:,} ({pct_outliers:.1f}%)")
+        print(f"Retained: {final_count:,} ({final_count/initial_count*100:.1f}%)")
+    
+    # Append to cleaning log
+    if update_log:
+        log_path = REPORTS_DIR / "cleaning_log.json"
+        if log_path.exists():
+            try:
+                with open(log_path, 'r') as f:
+                    log_data = json.load(f)
+                
+                # Add new step (convert numpy int64 to Python int for JSON)
+                new_step = {
+                    "step": "Density-based outlier filtering",
+                    "rows_before": int(initial_count),
+                    "rows_after": int(final_count),
+                    "rows_removed": int(n_outliers),
+                    "removal_percentage": round(pct_outliers, 2),
+                    "reason": f"Removed isolated points with < {min_neighbors} neighbors within {radius}° radius (low local density)"
+                }
+                log_data["steps"].append(new_step)
+                
+                # Update final count
+                log_data["final_count"] = int(final_count)
+                log_data["total_removed"] = int(log_data["initial_count"] - final_count)
+                log_data["retention_rate"] = round(final_count / log_data["initial_count"] * 100, 2)
+                
+                with open(log_path, 'w') as f:
+                    json.dump(log_data, f, indent=2)
+                
+                if verbose:
+                    print(f"\n  ✅ Updated cleaning log: {log_path}")
+            except Exception as e:
+                if verbose:
+                    print(f"\n  ⚠️ Could not update log: {e}")
+    
+    return df[mask].copy()
 
 
 def prepare_coordinates(df: pd.DataFrame, scale: bool = False) -> np.ndarray:
@@ -189,6 +311,113 @@ def run_hierarchical(
     labels = hierarchical.fit_predict(coords)
     return labels
 
+
+# =============================================================================
+# HDBSCAN CLUSTERING
+# =============================================================================
+
+def run_hdbscan(
+    coords: np.ndarray,
+    min_cluster_size: int = 15,
+    min_samples: int = None,
+    cluster_selection_epsilon: float = 0.0,
+    cluster_selection_method: str = 'eom'
+) -> np.ndarray:
+    """
+    Run HDBSCAN clustering on coordinates.
+    
+    HDBSCAN (Hierarchical DBSCAN) is an improvement over DBSCAN that:
+    - Does not require eps parameter selection
+    - Finds clusters of varying densities
+    - Handles noise points automatically
+    - Produces more stable clusterings
+    
+    Args:
+        coords: Array of [lat, lon] coordinates
+        min_cluster_size: Minimum number of points to form a cluster (most important param)
+        min_samples: Number of samples in neighborhood for core points (defaults to min_cluster_size)
+        cluster_selection_epsilon: Distance threshold for cluster selection (0 = no threshold)
+        cluster_selection_method: 'eom' (Excess of Mass) or 'leaf'
+    
+    Returns:
+        Array of cluster labels (-1 = noise)
+    """
+    clusterer = hdbscan.HDBSCAN(
+        min_cluster_size=min_cluster_size,
+        min_samples=min_samples,
+        cluster_selection_epsilon=cluster_selection_epsilon,
+        cluster_selection_method=cluster_selection_method,
+        metric='euclidean'
+    )
+    labels = clusterer.fit_predict(coords)
+    return labels
+
+
+def find_optimal_hdbscan(
+    coords: np.ndarray,
+    min_cluster_sizes: List[int] = None,
+    min_samples_values: List[int] = None,
+    sample_size: int = 10000
+) -> List[Dict]:
+    """
+    Grid search over HDBSCAN parameters to find optimal configuration.
+    
+    Args:
+        coords: Array of coordinates
+        min_cluster_sizes: List of min_cluster_size values to test
+        min_samples_values: List of min_samples values to test (None means same as min_cluster_size)
+        sample_size: Number of points to sample for silhouette calculation
+    
+    Returns:
+        List of dictionaries with results for each parameter combination
+    """
+    if min_cluster_sizes is None:
+        min_cluster_sizes = [10, 15, 20, 30, 50, 75, 100]
+    if min_samples_values is None:
+        min_samples_values = [None, 5, 10, 15]  # None means use min_cluster_size
+    
+    results = []
+    n_points = len(coords)
+    
+    # Create sample indices for silhouette calculation
+    np.random.seed(42)
+    if n_points > sample_size:
+        sample_idx = np.random.choice(n_points, sample_size, replace=False)
+    else:
+        sample_idx = np.arange(n_points)
+    
+    total_combos = len(min_cluster_sizes) * len(min_samples_values)
+    combo_num = 0
+    
+    for mcs in min_cluster_sizes:
+        for ms in min_samples_values:
+            combo_num += 1
+            actual_ms = ms if ms is not None else mcs
+            print(f"  [{combo_num}/{total_combos}] min_cluster_size={mcs}, min_samples={actual_ms}", end=" ")
+            
+            labels = run_hdbscan(coords, min_cluster_size=mcs, min_samples=ms)
+            stats = get_cluster_stats(labels)
+            
+            # Calculate silhouette on sample (only for clustered points)
+            mask = labels[sample_idx] != -1
+            if mask.sum() > 50 and stats['n_clusters'] > 1:
+                sil = silhouette_score(coords[sample_idx][mask], labels[sample_idx][mask])
+            else:
+                sil = None
+            
+            result = {
+                'min_cluster_size': mcs,
+                'min_samples': actual_ms,
+                'n_clusters': stats['n_clusters'],
+                'noise_pct': round(stats['noise_percentage'], 1),
+                'largest_pct': round(stats['largest_cluster'] / len(labels) * 100, 1),
+                'median_size': stats['median_cluster_size'],
+                'silhouette': round(sil, 4) if sil else None
+            }
+            results.append(result)
+            print(f"→ clusters={result['n_clusters']}, noise={result['noise_pct']}%, sil={result['silhouette']}")
+    
+    return results
 
 # =============================================================================
 # CLUSTER STATISTICS & METRICS
@@ -547,6 +776,140 @@ def run_parameter_sweep(
     
     return results_df
 
+
+def run_dbscan_grid_search(
+    df: Optional[pd.DataFrame] = None,
+    eps_values: list = None,
+    min_samples_values: list = None,
+    save_results: bool = True,
+    sample_size: int = None
+) -> pd.DataFrame:
+    """
+    Full grid search over DBSCAN parameters (eps × min_samples).
+    
+    This addresses the issue that only eps was being tuned while 
+    min_samples was fixed at 10.
+    
+    Args:
+        df: DataFrame with photo data
+        eps_values: List of eps values to try (default: [0.002, 0.003, 0.004, 0.005, 0.006])
+        min_samples_values: List of min_samples to try (default: [5, 10, 15, 20, 30])
+        save_results: Whether to save results to CSV
+        sample_size: Optional sample size for faster testing
+    
+    Returns:
+        DataFrame with results for each parameter combination
+    """
+    if eps_values is None:
+        eps_values = [0.002, 0.003, 0.004, 0.005, 0.006]
+    if min_samples_values is None:
+        min_samples_values = [5, 10, 15, 20, 30]
+    
+    if df is None:
+        df = load_cleaned_data()
+    
+    # Optional sampling for faster experimentation
+    if sample_size and len(df) > sample_size:
+        print(f"Sampling {sample_size:,} points for faster grid search...")
+        df = df.sample(n=sample_size, random_state=42)
+    
+    coords = prepare_coordinates(df)
+    results = []
+    
+    total_combinations = len(eps_values) * len(min_samples_values)
+    
+    print("=" * 70)
+    print("DBSCAN GRID SEARCH (eps × min_samples)")
+    print("=" * 70)
+    print(f"eps values: {eps_values}")
+    print(f"min_samples values: {min_samples_values}")
+    print(f"Total combinations: {total_combinations}")
+    print(f"Data points: {len(df):,}")
+    print("-" * 70)
+    
+    combo_num = 0
+    for eps in eps_values:
+        for min_s in min_samples_values:
+            combo_num += 1
+            print(f"\n[{combo_num}/{total_combinations}] eps={eps}, min_samples={min_s}...", end=" ")
+            
+            import time
+            start = time.time()
+            
+            # Run DBSCAN
+            labels = run_dbscan(coords, eps=eps, min_samples=min_s)
+            
+            dbscan_time = time.time() - start
+            
+            # Get statistics
+            stats = get_cluster_stats(labels)
+            
+            # Get quality metrics (skip if too few clusters)
+            metrics = calculate_quality_metrics(coords, labels)
+            
+            total_time = time.time() - start
+            
+            result = {
+                'eps': eps,
+                'min_samples': min_s,
+                'n_clusters': stats['n_clusters'],
+                'noise_pct': round(stats['noise_percentage'], 2),
+                'largest_cluster_pct': round(stats['largest_cluster'] / len(labels) * 100, 2),
+                'median_size': stats['median_cluster_size'],
+                'mean_size': round(stats['mean_cluster_size'], 1),
+                'silhouette': round(metrics['silhouette'], 4) if metrics.get('silhouette') else None,
+                'davies_bouldin': round(metrics['davies_bouldin'], 4) if metrics.get('davies_bouldin') else None,
+                'time_sec': round(total_time, 1)
+            }
+            results.append(result)
+            
+            print(f"clusters={result['n_clusters']}, noise={result['noise_pct']}%, sil={result['silhouette']} ({total_time:.1f}s)")
+    
+    # Create results DataFrame
+    results_df = pd.DataFrame(results)
+    
+    print("\n" + "=" * 70)
+    print("GRID SEARCH RESULTS")
+    print("=" * 70)
+    print(results_df.to_string(index=False))
+    
+    # Find best configuration by silhouette (excluding mega-cluster cases)
+    valid_results = results_df[
+        (results_df['silhouette'].notna()) & 
+        (results_df['largest_cluster_pct'] < 50)  # Reject if one cluster has >50%
+    ]
+    
+    if len(valid_results) > 0:
+        best_idx = valid_results['silhouette'].idxmax()
+        best = results_df.loc[best_idx]
+        print(f"\n✅ BEST CONFIGURATION (by silhouette, excluding mega-clusters):")
+        print(f"   eps={best['eps']}, min_samples={best['min_samples']}")
+        print(f"   Clusters: {best['n_clusters']}, Silhouette: {best['silhouette']}")
+        print(f"   Noise: {best['noise_pct']}%, Largest cluster: {best['largest_cluster_pct']}%")
+        
+        # Save best params
+        best_params = {
+            'algorithm': 'DBSCAN',
+            'eps': float(best['eps']),
+            'min_samples': int(best['min_samples']),
+            'silhouette': float(best['silhouette']) if best['silhouette'] else None,
+            'n_clusters': int(best['n_clusters']),
+            'timestamp': datetime.now().isoformat()
+        }
+        best_path = REPORTS_DIR / "best_dbscan_params.json"
+        with open(best_path, 'w') as f:
+            json.dump(best_params, f, indent=2)
+        print(f"\n   Saved best params to: {best_path}")
+    else:
+        print("\n⚠️  No valid configuration found (all have mega-clusters or failed metrics)")
+    
+    # Save full results
+    if save_results:
+        grid_path = REPORTS_DIR / "dbscan_grid_search.csv"
+        results_df.to_csv(grid_path, index=False)
+        print(f"\n📊 Saved grid search results to: {grid_path}")
+    
+    return results_df
 
 def main():
     """Run clustering comparison and print results."""

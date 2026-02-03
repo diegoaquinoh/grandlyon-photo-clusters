@@ -21,12 +21,36 @@ CLEANED_DATA_PATH = DATA_DIR / "flickr_cleaned.parquet"  # Changed to Parquet
 CLEANED_CSV_PATH = DATA_DIR / "flickr_cleaned.csv"  # Keep CSV fallback
 CLEANING_LOG_PATH = REPORTS_DIR / "cleaning_log.json"
 
-# Lyon bounding box (approximate)
+# Lyon bounding box options
+# Original: Large area including suburbs (~1400 km²)
 LYON_BBOX = {
     "lat_min": 45.55,
     "lat_max": 45.95,
     "lon_min": 4.65,
     "lon_max": 5.10
+}
+
+# Metro: Grand Lyon metropolitan area (~150 km²) - Recommended
+LYON_BBOX_METRO = {
+    "lat_min": 45.69,  # Oullins/Pierre-Bénite
+    "lat_max": 45.82,  # Caluire-et-Cuire
+    "lon_min": 4.77,   # Tassin-la-Demi-Lune
+    "lon_max": 4.92    # Villeurbanne/Bron
+}
+
+# Center: Lyon city center only (~20 km²)
+LYON_BBOX_CENTER = {
+    "lat_min": 45.73,  # Confluence
+    "lat_max": 45.78,  # Croix-Rousse
+    "lon_min": 4.80,   # Vieux Lyon
+    "lon_max": 4.87    # Part-Dieu
+}
+
+# Map of bbox names to values
+LYON_BBOX_OPTIONS = {
+    "large": LYON_BBOX,
+    "metro": LYON_BBOX_METRO,
+    "center": LYON_BBOX_CENTER
 }
 
 # Valid GPS coordinate ranges
@@ -243,23 +267,34 @@ def validate_date_coherency(df: pd.DataFrame) -> Tuple[pd.DataFrame, int]:
     return df_clean, removed
 
 
-def filter_lyon_bbox(df: pd.DataFrame) -> Tuple[pd.DataFrame, int]:
+def filter_lyon_bbox(df: pd.DataFrame, bbox_type: str = "large") -> Tuple[pd.DataFrame, int]:
     """
     Filter data to only include points within Lyon bounding box.
     
     Args:
         df: DataFrame with lat/long columns
+        bbox_type: One of 'large', 'metro', or 'center'
+            - 'large': Original bbox (~1400 km², includes distant suburbs)
+            - 'metro': Grand Lyon metropolitan area (~150 km²) - Recommended
+            - 'center': Lyon city center only (~20 km²)
     
     Returns:
         Tuple of (filtered DataFrame, number of rows removed)
     """
     initial_count = len(df)
     
+    # Get the appropriate bbox
+    if bbox_type not in LYON_BBOX_OPTIONS:
+        print(f"Warning: Unknown bbox_type '{bbox_type}', using 'large'")
+        bbox_type = "large"
+    
+    bbox = LYON_BBOX_OPTIONS[bbox_type]
+    
     mask = (
-        (df['lat'] >= LYON_BBOX['lat_min']) & 
-        (df['lat'] <= LYON_BBOX['lat_max']) &
-        (df['long'] >= LYON_BBOX['lon_min']) & 
-        (df['long'] <= LYON_BBOX['lon_max'])
+        (df['lat'] >= bbox['lat_min']) & 
+        (df['lat'] <= bbox['lat_max']) &
+        (df['long'] >= bbox['lon_min']) & 
+        (df['long'] <= bbox['lon_max'])
     )
     
     df_clean = df[mask].copy()
@@ -356,6 +391,7 @@ def get_data_stats(df: pd.DataFrame) -> dict:
 
 def load_and_clean_data(
     filter_bbox: bool = True,
+    bbox_type: str = "large",
     save_cache: bool = True,
     save_log: bool = True,
     verbose: bool = True
@@ -372,6 +408,7 @@ def load_and_clean_data(
     
     Args:
         filter_bbox: Whether to filter to Lyon area (default: True)
+        bbox_type: Bbox size - 'large', 'metro', or 'center' (default: 'large')
         save_cache: Whether to save cleaned data to Parquet (default: True)
         save_log: Whether to save cleaning log (default: True)
         verbose: Whether to print progress (default: True)
@@ -453,14 +490,15 @@ def load_and_clean_data(
     # Step 5: Filter to Lyon bbox (optional)
     if filter_bbox:
         if verbose:
-            print("\n[6/6] Filtering to Lyon bounding box...")
+            print(f"\n[6/6] Filtering to Lyon bounding box (type: {bbox_type})...")
         before = len(df)
-        df, removed = filter_lyon_bbox(df)
+        df, removed = filter_lyon_bbox(df, bbox_type=bbox_type)
+        bbox = LYON_BBOX_OPTIONS.get(bbox_type, LYON_BBOX)
         log.log_step(
-            "Lyon bbox filter", 
+            f"Lyon bbox filter ({bbox_type})", 
             before, 
             len(df), 
-            f"Kept only photos within Lyon area (lat: {LYON_BBOX['lat_min']}-{LYON_BBOX['lat_max']}, lon: {LYON_BBOX['lon_min']}-{LYON_BBOX['lon_max']})"
+            f"Kept only photos within Lyon area (lat: {bbox['lat_min']}-{bbox['lat_max']}, lon: {bbox['lon_min']}-{bbox['lon_max']})"
         )
         if verbose:
             print(f"      Removed: {removed:,} rows (outside Lyon area)")
