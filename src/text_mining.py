@@ -1220,18 +1220,20 @@ def run_text_mining(
 
 def run_association_rules_mining(
     df: pd.DataFrame = None,
-    min_support: float = 0.05,
+    min_support: float = 0.08,
     min_confidence: float = 0.3,
-    save_results: bool = True
+    save_results: bool = True,
+    tfidf_descriptors: Dict[int, List] = None
 ) -> Tuple[Dict[int, List[Dict[str, Any]]], Dict[int, Dict[str, Any]]]:
     """
     Run association rules mining on clustered data.
     
     Args:
         df: DataFrame with clustered photos (loads from file if None)
-        min_support: Minimum support for frequent itemsets
+        min_support: Minimum support for frequent itemsets (raised from 0.05 to 0.08)
         min_confidence: Minimum confidence for rules
         save_results: Whether to save outputs to files
+        tfidf_descriptors: Pre-computed TF-IDF descriptors (avoids recomputation)
     
     Returns:
         Tuple of (cluster_rules, cluster_names)
@@ -1261,13 +1263,17 @@ def run_association_rules_mining(
         min_confidence=min_confidence
     )
     
-    # Get frequent itemsets for naming
-    cluster_itemsets = get_cluster_itemsets_summary(cluster_transactions)
-    
-    # Also compute TF-IDF for fallback naming
-    print("Computing TF-IDF for naming fallback...")
-    cluster_texts = get_cluster_texts(df)
-    tfidf_descriptors = compute_tfidf_descriptors(cluster_texts, top_n=10)
+    # Get frequent itemsets for naming (simplified - skip if we have TF-IDF)
+    if tfidf_descriptors is None:
+        cluster_itemsets = get_cluster_itemsets_summary(cluster_transactions)
+        # Compute TF-IDF for fallback naming
+        print("Computing TF-IDF for naming fallback...")
+        cluster_texts = get_cluster_texts(df)
+        tfidf_descriptors = compute_tfidf_descriptors(cluster_texts, top_n=10)
+    else:
+        # Skip itemset summary when we already have TF-IDF (primary naming source)
+        print("Using pre-computed TF-IDF descriptors (skipping redundant computation)")
+        cluster_itemsets = {}
     
     # Generate cluster names
     cluster_names = generate_all_cluster_names(

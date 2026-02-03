@@ -22,6 +22,7 @@ import sys
 import argparse
 import time
 import json
+import hashlib
 from pathlib import Path
 from datetime import datetime
 
@@ -45,6 +46,7 @@ import pandas as pd
 
 # Output paths
 CLUSTERED_DATA_PATH = DATA_DIR / "flickr_clustered.csv"
+CLUSTERING_CACHE_META_PATH = DATA_DIR / "clustering_cache_meta.json"
 CLUSTER_MAP_PATH = APP_DIR / "cluster_map_v2.html"
 TEMPORAL_CLASSIFICATIONS_PATH = REPORTS_DIR / "temporal_classifications.json"
 
@@ -616,6 +618,7 @@ def run_full_pipeline(
     skip_if_exists: bool = False,
     quick: bool = False,
     map_only: bool = False,
+    skip_rules: bool = False,
     algorithm: str = 'hdbscan',
     algo_params: dict = None
 ):
@@ -626,7 +629,7 @@ def run_full_pipeline(
     
     print_header("GRAND LYON PHOTO CLUSTERS - FULL PIPELINE (Session 3)")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"Options: skip_if_exists={skip_if_exists}, quick={quick}, map_only={map_only}")
+    print(f"Options: skip_if_exists={skip_if_exists}, quick={quick}, map_only={map_only}, skip_rules={skip_rules}")
     print(f"Algorithm: {algorithm} with params: {algo_params or 'defaults'}")
     
     total_steps = 1 if map_only else 5
@@ -664,7 +667,36 @@ def run_full_pipeline(
         # =========================================================================
         print_step(2, total_steps, f"CLUSTERING ({algorithm.upper()})")
         
-        if skip_if_exists and CLUSTERED_DATA_PATH.exists():
+        # Build cache key from algorithm + params to detect stale cache
+        params = algo_params or {}
+        cache_meta = {
+            'algorithm': algorithm,
+            'params': {
+                'min_cluster_size': params.get('min_cluster_size', 120),
+                'min_samples': params.get('min_samples'),
+                'eps': params.get('eps', 0.005),
+                'n_clusters': params.get('n_clusters', 50),
+            }
+        }
+        cache_key = hashlib.md5(json.dumps(cache_meta, sort_keys=True).encode()).hexdigest()[:8]
+        
+        # Check if cache matches current parameters
+        cache_valid = False
+        if skip_if_exists and CLUSTERED_DATA_PATH.exists() and CLUSTERING_CACHE_META_PATH.exists():
+            try:
+                with open(CLUSTERING_CACHE_META_PATH, 'r') as f:
+                    saved_meta = json.load(f)
+                if saved_meta.get('cache_key') == cache_key:
+                    cache_valid = True
+                    print(f"✓ Cache valid (key: {cache_key}, algorithm: {algorithm})")
+                else:
+                    print(f"⚠️  Cache stale (saved: {saved_meta.get('cache_key')}, current: {cache_key})")
+                    print(f"   Saved params: {saved_meta.get('algorithm')} {saved_meta.get('params')}")
+                    print(f"   Current params: {algorithm} {cache_meta['params']}")
+            except (json.JSONDecodeError, KeyError):
+                print("⚠️  Cache metadata corrupted, will regenerate")
+        
+        if cache_valid:
             print(f"Loading cached clustered data: {CLUSTERED_DATA_PATH}")
             df = pd.read_csv(CLUSTERED_DATA_PATH)
             if quick:
@@ -675,7 +707,6 @@ def run_full_pipeline(
             coords = prepare_coordinates(df, scale=scale)
             
             # Run selected clustering algorithm
-            params = algo_params or {}
             if algorithm == 'hdbscan':
                 labels = run_hdbscan(
                     coords,
@@ -708,20 +739,36 @@ def run_full_pipeline(
             print(f"  Clusters: {stats['n_clusters']}")
             print(f"  Noise: {stats['n_noise']:,} ({stats['noise_percentage']:.1f}%)")
             
+            # Save clustered data AND cache metadata
             df.to_csv(CLUSTERED_DATA_PATH, index=False)
+            cache_meta['cache_key'] = cache_key
+            cache_meta['created_at'] = datetime.now().isoformat()
+            with open(CLUSTERING_CACHE_META_PATH, 'w') as f:
+                json.dump(cache_meta, f, indent=2)
+            print(f"  Cache saved with key: {cache_key}")
         
         print(f"✅ {df['cluster'].nunique()} clusters")
         
         # =========================================================================
         # STAGE 3: TEXT MINING
         # =========================================================================
-        print_step(3, total_steps, "TEXT MINING (TF-IDF + Association Rules)")
+        if skip_rules:
+            print_step(3, total_steps, "TEXT MINING (TF-IDF only)")
+        else:
+            print_step(3, total_steps, "TEXT MINING (TF-IDF + Association Rules)")
         
         # TF-IDF
-        run_text_mining(df=df, top_n=10, save_results=True)
+        tfidf_descriptors = run_text_mining(df=df, top_n=10, save_results=True)
         
-        # Association Rules
-        run_association_rules_mining(df=df, save_results=True)
+        # Association Rules (skip if --skip-rules flag is set)
+        if not skip_rules:
+            run_association_rules_mining(
+                df=df, 
+                save_results=True,
+                tfidf_descriptors=tfidf_descriptors  # Pass TF-IDF to avoid recomputation
+            )
+        else:
+            print("⏭️  Skipping association rules mining (--skip-rules)")
         
         print("✅ Text mining complete")
         
@@ -829,6 +876,11 @@ def main():
         help="Only regenerate the map (skip all processing)"
     )
     parser.add_argument(
+        "--skip-rules",
+        action="store_true",
+        help="Skip association rules mining for faster execution"
+    )
+    parser.add_argument(
         "--algorithm", "-a",
         type=str,
         default="hdbscan",
@@ -875,6 +927,7 @@ def main():
             skip_if_exists=args.skip_if_exists,
             quick=args.quick,
             map_only=args.map_only,
+            skip_rules=args.skip_rules,
             algorithm=args.algorithm,
             algo_params=algo_params
         )

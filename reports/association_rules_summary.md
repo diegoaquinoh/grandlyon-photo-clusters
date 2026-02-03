@@ -1,8 +1,8 @@
 # Association Rules Summary
 
-**Generated:** 2026-02-02 09:32
+**Generated:** 2026-02-02 13:03
 **Method:** FP-Growth for frequent itemsets + Association Rules
-**Total Clusters Analyzed:** 224
+**Total Clusters Analyzed:** 274
 
 ## Methodology
 
@@ -16,156 +16,156 @@
 
 | Cluster | Size | Auto-Generated Name | Method |
 |---------|------|---------------------|--------|
-| 32 | 5054 | Ddc | tfidf |
-| 33 | 3146 | Chaos | tfidf |
-| 31 | 2683 | Abodeofchaos + Demeureduchaos | frequent_itemset |
-| 90 | 2303 | Confluences | Confluence | tfidf |
-| 143 | 1840 | Bmx | Skatepark | tfidf |
-| 121 | 1700 | Unicef | Ong | tfidf |
-| 169 | 1547 | Opera | Pradel | tfidf |
-| 180 | 1293 | Chef | Place | tfidf |
-| 221 | 1256 | Miniature | Miniature Miniature | tfidf |
-| 173 | 1142 | Jacobins | Place Jacobins | tfidf |
-| 225 | 1126 | Saint Jean | Jean | tfidf |
-| 216 | 1072 | Bellecour | Crs Retraite | tfidf |
-| 2 | 1032 | Stadium | Dion | tfidf |
-| 85 | 1026 | Foursquare Venue | Foursquare | tfidf |
-| 132 | 1010 | Open | Stella | tfidf |
-| 99 | 937 | Biennale | Biennaledelyon | tfidf |
-| 0 | 914 | Chaponost | Ballon | tfidf |
-| 94 | 873 | Parc | Park | tfidf |
-| 207 | 850 | Zombie | Pont Bonaparte | tfidf |
-| 117 | 797 | Robot | Innovation | tfidf |
-| 167 | 772 | Georges | Saint Georges | tfidf |
-| 171 | 762 | Fresque Lyonnais | Fresque | tfidf |
-| 145 | 757 | Nuits | Theatre | tfidf |
-| 11 | 751 | Cosplay | Japan Touch | tfidf |
-| 124 | 742 | Incity | Tour | tfidf |
-| 59 | 724 | Europa Museu | Museum Europa | tfidf |
-| 151 | 723 | Fourviere | Panoramic | tfidf |
-| 191 | 719 | Revolutions | Zombie | tfidf |
-| 19 | 717 | Chaos | tfidf |
-| 164 | 691 | Nizier | Saint Nizier | tfidf |
-| 130 | 685 | Part | Part Dieu | tfidf |
-| 177 | 683 | Foursquare Venue | Foursquare | tfidf |
-| 136 | 656 | Marquis | tfidf |
-| 194 | 655 | Celestins | Parking | tfidf |
-| 10 | 652 | Boardgame | Nuages Nuages | tfidf |
-| 23 | 624 | Touch | Japan | tfidf |
-| 4 | 622 | Miribel | Jonage | tfidf |
-| 29 | 619 | Chaos | tfidf |
-| 125 | 601 | Auditorium | Partdieu | tfidf |
-| 183 | 595 | Pasted | Paper | tfidf |
-| 22 | 584 | Chaos | tfidf |
-| 98 | 580 | Confluence | Cube Orange | tfidf |
-| 208 | 575 | Passerelle | Justice | tfidf |
-| 24 | 574 | Automobile Voitures | Epoqu Auto | tfidf |
-| 205 | 569 | Justice | Palais Justice | tfidf |
-| 34 | 565 | Chaos | tfidf |
-| 116 | 562 | Mac | Biennale | tfidf |
-| 152 | 559 | Zombie | Zombie Walk | tfidf |
-| 76 | 548 | Insa Villeurbanne | Cross Insa | tfidf |
-| 66 | 543 | Lou | Ubb | tfidf |
+| 42 | 5054 | Ddc | tfidf |
+| 43 | 3146 | Chaos | tfidf |
+| 41 | 2683 | Francmaconnerie + Sanctuaire | association_rule |
+| 102 | 2331 | Confluences | Confluence | tfidf |
+| 173 | 1895 | Bmx | River | tfidf |
+| 139 | 1701 | Unicef | Ong | tfidf |
+| 194 | 1175 | Place | Republique | tfidf |
+| 208 | 1152 | Jacobins | Place Jacobins | tfidf |
+| 3 | 1026 | Stadium | Dion | tfidf |
+| 154 | 1021 | Open | Stella | tfidf |
+| 200 | 970 | Georges | Saint Georges | tfidf |
+| 214 | 909 | Museedesbeauxarts | Bellecour | tfidf |
+| 0 | 884 | Craponne | Moulin | tfidf |
+| 167 | 880 | Fourviere | Panoramic | tfidf |
+| 240 | 798 | Opera | Nouvel | tfidf |
+| 141 | 797 | Robot | Conference | tfidf |
+| 211 | 756 | Fresque Lyonnais | Fresque | tfidf |
+| 64 | 754 | Europa Museu | Museum Europa | tfidf |
+| 12 | 752 | Cosplay | Japan Touch | tfidf |
+| 232 | 751 | Pasted | Paper | tfidf |
+| 260 | 740 | Zombie | Pont | tfidf |
+| 147 | 729 | Incity | Tour | tfidf |
+| 26 | 717 | Chaos | tfidf |
+| 174 | 717 | Nuits | Theatre | tfidf |
+| 224 | 713 | Foursquare | Foursquare Venue | tfidf |
+| 213 | 708 | Nizier | Saint Nizier | tfidf |
+| 235 | 695 | Revolutions | Zombie | tfidf |
+| 15 | 653 | Boardgame | Nuages Nuages | tfidf |
+| 233 | 652 | Celestins | Parking | tfidf |
+| 19 | 624 | Touch | Japan | tfidf |
+| 118 | 621 | Parc | Park | tfidf |
+| 114 | 620 | Confluence | Cube | tfidf |
+| 39 | 619 | Chaos | tfidf |
+| 187 | 615 | Croixrousse | Zombie | tfidf |
+| 146 | 589 | Auditorium | Partdieu | tfidf |
+| 27 | 583 | Chaos | tfidf |
+| 20 | 574 | Automobile Voitures | Epoqu | tfidf |
+| 210 | 572 | Fireworks | Artifice Feu | tfidf |
+| 45 | 558 | Chaos | tfidf |
+| 266 | 558 | Vieuxlyon | Vieux | tfidf |
+| 82 | 548 | Insa Villeurbanne | Cross Insa | tfidf |
+| 259 | 548 | Justice | Palais Justice | tfidf |
+| 148 | 545 | Part Dieu | Gare | tfidf |
+| 140 | 543 | Mac | Biennale | tfidf |
+| 125 | 528 | Confluence | Lego Ferrari | tfidf |
+| 132 | 527 | Parc | Fleurs | tfidf |
+| 133 | 513 | Library | Chocolat | tfidf |
+| 138 | 510 | Parc | Zoo | tfidf |
+| 1 | 506 | Craponne | Mai | tfidf |
+| 55 | 496 | Rieur | Inte | tfidf |
 
 ## Sample Association Rules
 
-### Cluster 32: Ddc (5054 photos)
+### Cluster 42: Ddc (5054 photos)
 
-1. `mystic + survivetheapocalypse` → `manifestation` (conf: 1.00, lift: 2.47)
+1. `survivetheapocalypse + mystic` → `manifestation` (conf: 1.00, lift: 2.47)
 2. `endoftheworld + survivetheapocalypse` → `manifestation` (conf: 1.00, lift: 2.47)
 3. `survivetheapocalypse + actingperformance` → `manifestation` (conf: 1.00, lift: 2.47)
 4. `eros + survivetheapocalypse` → `manifestation` (conf: 1.00, lift: 2.47)
 5. `manifestation` → `event` (conf: 1.00, lift: 2.47)
 
-### Cluster 33: Chaos (3146 photos)
+### Cluster 43: Chaos (3146 photos)
 
 1. `ehrmann + freemasonry` → `thierry` (conf: 0.93, lift: 1.78)
 2. `thierry` → `ehrmann + freemasonry` (conf: 0.56, lift: 1.78)
-3. `streetart + thierry` → `ehrmann` (conf: 1.00, lift: 1.70)
-4. `ehrmann` → `streetart + thierry` (conf: 0.81, lift: 1.70)
-5. `organmuseum + thierry` → `ehrmann` (conf: 1.00, lift: 1.70)
+3. `thierry + streetart` → `ehrmann` (conf: 1.00, lift: 1.70)
+4. `ehrmann` → `thierry + streetart` (conf: 0.81, lift: 1.70)
+5. `thierry + organmuseum` → `ehrmann` (conf: 1.00, lift: 1.70)
 
-### Cluster 31: Abodeofchaos + Demeureduchaos (2683 photos)
+### Cluster 41: Francmaconnerie + Sanctuaire (2683 photos)
 
 1. `francmaconnerie` → `sanctuaire + freemasonry` (conf: 0.77, lift: 1.60)
-2. `francmaconnerie` → `freemasonry + prophétie` (conf: 0.74, lift: 1.60)
+2. `francmaconnerie` → `prophétie + freemasonry` (conf: 0.74, lift: 1.60)
 3. `lespritdelasalamandre + freemasonry` → `francmaconnerie` (conf: 1.00, lift: 1.60)
 4. `francmaconnerie` → `lespritdelasalamandre + freemasonry` (conf: 1.00, lift: 1.60)
 5. `salamanderspirit + freemasonry` → `francmaconnerie` (conf: 1.00, lift: 1.60)
 
-### Cluster 90: Confluences | Confluence (2303 photos)
+### Cluster 102: Confluences | Confluence (2331 photos)
 
-1. `francie + франция` → `フランス` (conf: 1.00, lift: 16.64)
-2. `フランス` → `francie + франция` (conf: 1.00, lift: 16.64)
-3. `francie + лион` → `フランス` (conf: 1.00, lift: 16.64)
-4. `フランス` → `francie + лион` (conf: 1.00, lift: 16.64)
-5. `франция + francja` → `フランス` (conf: 1.00, lift: 16.64)
+1. `франция + لیون` → `ประเทศฝร` (conf: 1.00, lift: 16.86)
+2. `ประเทศฝร` → `франция + لیون` (conf: 1.00, lift: 16.86)
+3. `франция + ليون` → `ประเทศฝร` (conf: 1.00, lift: 16.86)
+4. `ประเทศฝร` → `франция + ليون` (conf: 1.00, lift: 16.86)
+5. `франция + リヨン` → `ประเทศฝร` (conf: 1.00, lift: 16.86)
 
-### Cluster 143: Bmx | Skatepark (1840 photos)
+### Cluster 173: Bmx | River (1895 photos)
 
-1. `dj` → `plateforme` (conf: 0.97, lift: 36.80)
-2. `plateforme` → `dj` (conf: 0.97, lift: 36.80)
-3. `europa` → `frança` (conf: 0.80, lift: 26.87)
-4. `frança` → `europa` (conf: 0.71, lift: 26.87)
-5. `foursquare` → `venue` (conf: 1.00, lift: 26.56)
+1. `crs` → `retraite` (conf: 1.00, lift: 36.62)
+2. `retraite` → `crs` (conf: 1.00, lift: 36.62)
+3. `riots` → `retraite` (conf: 1.00, lift: 36.62)
+4. `retraite` → `riots` (conf: 1.00, lift: 36.62)
+5. `crs` → `riots` (conf: 1.00, lift: 36.62)
 
-### Cluster 121: Unicef | Ong (1700 photos)
+### Cluster 139: Unicef | Ong (1701 photos)
 
-1. `international` → `vaccination` (conf: 1.00, lift: 49.53)
-2. `vaccination` → `international` (conf: 1.00, lift: 49.53)
-3. `international + unicefrhône` → `vaccination` (conf: 1.00, lift: 49.53)
-4. `unicefrhône + vaccination` → `international` (conf: 1.00, lift: 49.53)
-5. `international` → `unicefrhône + vaccination` (conf: 1.00, lift: 49.53)
+1. `vaccination` → `international` (conf: 1.00, lift: 49.53)
+2. `international` → `vaccination` (conf: 1.00, lift: 49.53)
+3. `unicefrhône + vaccination` → `international` (conf: 1.00, lift: 49.53)
+4. `unicefrhône + international` → `vaccination` (conf: 1.00, lift: 49.53)
+5. `vaccination` → `unicefrhône + international` (conf: 1.00, lift: 49.53)
 
-### Cluster 169: Opera | Pradel (1547 photos)
+### Cluster 194: Place | Republique (1175 photos)
 
-1. `december8th` → `festivaloflights + grandlyon` (conf: 0.94, lift: 28.94)
-2. `december8th` → `grandlyon + 8décembre` (conf: 0.94, lift: 28.94)
-3. `grandlyon` → `1er + december8th` (conf: 0.94, lift: 28.94)
-4. `december8th` → `1er + grandlyon` (conf: 0.94, lift: 28.94)
-5. `december8th` → `grandlyon + festival` (conf: 0.94, lift: 28.94)
+1. `laplacedelart` → `parc + lyonparcauto` (conf: 0.96, lift: 28.43)
+2. `lyonparcauto` → `laplacedelart + parc` (conf: 0.96, lift: 28.43)
+3. `parc + place` → `lyonparcauto` (conf: 1.00, lift: 28.43)
+4. `laplacedelart` → `lyonparcauto` (conf: 1.00, lift: 28.43)
+5. `lyonparcauto` → `laplacedelart` (conf: 1.00, lift: 28.43)
 
-### Cluster 180: Chef | Place (1293 photos)
+### Cluster 208: Jacobins | Place Jacobins (1152 photos)
 
-1. `air + bellecour` → `yoann` (conf: 1.00, lift: 27.78)
-2. `yoann` → `air + bellecour` (conf: 1.00, lift: 27.78)
-3. `air + 8décembre` → `yoann` (conf: 1.00, lift: 27.78)
-4. `yoann` → `air + 8décembre` (conf: 1.00, lift: 27.78)
-5. `air + illuminations` → `yoann` (conf: 1.00, lift: 27.78)
+1. `fdl` → `n1` (conf: 1.00, lift: 45.47)
+2. `n1` → `fdl` (conf: 1.00, lift: 45.47)
+3. `fdl` → `supermimil` (conf: 1.00, lift: 45.47)
+4. `supermimil` → `fdl` (conf: 1.00, lift: 45.47)
+5. `supermimil` → `n1` (conf: 1.00, lift: 45.47)
 
-### Cluster 221: Miniature | Miniature Miniature (1256 photos)
+### Cluster 3: Stadium | Dion (1026 photos)
 
-1. `view + dark` → `special` (conf: 1.00, lift: 31.95)
-2. `view + light` → `special` (conf: 1.00, lift: 31.95)
-3. `dark + light` → `special` (conf: 1.00, lift: 31.95)
-4. `maisondesavocats + unesco` → `lawoffices` (conf: 1.00, lift: 31.95)
-5. `lawoffices` → `maisondesavocats + unesco` (conf: 1.00, lift: 31.95)
+1. `dicaire` → `véronic` (conf: 1.00, lift: 26.81)
+2. `véronic` → `dicaire` (conf: 1.00, lift: 26.81)
+3. `parc + dicaire` → `véronic` (conf: 1.00, lift: 26.81)
+4. `parc + véronic` → `dicaire` (conf: 1.00, lift: 26.81)
+5. `dicaire` → `parc + véronic` (conf: 1.00, lift: 26.81)
 
-### Cluster 173: Jacobins | Place Jacobins (1142 photos)
+### Cluster 154: Open | Stella (1021 photos)
 
-1. `fdl` → `n1` (conf: 1.00, lift: 45.29)
-2. `n1` → `fdl` (conf: 1.00, lift: 45.29)
-3. `supermimil` → `n1` (conf: 1.00, lift: 45.29)
-4. `n1` → `supermimil` (conf: 1.00, lift: 45.29)
-5. `supermimil` → `fdl` (conf: 1.00, lift: 45.29)
+1. `piscine + piscinedurhône` → `swimmingpool` (conf: 0.81, lift: 19.33)
+2. `swimmingpool` → `piscine + piscinedurhône` (conf: 0.54, lift: 19.33)
+3. `déficit` → `démocratique` (conf: 1.00, lift: 15.43)
+4. `démocratique` → `déficit` (conf: 1.00, lift: 15.43)
+5. `déficit + union` → `démocratique` (conf: 1.00, lift: 15.43)
 
 ## Naming Method Distribution
 
 | Method | Count | Percentage |
 |--------|-------|------------|
-| tfidf | 222 | 98.2% |
-| fallback | 2 | 0.9% |
-| frequent_itemset | 2 | 0.9% |
+| tfidf | 272 | 98.2% |
+| fallback | 3 | 1.1% |
+| association_rule | 2 | 0.7% |
 
 ## Validation: Known Lyon Landmarks
 
 | Expected Landmark | Matched Cluster | Auto-Name | Status |
 |-------------------|-----------------|-----------|--------|
-| Fourvière | 135 | Ainay | Martin | ✅ |
-| Vieux Lyon | 206 | Vieuxlyon | Traboules | ✅ |
-| Place Bellecour | 201 | Hommage | Marche | ✅ |
-| Fête des Lumières | 115 | Brotteaux | Lumieres Fete | ✅ |
-| Demeure du Chaos | 18 | Palaisideal + Vanitas | ✅ |
-| Parc Tête d'Or | 105 | Zoo | Show | ✅ |
-| Croix-Rousse | 122 | Canuts | Mur | ✅ |
-| Presqu'île | 173 | Jacobins | Place Jacobins | ✅ |
+| Fourvière | 156 | Basilique Basilique | Basilique | ✅ |
+| Vieux Lyon | 251 | Vieuxlyon | Traboules | ✅ |
+| Place Bellecour | 183 | Environs | Euro Province | ✅ |
+| Fête des Lumières | 123 | Brotteaux | Lumieres Fete | ✅ |
+| Demeure du Chaos | 25 | Prophétie + Temps | ✅ |
+| Parc Tête d'Or | 127 | Zoo | Show | ✅ |
+| Croix-Rousse | 137 | Canuts | Mur | ✅ |
+| Presqu'île | 183 | Environs | Euro Province | ✅ |
